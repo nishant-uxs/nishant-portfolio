@@ -14,13 +14,6 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\"",
     "prepare": "node -e \"process.env.NODE_ENV==='production'||process.env.CI?process.exit(0):require('child_process').execSync('husky',{stdio:'inherit'})\""
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
-    "check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\" && eslint src",
-    "validate": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\" && eslint src && next build",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\"",
-    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [

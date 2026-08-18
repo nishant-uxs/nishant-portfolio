@@ -30,7 +30,7 @@ const NavbarAppleMenu = ({
     ],
     [
       { label: "Lock Screen", meta: "⌃⌘Q", onClick: () => setIsAsleep(true) },
-      { label: "Log Out Kuldeep...", meta: "⇧⌘Q", onClick: () => setIsAsleep(true) },
+      { label: "Log Out Nishant...", meta: "⇧⌘Q", onClick: () => setIsAsleep(true) },
     ],
   ];
 

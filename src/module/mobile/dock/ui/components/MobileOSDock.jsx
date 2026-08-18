@@ -31,16 +31,35 @@ const MobileOSDock = ({ dockApps, openWindow }) => (
     {dockApps.map((app) => (
       <button
         key={app.id}
-        onClick={() => openWindow(app.id)}
+        onClick={() => {
+          if (app.external && app.href) {
+            window.open(
+              app.href,
+              app.href.startsWith("mailto:") ? "_self" : "_blank",
+              "noopener,noreferrer",
+            );
+            return;
+          }
+          openWindow(app.id);
+        }}
         className="active:scale-[0.82] transition-transform duration-150 w-[58px] h-[58px] rounded-[14px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.2)]"
       >
-        <OptimizedImage
-          src={`/images/${app.icon}`}
-          alt={app.name}
-          width={64}
-          height={64}
-          className={`w-full h-full object-cover rounded-[14px] ${scaleMap[app.id] || ""}`}
-        />
+        {app.iconSrc ? (
+          <span
+            className="flex h-full w-full items-center justify-center rounded-[14px]"
+            style={{ background: app.iconBg || "#ffffff" }}
+          >
+            <img src={app.iconSrc} alt={app.name} className="h-7 w-7 object-contain" />
+          </span>
+        ) : (
+          <OptimizedImage
+            src={`/images/${app.icon}`}
+            alt={app.name}
+            width={64}
+            height={64}
+            className={`w-full h-full object-cover rounded-[14px] ${scaleMap[app.id] || ""}`}
+          />
+        )}
       </button>
     ))}
   </footer>

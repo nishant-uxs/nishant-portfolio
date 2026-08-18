@@ -36,6 +36,15 @@ const Dock = () => {
   }, [dockAppIds]);
 
   const toggleApp = (app) => {
+    if (app.external && app.href) {
+      window.open(
+        app.href,
+        app.href.startsWith("mailto:") ? "_self" : "_blank",
+        "noopener,noreferrer",
+      );
+      return;
+    }
+
     if (!app.canOpen) return;
 
     if (app.id === "trash") {
@@ -138,23 +147,23 @@ const Dock = () => {
       aria-label="Dock"
     >
       <div ref={dockRef} className="dock-container">
-        {orderedDockApps.map(({ id, name, icon, canOpen }, index) => (
-          <Fragment key={id}>
-            {id === "folder" && (
+        {orderedDockApps.map((app, index) => (
+          <Fragment key={app.id}>
+            {app.separatorBefore && (
               <div className="dock-separator-wrap" aria-hidden="true">
                 <span className="dock-separator" />
               </div>
             )}
             <DockIcon
-              app={{ id, name, icon, canOpen }}
-              state={windows[id === "folder" ? "finder" : id]}
-              isFocused={focusedWindowId === (id === "folder" ? "finder" : id)}
-              isHovered={hoveredAppId === id}
-              onMouseEnter={() => setHoveredAppId(id)}
+              app={app}
+              state={windows[app.id === "folder" ? "finder" : app.id]}
+              isFocused={focusedWindowId === (app.id === "folder" ? "finder" : app.id)}
+              isHovered={hoveredAppId === app.id}
+              onMouseEnter={() => setHoveredAppId(app.id)}
               onMouseLeave={() => setHoveredAppId(null)}
-              onClick={() => toggleApp({ id, canOpen })}
-              draggable={true}
-              onDragStart={(e) => handleDragStart(e, index, id)}
+              onClick={() => toggleApp(app)}
+              draggable={!app.external}
+              onDragStart={(e) => handleDragStart(e, index, app.id)}
               onDragOver={(e) => handleDragOver(e, index)}
               onDragEnd={handleDragEnd}
               style={{

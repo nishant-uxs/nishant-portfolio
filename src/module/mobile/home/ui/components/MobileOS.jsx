@@ -64,18 +64,13 @@ const MobileOS = () => {
 
       <MobileOSAppGrid
         dockApps={dockApps.filter(
-          (app) =>
-            app.id !== "launchpad" &&
-            app.id !== "trash" &&
-            !["safari", "messages", "call", "music", "vscode", "postman", "folder"].includes(
-              app.id,
-            ),
+          (app) => app.canOpen && !["finder", "folder", "resume"].includes(app.id),
         )}
         openWindow={openWindow}
       />
 
       <MobileOSDock
-        dockApps={["call", "safari", "messages", "music"]
+        dockApps={["finder", "folder", "resume", "github", "linkedin"]
           .map((id) => dockApps.find((app) => app.id === id))
           .filter(Boolean)}
         openWindow={openWindow}

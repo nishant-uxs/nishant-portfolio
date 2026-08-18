@@ -19,7 +19,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
 
     const setupHandlers = (t) => {
       const prompt = () => {
-        t.write("\r\n\x1b[1;32mkuldeep@macbook ~ %\x1b[0m ");
+        t.write("\r\n\x1b[1;32mnishant@macbook ~ %\x1b[0m ");
       };
 
       const println = (msg) => {
@@ -103,7 +103,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
                 "\x1b[1;38;2;16;185;129mwhoami\x1b[0m    \x1b[38;2;75;85;99m- Print current user\x1b[0m",
               );
               println(
-                "\x1b[1;38;2;16;185;129mabout\x1b[0m     \x1b[38;2;75;85;99m- About Kuldeep Rajput\x1b[0m",
+                "\x1b[1;38;2;16;185;129mabout\x1b[0m     \x1b[38;2;75;85;99m- About Nishant Agarwal\x1b[0m",
               );
               println(
                 "\x1b[1;38;2;16;185;129mtechstack\x1b[0m \x1b[38;2;75;85;99m- Display tech stack\x1b[0m",
@@ -125,13 +125,15 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
               println(new Date().toString());
               break;
             case "whoami":
-              println("\x1b[38;2;75;85;99mkuldeep\x1b[0m");
+              println("\x1b[38;2;75;85;99mnishant\x1b[0m");
               break;
             case "about":
-              println("\x1b[1;38;2;219;39;119m=== About Kuldeep Rajput ===\x1b[0m");
-              println("\x1b[1;38;2;16;185;129mName:      \x1b[38;2;75;85;99mKuldeep Rajput\x1b[0m");
+              println("\x1b[1;38;2;219;39;119m=== About Nishant Agarwal ===\x1b[0m");
               println(
-                "\x1b[1;38;2;16;185;129mRole:      \x1b[38;2;75;85;99mFull-Stack Developer & Designer\x1b[0m",
+                "\x1b[1;38;2;16;185;129mName:      \x1b[38;2;75;85;99mNishant Agarwal\x1b[0m",
+              );
+              println(
+                "\x1b[1;38;2;16;185;129mRole:      \x1b[38;2;75;85;99mBackend & Blockchain Engineer\x1b[0m",
               );
               println("\x1b[1;38;2;16;185;129mLocation:  \x1b[38;2;75;85;99mIndia 🇮🇳\x1b[0m");
               println(`\x1b[1;38;2;16;185;129mEmail:     \x1b[4;38;2;37;99;235m${EMAIL}\x1b[0m`);
@@ -142,17 +144,17 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
                 `\x1b[1;38;2;16;185;129mPortfolio: \x1b[4;38;2;37;99;235m${PORTFOLIO_URL}\x1b[0m`,
               );
               println("\x1b[1;38;2;6;182;212m\r\nBio:\x1b[0m");
+              println("\x1b[38;2;75;85;99mBackend, blockchain, and Web3 engineer building\x1b[0m");
               println(
-                "\x1b[38;2;75;85;99mPassionate developer crafting premium macOS-inspired\x1b[0m",
+                "\x1b[38;2;75;85;99mprivacy-preserving systems, APIs, and dev tooling.\x1b[0m",
               );
-              println("\x1b[38;2;75;85;99mweb experiences with React, Next.js & Node.js.\x1b[0m");
               println(
                 "\x1b[38;2;75;85;99mType \x1b[1;38;2;16;185;129mtechstack\x1b[0m\x1b[38;2;75;85;99m for skills or \x1b[1;38;2;16;185;129mprojects\x1b[0m\x1b[38;2;75;85;99m for work.\x1b[0m",
               );
               break;
             case "sudo":
               println(
-                "\x1b[31mkuldeep is not in the sudoers file. This incident will be reported.\x1b[0m",
+                "\x1b[31mnishant is not in the sudoers file. This incident will be reported.\x1b[0m",
               );
               break;
             case "techstack":

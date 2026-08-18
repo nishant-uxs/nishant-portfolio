@@ -26,7 +26,9 @@ const scaleMap = {
   trash: "scale-[0.80]",
 };
 
-const statusLabel = (name, state, canOpen) => {
+const statusLabel = (app, state) => {
+  const { name, canOpen, href } = app;
+  if (!canOpen && href) return `${name}, opens external link`;
   if (!canOpen) return name;
   if (state?.isMinimized) return `${name}, minimized`;
   if (state?.isOpen) return `${name}, open`;
@@ -62,7 +64,7 @@ const DockIcon = ({
   onDragEnd,
   style,
 }) => {
-  const { id, name, icon, canOpen } = app;
+  const { id, name, icon, iconSrc, iconBg, canOpen, href } = app;
   const isOpen = Boolean(state?.isOpen);
   const isMinimized = Boolean(state?.isMinimized);
   const isDockDragging = useWindowsStore((state) => state.isDockDragging);
@@ -86,9 +88,9 @@ const DockIcon = ({
       <button
         type="button"
         className="dock-icon relative flex justify-center items-center overflow-visible"
-        aria-label={statusLabel(name, state, canOpen)}
+        aria-label={statusLabel(app, state)}
         aria-pressed={canOpen ? isOpen : undefined}
-        disabled={!canOpen}
+        disabled={!canOpen && !href}
         onClick={onClick}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
@@ -99,6 +101,17 @@ const DockIcon = ({
         <span className="size-full flex items-center justify-center overflow-hidden">
           {id === "calendar" ? (
             <CalendarIcon />
+          ) : iconSrc ? (
+            <span
+              className="flex h-[58px] w-[58px] items-center justify-center rounded-[16px] shadow-[0_8px_18px_rgba(0,0,0,0.18)]"
+              style={{ background: iconBg || "#ffffff" }}
+            >
+              <img
+                src={iconSrc}
+                alt={name}
+                className="pointer-events-none h-7 w-7 object-contain"
+              />
+            </span>
           ) : (
             <OptimizedImage
               src={`/images/${icon}`}
