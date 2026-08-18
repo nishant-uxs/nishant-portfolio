@@ -46,7 +46,7 @@ const AboutPortfolioModal = ({ show, onClose }) => {
         {/* Footer/Copyright */}
         <div className="text-center text-[8.5px] text-gray-400/90 leading-tight mb-2 select-none">
           <p>Portfolio of Nishant Agarwal.</p>
-          <p>Desktop UI by Kuldeep Rajput.</p>
+          <p>Backend & Blockchain Engineer.</p>
         </div>
       </div>
     </div>

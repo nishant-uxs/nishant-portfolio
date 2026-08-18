@@ -25,7 +25,7 @@ const useMessages = () => {
     return INITIAL_CONVERSATIONS;
   });
 
-  const [activeChatId, setActiveChatId] = useState("kuldeep");
+  const [activeChatId, setActiveChatId] = useState("nishant");
   const [inputText, setInputText] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -142,31 +142,31 @@ const useMessages = () => {
     setInputText("");
 
     const chatId = activeChat.id;
-    if (chatId === "kuldeep" || chatId === "mahabub" || chatId === "bhavesh") {
+    if (chatId === "nishant" || chatId === "mahabub" || chatId === "bhavesh") {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
         let replyText = "";
 
-        if (chatId === "kuldeep") {
+        if (chatId === "nishant") {
           replyText = "That's cool! Feel free to explore other apps in the dock too.";
           if (userMsg.includes("project")) {
             replyText =
-              "I have built several cool projects! You can check them out in the 'Portfolio' Finder app, or view 'NewTube', 'Snsta', and 'Docs Editor'.";
+              "I have built several cool projects! You can check them out in Finder, or open Krydo, BlockForge, CivicSense, and TrustMesh.";
           } else if (
             userMsg.includes("skill") ||
             userMsg.includes("tech") ||
             userMsg.includes("stack")
           ) {
             replyText =
-              "My primary tech stack includes React, Next.js, TypeScript, Node.js, Express, Bun, Tailwind CSS, PostgreSQL, and MongoDB. Open the 'Skills' Terminal app to see the complete list!";
+              "My stack: TypeScript, Solidity, Node.js, Express, Hardhat, viem, ZK proofs, IPFS, React, Next.js. Open Terminal and type techstack.";
           } else if (
             userMsg.includes("contact") ||
             userMsg.includes("mail") ||
             userMsg.includes("hire")
           ) {
             replyText =
-              "You can contact me via email at kuldeeprajput.dev@gmail.com, or check out my socials (Github, LinkedIn) in the Safari app!";
+              "You can contact me via email at agarwalnishant812@gmail.com, or check out my socials (Github, LinkedIn) in the Safari app!";
           } else if (
             userMsg.includes("hello") ||
             userMsg.includes("hi") ||

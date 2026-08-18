@@ -18,7 +18,7 @@ const WORK_LOCATION = {
   children: [
     {
       id: 5,
-      name: "NewTube",
+      name: "Krydo",
       icon: "/images/folder.webp",
       kind: "folder",
       position: "top-10 left-5",
@@ -26,20 +26,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "NewTube Project.txt",
+          name: "Krydo Project.txt",
           icon: "/images/txt.webp",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This platform is a modern video streaming application built for performance, scalability, and user engagement. It features an advanced video player with quality controls, playback speed, picture-in-picture, and keyboard shortcuts for a smooth experience. Powered by Mux, videos are processed, optimized, and delivered globally via a fast CDN.",
-            "It includes AI-powered tools for thumbnail generation, title suggestions, and description optimization, helping creators boost discoverability. The Creator Studio provides analytics, engagement metrics, and growth tracking. ",
-            "Built with Next.js, Tailwind CSS, tRPC, and PostgreSQL, it ensures a fast, responsive, and scalable architecture across all devices.",
+            "Krydo is privacy-preserving identity infrastructure by Nishant Agarwal. Prove eligibility with zero-knowledge proofs and W3C verifiable credentials without revealing confidential data.",
+            "154 tests. 3 contracts deployed on Sepolia. Circom circuits plus on-chain verification.",
+            "Stack: Solidity, Hardhat, ZK proofs, Next.js, and Ethereum.",
           ],
         },
         {
           id: 2,
-          name: "newtube.com",
+          name: "krydo.onrender.com",
           icon: "/images/safari.webp",
           kind: "file",
           fileType: "url",
@@ -48,7 +48,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "newtube.png",
+          name: "krydo.png",
           icon: "/images/image.webp",
           kind: "file",
           fileType: "img",
@@ -69,7 +69,7 @@ const WORK_LOCATION = {
     },
     {
       id: 6,
-      name: "Snsta",
+      name: "BlockForge",
       icon: "/images/folder.webp",
       kind: "folder",
       position: "top-52 right-80",
@@ -77,20 +77,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Snsta Project.txt",
+          name: "BlockForge Project.txt",
           icon: "/images/txt.webp",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "Download photos, videos, and reels from Instagram easily with a fast, user-friendly web app.",
-            "Simply paste the link and get high-quality content instantly without any login or hassle. ",
-            "Designed for speed, reliability, and convenience, this tool lets you save your favorite Instagram media anytime, anywhere, in just a few quick clicks.",
+            "BlockForge is a decentralized academic assessment platform. Lab submissions live on IPFS with content IDs stored on-chain, cutting storage cost by about 92%.",
+            "Modular Solidity contracts, Express backend, React frontend, and MetaMask. Paper accepted at NetCrypt 2026.",
+            "Live: blockchain-labeval.onrender.com",
           ],
         },
         {
           id: 2,
-          name: "snsta.com",
+          name: "blockforge.onrender.com",
           icon: "/images/safari.webp",
           kind: "file",
           fileType: "url",
@@ -99,7 +99,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "snsta.png",
+          name: "blockforge.png",
           icon: "/images/image.webp",
           kind: "file",
           fileType: "img",
@@ -120,7 +120,7 @@ const WORK_LOCATION = {
     },
     {
       id: 7,
-      name: "Resume Ats Scanner",
+      name: "CivicSense",
       icon: "/images/folder.webp",
       kind: "folder",
       position: "top-10 left-80",
@@ -128,20 +128,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Resume Ats Scanner Project.txt",
+          name: "CivicSense Project.txt",
           icon: "/images/txt.webp",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This is an AI-powered resume parsing and analysis platform designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS).",
-            "It extracts key information from uploaded resumes, analyzes them against job descriptions, and provides detailed feedback on keyword optimization, formatting issues, and content improvements.",
-            "Built with Groq API, it ensures accurate parsing and intelligent scoring, helping users increase their chances of passing through automated screening processes.",
+            "CivicSense is on-chain civic issue reporting with hybrid storage: Supabase for speed, Sepolia for integrity.",
+            "Gemini-assisted triage classifies reports. Citizens submit issues, admins track resolution on-chain.",
+            "Stack: Solidity, Next.js, Supabase, Gemini, and Ethereum.",
           ],
         },
         {
           id: 2,
-          name: "resumeatsscanner.com",
+          name: "civicsense.vercel.app",
           icon: "/images/safari.webp",
           kind: "file",
           fileType: "url",
@@ -150,7 +150,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "resumeatsscanner.png",
+          name: "civicsense.png",
           icon: "/images/image.webp",
           kind: "file",
           fileType: "img",
@@ -171,7 +171,7 @@ const WORK_LOCATION = {
     },
     {
       id: 8,
-      name: "Docs Editor",
+      name: "TrustMesh",
       icon: "/images/folder.webp",
       kind: "folder",
       position: "top-52 left-5",
@@ -179,20 +179,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Docs Editor Project.txt",
+          name: "TrustMesh Project.txt",
           icon: "/images/txt.webp",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This is a powerful, real-time collaborative document editor built to allow multiple users to edit rich-text documents simultaneously with high performance.",
-            "Powered by Liveblocks and Yjs CRDT, it features conflict-free editing, live cursor tracking, presence indicators, and inline comment threads. It integrates Tiptap for rich-text formatting, document headers, and image insertion.",
-            "Built with Next.js 15, Clerk for secure user authentication, Convex for database storage, and Zustand for state management, ensuring a modern, responsive, and secure experience.",
+            "TrustMesh is a business trust network on Stellar Soroban. Companies build on-chain reputation instead of relying on opaque off-chain scores.",
+            "Smart contracts on Soroban, Next.js frontend, and a live reputation graph.",
+            "Live: trust-mesh-taupe.vercel.app",
           ],
         },
         {
           id: 2,
-          name: "docs-editor.com",
+          name: "trustmesh.vercel.app",
           icon: "/images/safari.webp",
           kind: "file",
           fileType: "url",
@@ -201,7 +201,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "docs-editor.png",
+          name: "trustmesh.png",
           icon: "/images/image.webp",
           kind: "file",
           fileType: "img",

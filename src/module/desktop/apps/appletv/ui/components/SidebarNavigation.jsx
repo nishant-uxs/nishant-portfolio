@@ -123,7 +123,7 @@ const SidebarNavigation = ({
       </div>
       <div className="min-w-0">
         <p className="text-[11px] font-bold text-zinc-700 group-hover/profile:text-zinc-950 truncate leading-none">
-          {githubProfile?.name || "Kuldeep Rajput"}
+          {githubProfile?.name || "Nishant Agarwal"}
         </p>
         <span className="text-[9px] font-bold text-zinc-400 block mt-0.5">
           @{githubProfile?.login || GITHUB_USERNAME}

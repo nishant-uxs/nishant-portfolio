@@ -30,7 +30,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
     };
 
     const prompt = () => {
-      term.write("\r\n\x1b[1;32mkuldeep@macbook ~ %\x1b[0m ");
+      term.write("\r\n\x1b[1;32mnishant@macbook ~ %\x1b[0m ");
     };
 
     if (cmd === "clear") {
@@ -92,11 +92,11 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
         });
         break;
       case "whoami":
-        println("\x1b[38;2;75;85;99mkuldeep\x1b[0m");
+        println("\x1b[38;2;75;85;99mnishant\x1b[0m");
         break;
       case "sudo":
         println(
-          "\x1b[31mkuldeep is not in the sudoers file. This incident will be reported.\x1b[0m",
+          "\x1b[31mnishant is not in the sudoers file. This incident will be reported.\x1b[0m",
         );
         break;
       default:
@@ -190,7 +190,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
 
     const setupHandlers = (t) => {
       const prompt = () => {
-        t.write("\r\n\x1b[1;32mkuldeep@macbook ~ %\x1b[0m ");
+        t.write("\r\n\x1b[1;32mnishant@macbook ~ %\x1b[0m ");
       };
 
       const println = (msg) => {
@@ -251,11 +251,11 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
               println(new Date().toString());
               break;
             case "whoami":
-              println("\x1b[38;2;75;85;99mkuldeep\x1b[0m");
+              println("\x1b[38;2;75;85;99mnishant\x1b[0m");
               break;
             case "sudo":
               println(
-                "\x1b[31mkuldeep is not in the sudoers file. This incident will be reported.\x1b[0m",
+                "\x1b[31mnishant is not in the sudoers file. This incident will be reported.\x1b[0m",
               );
               break;
             case "techstack":

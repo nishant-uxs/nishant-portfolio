@@ -80,7 +80,7 @@ const AppStoreSidebar = ({
           </div>
           <div className="min-w-0">
             <p className="text-[11px] font-bold text-gray-800 leading-none truncate">
-              {githubProfile?.name || "Kuldeep Rajput"}
+              {githubProfile?.name || "Nishant Agarwal"}
             </p>
             <span className="text-[9px] font-medium text-gray-400 block mt-0.5">
               @{githubProfile?.login || GITHUB_USERNAME}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import useWindowsStore from "@store/window";
 import { DEFAULT_BOOKMARKS, WALLPAPERS, IFRAME_COMPATIBLE_SITES, MOCK_HISTORY } from "../data";
-import { PROJECT_1_URL, PROJECT_2_URL, PROJECT_3_URL } from "@constants";
+import { PROJECT_1_URL, PROJECT_2_URL, PROJECT_3_URL, PROJECT_4_URL } from "@constants";
 
 const isIframeable = (url) => {
   if (url.startsWith("safari://")) return true;
@@ -168,14 +168,17 @@ const useSafari = () => {
     const lowerQuery = targetUrl.toLowerCase();
     let isRedirected = false;
 
-    if (lowerQuery.includes("youtube")) {
+    if (lowerQuery.includes("krydo") || lowerQuery.includes("zk")) {
       targetUrl = PROJECT_1_URL;
       isRedirected = true;
-    } else if (lowerQuery.includes("insta")) {
+    } else if (lowerQuery.includes("blockforge") || lowerQuery.includes("labeval")) {
       targetUrl = PROJECT_2_URL;
       isRedirected = true;
-    } else if (lowerQuery.includes("resume")) {
+    } else if (lowerQuery.includes("civic")) {
       targetUrl = PROJECT_3_URL;
+      isRedirected = true;
+    } else if (lowerQuery.includes("trustmesh") || lowerQuery.includes("trust")) {
+      targetUrl = PROJECT_4_URL;
       isRedirected = true;
     } else if (lowerQuery.includes("portfolio")) {
       targetUrl = typeof window !== "undefined" ? window.location.origin : "http://localhost:3000";
@@ -237,11 +240,13 @@ const useSafari = () => {
           } else if (targetUrl === "safari://bookmarks") {
             newTitle = "Bookmarks";
           } else if (targetUrl === PROJECT_1_URL) {
-            newTitle = "NewTube";
+            newTitle = "Krydo";
           } else if (targetUrl === PROJECT_2_URL) {
-            newTitle = "Insta Downloader";
+            newTitle = "BlockForge";
           } else if (targetUrl === PROJECT_3_URL) {
-            newTitle = "Resume ATS";
+            newTitle = "CivicSense";
+          } else if (targetUrl === PROJECT_4_URL) {
+            newTitle = "TrustMesh";
           } else if (targetUrl === "https://en.wikipedia.org") {
             newTitle = "Wikipedia";
           } else if (targetUrl === "https://openstreetmap.org") {
@@ -360,9 +365,10 @@ const useSafari = () => {
     if (url === "safari://privacy-report") return "Privacy Report";
     if (url === "safari://history") return "History";
     if (url === "safari://bookmarks") return "Bookmarks";
-    if (url === PROJECT_1_URL) return "NewTube";
-    if (url === PROJECT_2_URL) return "Insta Downloader";
-    if (url === PROJECT_3_URL) return "Resume ATS";
+    if (url === PROJECT_1_URL) return "Krydo";
+    if (url === PROJECT_2_URL) return "BlockForge";
+    if (url === PROJECT_3_URL) return "CivicSense";
+    if (url === PROJECT_4_URL) return "TrustMesh";
     if (url === "https://en.wikipedia.org") return "Wikipedia";
     if (url === "https://openstreetmap.org") return "OpenStreetMap";
     if (url === (typeof window !== "undefined" ? window.location.origin : "http://localhost:3000"))

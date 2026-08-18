@@ -38,8 +38,8 @@ const useTelegram = () => {
   const [drawerSection, setDrawerSection] = useState("settings");
 
   const [userProfile, setUserProfile] = useState({
-    name: "Kuldeep Rajput",
-    username: "@kuldeeprajput_dev",
+    name: "Nishant Agarwal",
+    username: "@nishant-uxs",
     bio: "Full Stack Engineer | React, Next.js, Node.js & TypeScript enthusiast.",
     phone: "+91 ••••• •••••",
   });
@@ -116,16 +116,16 @@ const useTelegram = () => {
 
         if (cmd.includes("/start")) {
           reply =
-            "Hello! I am your Telegram assistant. Type `/projects`, `/skills`, or `/contact` to browse Kuldeep's portfolio.";
+            "Hello! I am your Telegram assistant. Type `/projects`, `/skills`, or `/contact` to browse Nishant's portfolio.";
         } else if (cmd.includes("/project")) {
           reply =
-            "Here are some top projects:\n1. **NewTube**: Video platform built with Next.js, Mux & PostgreSQL.\n2. **Insta Things Download**: Instagram media downloader tool.\n3. **Resume ATS Scanner**: ATS CV scoring app.\n4. **Docs Editor**: Live rich-text document collaboration.";
+            "Here are some top projects:\n1. **Krydo**: ZK identity, 154 tests, Sepolia contracts.\n2. **BlockForge**: Decentralized lab assessment + IPFS, NetCrypt 2026.\n3. **CivicSense**: On-chain civic reporting with Gemini triage.\n4. **TrustMesh**: Stellar Soroban business trust network.";
         } else if (cmd.includes("/skill") || cmd.includes("/tech")) {
           reply =
-            "Core Stack:\n• **Frontend**: React, Next.js, TypeScript\n• **Styling**: CSS, Sass, Tailwind CSS\n• **Backend**: Node.js, Express, Bun, tRPC\n• **Databases**: PostgreSQL, MongoDB\n• **Tools**: Git, GitHub, Docker";
+            "Core Stack:\n• **Languages**: TypeScript, JavaScript, Solidity, Python\n• **Backend**: Node.js, Express, REST APIs\n• **Blockchain**: Ethereum, Hardhat, viem, ZK proofs, IPFS\n• **Frontend**: React, Next.js, Tailwind CSS\n• **Tools**: Git, GitHub, Postman";
         } else if (cmd.includes("/contact")) {
           reply =
-            "Get in touch:\n• Email: kuldeeprajput.dev@gmail.com\n• Twitter: @kuldeepdotcom\n• LinkedIn: /in/kuldeepdotcom";
+            "Get in touch:\n• Email: agarwalnishant812@gmail.com\n• GitHub: nishant-uxs\n• LinkedIn: /in/nishant-agarwal-62a956322";
         } else if (cmd.includes("/help")) {
           reply =
             "Available Commands:\n• `/start` - Start the helper\n• `/projects` - List developer projects\n• `/skills` - View technical skill list\n• `/contact` - Get direct emails/socials";
@@ -154,7 +154,7 @@ const useTelegram = () => {
           ),
         );
       }, 1500);
-    } else if (activeChat.id === "kuldeep") {
+    } else if (activeChat.id === "nishant") {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
@@ -174,12 +174,12 @@ const useTelegram = () => {
           normalized.includes("work")
         ) {
           reply =
-            "I'm currently open to new roles and freelancing opportunities! Let's schedule a call. Drop me a line at kuldeeprajput.dev@gmail.com.";
+            "I'm currently open to new roles and freelancing opportunities! Let's schedule a call. Drop me a line at agarwalnishant812@gmail.com.";
         }
 
         setChats((prev) =>
           prev.map((c) =>
-            c.id === "kuldeep"
+            c.id === "nishant"
               ? {
                   ...c,
                   messages: [

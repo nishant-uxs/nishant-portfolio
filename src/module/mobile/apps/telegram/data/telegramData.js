@@ -28,15 +28,15 @@ export const INITIAL_CHATS = [
     ],
   },
   {
-    id: "kuldeep",
-    name: "Kuldeep (Developer)",
+    id: "nishant",
+    name: "Nishant (Developer)",
     type: "user",
     avatar: "/images/profile.webp",
     avatarColor: "bg-gradient-to-tr from-blue-500 to-indigo-600",
-    initials: "K",
+    initials: "N",
     status: "online",
-    username: "@kuldeeprajput_dev",
-    bio: "Full Stack Engineer | React, Next.js, Node.js & TypeScript enthusiast.",
+    username: "@nishant-uxs",
+    bio: "Backend & Blockchain Engineer | ZK, Ethereum, Hardhat, Next.js.",
     phone: "+91 ••••• •••••",
     messages: [
       {
@@ -94,7 +94,7 @@ export const INITIAL_CHATS = [
     avatarColor: "bg-gradient-to-tr from-purple-500 to-pink-600",
     initials: "PU",
     status: "1,240 subscribers",
-    username: "@kuldeep_updates",
+    username: "@nishant-uxs",
     bio: "Official channel for release logs, new features, and design updates on this macOS portfolio project.",
     phone: "None",
     messages: [

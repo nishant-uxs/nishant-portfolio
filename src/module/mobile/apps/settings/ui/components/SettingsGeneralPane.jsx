@@ -59,7 +59,7 @@ const SettingsGeneralPane = () => {
           <div className="bg-white rounded-2xl border border-black/5 overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.02)] divide-y divide-zinc-100">
             <div className="flex items-center justify-between p-3.5 pl-4">
               <span className="text-[14px] font-semibold text-gray-700">Name</span>
-              <span className="text-[14px] font-bold text-gray-900">iPhone (Kuldeep)</span>
+              <span className="text-[14px] font-bold text-gray-900">iPhone (Nishant)</span>
             </div>
             <div className="flex items-center justify-between p-3.5 pl-4">
               <span className="text-[14px] font-semibold text-gray-700">iOS Version</span>

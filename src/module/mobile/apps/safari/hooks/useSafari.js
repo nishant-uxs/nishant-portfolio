@@ -50,16 +50,16 @@ export default function useSafari() {
     const lowerQuery = targetUrl.toLowerCase();
     let isRedirected = false;
 
-    if (lowerQuery.includes("youtube") || lowerQuery.includes("newtube")) {
+    if (lowerQuery.includes("krydo") || lowerQuery.includes("zk")) {
       targetUrl = PROJECT_1_URL;
       isRedirected = true;
-    } else if (lowerQuery.includes("insta") || lowerQuery.includes("snsta")) {
+    } else if (lowerQuery.includes("blockforge") || lowerQuery.includes("labeval")) {
       targetUrl = PROJECT_2_URL;
       isRedirected = true;
-    } else if (lowerQuery.includes("resume")) {
+    } else if (lowerQuery.includes("civic") || lowerQuery.includes("civicsense")) {
       targetUrl = PROJECT_3_URL;
       isRedirected = true;
-    } else if (lowerQuery.includes("docs-editor") || lowerQuery.includes("docs")) {
+    } else if (lowerQuery.includes("trustmesh") || lowerQuery.includes("trust")) {
       targetUrl = PROJECT_4_URL;
       isRedirected = true;
     } else if (lowerQuery.includes("portfolio")) {

@@ -2,13 +2,13 @@ import { GITHUB_PROFILE } from "@constants";
 
 export const INITIAL_CONVERSATIONS = [
   {
-    id: "kuldeep",
-    name: "Kuldeep (Developer)",
+    id: "nishant",
+    name: "Nishant (Developer)",
     avatarColor: "bg-gradient-to-tr from-blue-500 to-indigo-500",
-    initials: "K",
+    initials: "N",
     avatar: "/images/profile.webp",
     unread: true,
-    email: "kuldeeprajput.dev@gmail.com",
+    email: "agarwalnishant812@gmail.com",
     github: GITHUB_PROFILE,
     messages: [
       {
@@ -43,7 +43,7 @@ export const INITIAL_CONVERSATIONS = [
     messages: [
       {
         id: 1,
-        text: "Hey Kuldeep, did you check the new desktop mockup?",
+        text: "Hey Nishant, did you check the new desktop mockup?",
         sender: "them",
         time: "Yesterday",
       },
@@ -68,7 +68,7 @@ export const INITIAL_CONVERSATIONS = [
     messages: [
       {
         id: 1,
-        text: "Hey Kuldeep! I'm online now. Let me know if you need help with coding.",
+        text: "Hey Nishant! I'm online now. Let me know if you need help with coding.",
         sender: "them",
         time: "Yesterday",
       },

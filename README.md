@@ -19,10 +19,7 @@
 </p>
 
 <p align="center">
-  Desktop UI originally built by
-  <a href="https://kuldeeprajput.in">Kuldeep Rajput</a>
-  (<a href="https://github.com/kuldeeprajput-dev/macos-portfolio">original repo</a>).
-  This is a customized public version for Nishant Agarwal.
+  Official macOS-inspired portfolio of Nishant Agarwal — Backend &amp; Blockchain Engineer.
 </p>
 
 <p align="center">
@@ -574,12 +571,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 ## 🙏 Credits & Acknowledgments
 
-- **Kuldeep Rajput** — Original macOS portfolio UI, interaction system, and open-source template
-  - Website: [kuldeeprajput.in](https://kuldeeprajput.in)
-  - GitHub: [kuldeeprajput-dev/macos-portfolio](https://github.com/kuldeeprajput-dev/macos-portfolio)
-  - LinkedIn: [kuldeepdotcom](https://www.linkedin.com/in/kuldeepdotcom/)
-  - X: [@kuldeepdotcom](https://x.com/kuldeepdotcom)
-- **Nishant Agarwal** — Content, identity, projects, SEO, and customization for this hosted version
+- **Nishant Agarwal** — Content, identity, projects, SEO, and customization
 - **macOS Design** — Inspired by Apple's macOS Sequoia / Sonoma interface
 - **Jamendo API** — Music streaming data
 - **wttr.in** — Weather data

@@ -16,10 +16,10 @@ import {
 const OWNER_NAME = "Nishant Agarwal";
 
 const FALLBACK_PROJECT_LINKS = {
-  newtube: PROJECT_1_URL,
-  insta: PROJECT_2_URL,
-  resume: PROJECT_3_URL,
-  docs: PROJECT_4_URL,
+  krydo: PROJECT_1_URL,
+  blockforge: PROJECT_2_URL,
+  civicsense: PROJECT_3_URL,
+  trustmesh: PROJECT_4_URL,
 };
 
 const FALLBACK_SOCIAL_LINKS = {
@@ -31,40 +31,20 @@ const FALLBACK_SOCIAL_LINKS = {
 
 const PROJECT_META = {
   1: {
-    key: "newtube",
-    aliases: ["newtube", "new tube", "youtube clone", "video streaming", "video app"],
+    key: "krydo",
+    aliases: ["krydo", "zk", "zero knowledge", "identity", "verifiable credentials"],
   },
   2: {
-    key: "insta",
-    aliases: [
-      "snsta",
-      "insta things download",
-      "instagram downloader",
-      "insta downloader",
-      "reels downloader",
-      "free course finder",
-      "course finder",
-    ],
+    key: "blockforge",
+    aliases: ["blockforge", "labeval", "lab assessment", "ipfs", "netcrypt"],
   },
   3: {
-    key: "resume",
-    aliases: [
-      "resume ats",
-      "resume ats scanner",
-      "resume scanner",
-      "ats scanner",
-      "resume analyzer",
-    ],
+    key: "civicsense",
+    aliases: ["civicsense", "civic sense", "civic reporting", "gemini"],
   },
   4: {
-    key: "docs",
-    aliases: [
-      "docs editor",
-      "document editor",
-      "collaborative editor",
-      "real time editor",
-      "documents editor",
-    ],
+    key: "trustmesh",
+    aliases: ["trustmesh", "trust mesh", "stellar", "soroban", "reputation"],
   },
 };
 
@@ -485,27 +465,27 @@ const handleLocationCommand = (query, actions) => {
     });
   }
 
-  // Informational queries about Kuldeep
+  // Informational queries about Nishant
   if (
     hasAny(query, [
-      "tell me about kuldeep",
-      "tell me about rajput",
-      "tell me about kuldeep rajput",
-      "who is kuldeep",
-      "who is rajput",
-      "who is kuldeep rajput",
-      "say about kuldeep",
-      "say about rajput",
-      "say about kuldeep rajput",
+      "tell me about nishant",
+      "tell me about agarwal",
+      "tell me about nishant agarwal",
+      "who is nishant",
+      "who is agarwal",
+      "who is nishant agarwal",
+      "say about nishant",
+      "say about agarwal",
+      "say about nishant agarwal",
     ]) ||
-    query === "kuldeep" ||
-    query === "rajput" ||
-    query === "kuldeep rajput" ||
-    ((containsTerm(query, "kuldeep") || containsTerm(query, "rajput")) &&
+    query === "nishant" ||
+    query === "agarwal" ||
+    query === "nishant agarwal" ||
+    ((containsTerm(query, "nishant") || containsTerm(query, "agarwal")) &&
       !hasAny(query, OPEN_INTENTS))
   ) {
     return makeResult(
-      `${OWNER_NAME} is a web developer focused on React, Next.js, and polished interactive portfolio experiences.`,
+      `${OWNER_NAME} is a backend and blockchain engineer. He builds ZK identity, on-chain apps, and Ethereum tooling. Projects include Krydo, BlockForge, CivicSense, and TrustMesh.`,
       { listenAfter: true },
     );
   }
@@ -517,9 +497,9 @@ const handleLocationCommand = (query, actions) => {
       "open about me",
       "open about",
       "about me",
-      "about kuldeep",
-      "about rajput",
-      "about kuldeep rajput",
+      "about nishant",
+      "about agarwal",
+      "about nishant agarwal",
       "developer profile",
     ])
   ) {

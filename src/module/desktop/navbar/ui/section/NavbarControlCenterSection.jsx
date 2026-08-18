@@ -41,11 +41,11 @@ const NavbarControlCenterSection = ({
   const [mounted, setMounted] = useState(false);
 
   const [profile, setProfile] = useState({
-    name: "Kuldeep Rajput",
+    name: "Nishant Agarwal",
     avatar_url: null,
     login: GITHUB_USERNAME,
     email: `${GITHUB_USERNAME}@users.noreply.github.com`,
-    bio: "Full Stack Developer",
+    bio: "Backend & Blockchain Engineer",
     location: "India",
     public_repos: 15,
     followers: 45,
@@ -61,7 +61,7 @@ const NavbarControlCenterSection = ({
       .then((data) => {
         if (data && data.login) {
           setProfile({
-            name: data.name || "Kuldeep Rajput",
+            name: data.name || "Nishant Agarwal",
             avatar_url: data.avatar_url,
             login: data.login,
             email: data.email || `${data.login}@users.noreply.github.com`,
@@ -86,7 +86,7 @@ const NavbarControlCenterSection = ({
   const wifiNetworksList = [
     { name: "Home Network", locked: true, strength: "strong" },
     { name: "Coffee Shop 5G", locked: true, strength: "medium" },
-    { name: "iPhone (Kuldeep)", locked: true, strength: "strong" },
+    { name: "iPhone (Nishant)", locked: true, strength: "strong" },
     { name: "Airport Free WiFi", locked: false, strength: "weak" },
   ];
 
@@ -763,7 +763,7 @@ const NavbarControlCenterSection = ({
                         >
                           {currentUserMode === "admin"
                             ? "Launch Guest Mode"
-                            : "Switch back to Admin (Kuldeep)"}
+                            : "Switch back to Admin (Nishant)"}
                         </button>
                       </div>
                     </div>

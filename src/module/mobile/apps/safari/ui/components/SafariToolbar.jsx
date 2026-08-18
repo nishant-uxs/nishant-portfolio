@@ -657,29 +657,29 @@ const SafariMobileHeader = ({ projects }) => {
                   <div className="flex-1 flex items-center justify-center mt-2 bg-zinc-50 rounded-xl border border-zinc-200/50 shadow-inner overflow-hidden select-none relative">
                     {(() => {
                       const urlLower = tab.url.toLowerCase();
-                      if (urlLower.includes("newtube") || urlLower.includes("youtube")) {
+                      if (urlLower.includes("krydo") || urlLower.includes("onrender.com")) {
                         return (
                           <img
                             src="/projects/newtube.webp"
-                            alt="NewTube"
+                            alt="Krydo"
                             className="w-full h-full object-cover object-top"
                           />
                         );
                       }
-                      if (urlLower.includes("insta") || urlLower.includes("snsta")) {
+                      if (urlLower.includes("blockforge") || urlLower.includes("labeval")) {
                         return (
                           <img
                             src="/projects/snsta.webp"
-                            alt="Insta Downloader"
+                            alt="BlockForge"
                             className="w-full h-full object-cover object-top"
                           />
                         );
                       }
-                      if (urlLower.includes("resume")) {
+                      if (urlLower.includes("civic")) {
                         return (
                           <img
                             src="/projects/resume-ats.webp"
-                            alt="Resume ATS"
+                            alt="CivicSense"
                             className="w-full h-full object-cover object-top"
                           />
                         );
@@ -688,7 +688,7 @@ const SafariMobileHeader = ({ projects }) => {
                         return (
                           <img
                             src="/projects/docs-editor.webp"
-                            alt="Docs Editor"
+                            alt="TrustMesh"
                             className="w-full h-full object-cover object-top"
                           />
                         );

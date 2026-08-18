@@ -2,7 +2,7 @@ const PRESET_PLACES = {
   mumbai: {
     name: "Mumbai",
     region: "Maharashtra, India",
-    desc: "Kuldeep's current location. The financial powerhouse and entertainment capital of India, situated on the coastal edge of the Arabian Sea.",
+    desc: "Nishant's current location. The financial powerhouse and entertainment capital of India, situated on the coastal edge of the Arabian Sea.",
     lat: 19.076,
     lon: 72.8777,
     bboxWidth: 0.12,
@@ -12,7 +12,7 @@ const PRESET_PLACES = {
       "Head north on Marine Drive toward Churchgate.",
       "Merge onto the Bandra-Worli Sea Link (toll road).",
       "Continue onto Western Express Highway.",
-      "Arrive at Kuldeep's Development Lab.",
+      "Arrive at Nishant's Development Lab.",
     ],
   },
   sf: {

@@ -52,7 +52,7 @@ const CallSection = ({
   // Mock Recents Call Log
   const recentsLog = [
     {
-      name: "Kuldeep (Developer)",
+      name: "Nishant (Developer)",
       type: "video",
       date: "10:30 AM",
       avatarColor: "from-blue-500 to-indigo-600",

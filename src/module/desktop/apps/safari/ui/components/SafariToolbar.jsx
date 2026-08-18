@@ -314,7 +314,7 @@ const SafariDesktopToolbar = ({
                       PDF
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold truncate text-left">Kuldeep_Resume.pdf</p>
+                      <p className="font-semibold truncate text-left">Nishant_Agarwal_Resume.pdf</p>
                       <p className="text-[10px] text-gray-400 text-left">2.4 MB — Complete</p>
                     </div>
                   </div>
@@ -469,7 +469,7 @@ const SafariMobileHeader = ({
                   PDF
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold truncate text-left">Kuldeep_Resume.pdf</p>
+                  <p className="font-semibold truncate text-left">Nishant_Agarwal_Resume.pdf</p>
                   <p className="text-[9px] text-gray-400 text-left">2.4 MB — Complete</p>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import { PROJECT_1_URL, PROJECT_2_URL, PROJECT_3_URL } from "@constants";
+import { PROJECT_1_URL, PROJECT_2_URL, PROJECT_3_URL, PROJECT_4_URL } from "@constants";
 
 export const DEFAULT_BOOKMARKS = [
   {
@@ -9,21 +9,27 @@ export const DEFAULT_BOOKMARKS = [
   },
   {
     id: 2,
-    title: "NewTube",
+    title: "Krydo",
     url: PROJECT_1_URL,
     img: "/images/youtube.webp",
   },
   {
     id: 3,
-    title: "Resume ATS",
+    title: "CivicSense",
     url: PROJECT_3_URL,
     img: "/images/resume-ats.webp",
   },
   {
     id: 4,
-    title: "Insta Downloader",
+    title: "BlockForge",
     url: PROJECT_2_URL,
     img: "/images/insta-downloader.webp",
+  },
+  {
+    id: 7,
+    title: "TrustMesh",
+    url: PROJECT_4_URL,
+    img: "/images/github.webp",
   },
   {
     id: 5,

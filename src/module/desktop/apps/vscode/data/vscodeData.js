@@ -11,7 +11,7 @@ export default function Portfolio() {
       <header className="sticky top-0 z-50 w-full py-4 border-b border-zinc-900 bg-[#0a0a0a]/80 backdrop-blur-md px-8 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
-          <span className="font-bold text-sm tracking-tight text-white uppercase">Kuldeep Rajput</span>
+          <span className="font-bold text-sm tracking-tight text-white uppercase">Nishant Agarwal</span>
         </div>
         <nav className="flex gap-6 text-xs font-semibold text-zinc-400">
           <a href="#projects" className="hover:text-white transition-colors">Projects</a>
@@ -29,7 +29,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
-        <p>© 2026 Kuldeep Rajput. Built with Next.js, React & Tailwind CSS.</p>
+        <p>© 2026 Nishant Agarwal. Built with Next.js, React & Tailwind CSS.</p>
       </footer>
     </div>
   );
@@ -40,24 +40,24 @@ export default function Hero() {
   return (
     <section className="py-12 space-y-6">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">
-        🚀 Software Engineer
+        🚀 Backend & Blockchain Engineer
       </div>
       <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
-        I build modern, scalable web applications
+        I build privacy-preserving systems and production backends
       </h1>
       <p className="text-base text-zinc-400 leading-relaxed max-w-2xl">
-        I am <span className="text-white font-medium">Kuldeep Rajput</span>. I design high-performance full-stack architectures and robust AI integrations using Next.js, React, and Tailwind CSS.
+        I am <span className="text-white font-medium">Nishant Agarwal</span>. I build ZK identity, on-chain apps, and Ethereum tooling. OSS merged into Hardhat, Hyperlane, FilOzone, and Mastra.
       </p>
       <div className="flex flex-wrap gap-4 pt-2">
         <a 
-          href="https://cal.com/kuldeep-kd6ity" 
+          href="mailto:agarwalnishant812@gmail.com" 
           target="_blank" 
           className="px-5 py-2.5 bg-white text-black hover:bg-zinc-200 rounded-xl text-xs font-bold transition-all shadow-lg active:scale-95"
         >
           Schedule Call
         </a>
         <a 
-          href="mailto:contact.kuldeeprajput@gmail.com" 
+          href="mailto:agarwalnishant812@gmail.com" 
           className="px-5 py-2.5 bg-zinc-900 text-white hover:bg-zinc-800 border border-zinc-800 rounded-xl text-xs font-bold transition-all active:scale-95"
         >
           Send Email
@@ -70,27 +70,27 @@ export default function Hero() {
 
 const SELECTED_PROJECTS = [
   {
-    title: "NEWTUBE",
-    desc: "A modern, full-stack video sharing platform built with Next.js 15, Mux, and tRPC.",
-    tech: ["Next.js 15", "Mux", "tRPC", "PostgreSQL"],
+    title: "KRYDO",
+    desc: "Privacy-preserving identity with zero-knowledge proofs, 154 tests, and Sepolia contracts.",
+    tech: ["Solidity", "ZK proofs", "Hardhat", "Next.js"],
     rating: "4.9"
   },
   {
-    title: "DOCS EDITOR",
-    desc: "A powerful, real-time collaborative document editor built with modern web technologies.",
-    tech: ["React", "Liveblocks", "TipTap Editor", "Next.js"],
+    title: "BLOCKFORGE",
+    desc: "Decentralized academic assessment with IPFS CIDs on-chain and a NetCrypt 2026 paper.",
+    tech: ["Ethereum", "IPFS", "React", "Express"],
     rating: "4.8"
   },
   {
-    title: "RESUME ANALYZER",
-    desc: "AI-powered tool that evaluates resumes against ATS systems and provides actionable feedback.",
-    tech: ["Gemini AI", "Next.js", "Tailwind CSS", "PDF Parser"],
-    rating: "4.9"
+    title: "CIVICSENSE",
+    desc: "On-chain civic reporting with hybrid storage and Gemini-assisted triage.",
+    tech: ["Solidity", "Supabase", "Gemini", "Next.js"],
+    rating: "4.8"
   },
   {
-    title: "FREE COURSE",
-    desc: "AI-powered learning discovery platform that finds free courses across the web.",
-    tech: ["Next.js", "AI Search Engine", "Tailwind CSS"],
+    title: "TRUSTMESH",
+    desc: "Business trust network on Stellar Soroban with on-chain reputation.",
+    tech: ["Stellar", "Soroban", "Next.js"],
     rating: "4.7"
   }
 ];
@@ -129,7 +129,7 @@ export default function AboutMe() {
     <section id="about" className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 border-t border-zinc-900">
       <div className="space-y-3">
         <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Education</h3>
-        <h4 className="text-sm font-bold text-white uppercase">Bachelor of Computer Applications</h4>
+        <h4 className="text-sm font-bold text-white uppercase">B.Tech Computer Science Engineering</h4>
         <p className="text-xs text-zinc-400 leading-relaxed">
           Specialized in software engineering and modern web architectures, focusing on scalable product development.
         </p>
@@ -137,9 +137,9 @@ export default function AboutMe() {
 
       <div className="space-y-3">
         <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Focus & Vision</h3>
-        <h4 className="text-sm font-bold text-white uppercase">Clean Architecture & AI</h4>
+        <h4 className="text-sm font-bold text-white uppercase">ZK, Web3 & Backend</h4>
         <p className="text-xs text-zinc-400 leading-relaxed">
-          Prioritizing performance, clean architecture, and exploring the intersection of AI integration with web interactivity.
+          Privacy-preserving systems, production APIs, and Ethereum tooling. Interned at Digital South Trust.
         </p>
       </div>
 
@@ -147,14 +147,14 @@ export default function AboutMe() {
         <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Social Channels</h3>
         <h4 className="text-sm font-bold text-white uppercase">Let's Connect</h4>
         <div className="flex flex-col gap-2 pt-1">
-          <a href="https://github.com/kuldeeprajput-dev" target="_blank" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
-            📁 GitHub /kuldeeprajput-dev
+          <a href="https://github.com/nishant-uxs" target="_blank" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
+            📁 GitHub /nishant-uxs
           </a>
-          <a href="https://www.linkedin.com/in/kuldeepdotcom/" target="_blank" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
-            💼 LinkedIn /in/kuldeepdotcom
+          <a href="https://www.linkedin.com/in/nishant-agarwal-62a956322/" target="_blank" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
+            💼 LinkedIn /in/nishant-agarwal-62a956322
           </a>
-          <a href="https://x.com/kuldeepdotcom" target="_blank" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
-            🐦 Twitter @kuldeepdotcom
+          <a href="https://github.com/nishant-uxs" target="_blank" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
+            🐦 Twitter @nishant-uxs
           </a>
         </div>
       </div>
@@ -185,7 +185,7 @@ module.exports = {
   plugins: [],
 }`,
   "package.json": `{
-  "name": "kuldeep-portfolio-v2",
+  "name": "nishant-portfolio",
   "private": true,
   "version": "2.0.0",
   "type": "module",
@@ -212,9 +212,9 @@ module.exports = {
   ".env": `NEXT_PUBLIC_GROQ_API_KEY=gsk_mock_key_12345
 PORT=3000
 NODE_ENV=development`,
-  "README.md": `# Kuldeep Rajput - Portfolio
+  "README.md": `# Nishant Agarwal - Portfolio
 
-This is my personal developer portfolio built with React, Next.js, and Tailwind CSS. It highlights my full-stack web applications, tech stack, and digital writing.
+This is my personal developer portfolio. It highlights Krydo, BlockForge, CivicSense, TrustMesh, and my backend / blockchain work.
 
 ## Tech Stack
 - **Frontend Framework:** Next.js (App Router)

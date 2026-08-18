@@ -17,7 +17,7 @@ const CallOverlay = ({
     const githubProfileUrl = process.env.NEXT_PUBLIC_GITHUB_PROFILE || "";
     const username = githubProfileUrl
       ? githubProfileUrl.replace(/\/+$/, "").split("/").pop()
-      : "kuldeeprajput-dev";
+      : "nishant-uxs";
 
     fetch(`https://api.github.com/users/${username}`)
       .then((res) => res.json())
@@ -29,11 +29,11 @@ const CallOverlay = ({
       .catch((err) => console.error("Error fetching profile avatar:", err));
   }, []);
 
-  const isKuldeep = activeChat.name?.toLowerCase().includes("kuldeep");
+  const isNishant = activeChat.name?.toLowerCase().includes("nishant");
   const isBhavesh = activeChat.name?.toLowerCase().includes("bhavesh");
   const isMahabub = activeChat.name?.toLowerCase().includes("mahabub");
 
-  const videoUrl = isKuldeep
+  const videoUrl = isNishant
     ? process.env.NEXT_PUBLIC_VIDEOCALL_KULDEEPRAJPUT
     : isBhavesh
       ? process.env.NEXT_PUBLIC_VIDEOCALL_BHAVESH_KUMAR
@@ -41,7 +41,7 @@ const CallOverlay = ({
         ? process.env.NEXT_PUBLIC_VIDEOCALL_MAHABUB
         : "";
 
-  const showVideo = (isKuldeep || isBhavesh || isMahabub) && videoUrl && !videoError;
+  const showVideo = (isNishant || isBhavesh || isMahabub) && videoUrl && !videoError;
   return (
     <div className="absolute inset-0 bg-[#0d0d0e] text-white z-40 flex flex-col items-center justify-between py-10 px-6 animate-fade-in overflow-hidden select-none rounded-b-xl group">
       {/* Full-screen Background Stream or Dynamic Gradient */}

@@ -117,9 +117,9 @@ const usePostman = () => {
           if (method === "GET") {
             data = {
               id: "usr_001",
-              name: "Kuldeep Rajput",
+              name: "Nishant Agarwal",
               role: "Full Stack Developer",
-              location: "Mumbai, India",
+              location: "India",
               github: GITHUB_PROFILE,
               skills: ["React", "Node.js", "Bun", "Tailwind CSS", "GSAP"],
               status: "active",
@@ -135,9 +135,9 @@ const usePostman = () => {
               updated_fields: parsed,
               profile: {
                 id: "usr_001",
-                name: parsed.name || "Kuldeep Rajput",
+                name: parsed.name || "Nishant Agarwal",
                 role: parsed.role || "Full Stack Developer",
-                location: parsed.location || "Mumbai, India",
+                location: parsed.location || "India",
                 github: GITHUB_PROFILE,
                 skills: ["React", "Node.js", "Bun", "Tailwind CSS", "GSAP"],
                 status: "active",
