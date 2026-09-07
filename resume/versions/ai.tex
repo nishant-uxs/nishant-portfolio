@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (template)
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Candidate: Nishant Agarwal
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.1pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Nishant Agarwal} \\ \vspace{1pt}
+  \small +91 7900654124 $|$
+  \href{mailto:agarwalnishant812@gmail.com}{\underline{agarwalnishant812@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/nishant-agarwal-62a956322/}{\underline{LinkedIn}} $|$
+  \href{https://github.com/nishant-uxs}{\underline{GitHub}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bennett University}{India}
+      {Bachelor of Technology in Computer Science Engineering; CGPA: 8.86/10}{Oct 2024 -- Jul 2028}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Web3 Blockchain Developer Intern}{Mar 2026 -- Jul 2026}
+      {Digital South Trust}{India}
+      \resumeItemListStart
+        \resumeItem{Built backend modules and transaction workflows for Crypto Suraksha, a production Web3 safety platform.}
+        \resumeItem{Designed and shipped News Portal REST APIs with request validation, structured errors, and Express.js.}
+        \resumeItem{Debugged production request failures and hardened error paths before release.}
+        \resumeItem{Owned feature delivery end-to-end: requirements, implementation, testing, and production handoff.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Selected Open Source Contributions}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{NomicFoundation/hardhat} --- Merged PR \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}}}{}
+      \resumeItemListStart
+        \resumeItem{Resolved configuration variables from \texttt{process.env} before plugin hooks (including keystore), with unit tests for hook short-circuiting.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{hyperlane-xyz/hyperlane-monorepo} --- Merged PR \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}}}{}
+      \resumeItemListStart
+        \resumeItem{Hardened message decoding to avoid panics in \texttt{HyperlaneMessage::from} on malformed multi-chain payloads.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{FilOzone/pdp} --- Merged PR \href{https://github.com/FilOzone/pdp/pull/287}{\underline{\#287}}; \textbf{filecoin-services} \href{https://github.com/FilOzone/filecoin-services/pull/566}{\underline{\#566}}}{}
+      \resumeItemListStart
+        \resumeItem{Emitted \texttt{PiecesScheduledForRemoval} in PDP and updated PDPVerifier ABI/event wiring across the Filecoin services stack.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{mastra-ai/mastra} --- Merged PRs \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}, \href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}}}{}
+      \resumeItemListStart
+        \resumeItem{Prevented declined tools from executing; reused terminal nested snapshots to avoid redundant agent-state recomputation.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{WalletConnect/walletconnect-monorepo} --- Merged PR \href{https://github.com/WalletConnect/walletconnect-monorepo/pull/7302}{\underline{\#7302}}; \textbf{wevm/viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
+      \resumeItemListStart
+        \resumeItem{Added EventEmitter \texttt{@types/node} annotations (WalletConnect); fixed ESM \texttt{\_types} package generation for NodeNext (viem).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Krydo} $|$ \emph{TypeScript, Ethereum, ZKP} $|$ \href{https://github.com/nishant-uxs/krydo}{\underline{GitHub}} $|$ \href{https://krydo.onrender.com}{\underline{Live}}}{Feb 2026 -- Apr 2026}
+      \resumeItemListStart
+        \resumeItem{Built privacy-preserving identity via 6 sigma-protocol ZK proofs over Pedersen commitments; 154 unit tests; 3 Sepolia contracts; W3C VC export.}
+        \resumeItem{Hybrid trust model: on-chain credential hashes as source of truth; Firestore as the query layer; SIWE auth.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{BlockForge (LabEval)} $|$ \emph{Solidity, IPFS, React} $|$ \href{https://github.com/nishant-uxs/labeval}{\underline{GitHub}} $|$ \href{https://blockchain-labeval.onrender.com}{\underline{Live}}}{Sep 2025 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{OpenZeppelin RBAC assessment contracts; IPFS CIDs on-chain (\textasciitilde{}92\% storage cut); Gemini-assisted grading; NetCrypt 2026 accepted paper.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{CivicSense} $|$ \emph{Solidity, Supabase, Gemini} $|$ \href{https://github.com/nishant-uxs/CivicSense}{\underline{GitHub}} $|$ \href{https://civic-sense-six.vercel.app}{\underline{Live}}}{Dec 2025 -- Feb 2026}
+      \resumeItemListStart
+        \resumeItem{3-step on-chain civic lifecycle with hybrid Supabase/Sepolia storage, Gemini triage, and 12-page citizen/admin/org portals.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Research}
+  \begin{itemize}[leftmargin=0.15in]
+    \resumeItem{\textbf{BlockForge: A Blockchain-Based Decentralized Platform for Transparent Academic Assessment} --- Accepted, 4th International Conference on Networks and Cryptology (NetCrypt 2026); Conference Presentation, Oct 2026.}
+  \end{itemize}
+
+\section{Achievements}
+  \begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Production open-source contributions merged into Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem.}
+    \resumeItem{Finalist, LNMHacks 8.0 (Top 30 / 150+ teams); Top 20, Tech Triad Hackathon, IIT Kharagpur (Kshitij 2026).}
+  \end{itemize}
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: TypeScript, JavaScript, Solidity, Python, Rust, C++, SQL} \\
+      \textbf{Backend / AI}{: Node.js, Express.js, REST APIs, Zod, JWT, agent tooling (Mastra)} \\
+      \textbf{Blockchain}{: Ethereum, Hardhat, Ethers.js/viem, Hyperlane, Filecoin PDP, ZK proofs, IPFS, WalletConnect} \\
+      \textbf{Frontend}{: React, Vite, Tailwind CSS, shadcn/ui} \\
+      \textbf{Databases}{: PostgreSQL (Supabase), Firestore} \\
+      \textbf{Tools}{: Git, GitHub Actions, Vitest} \\
+      \textbf{Core CS}{: Data Structures \& Algorithms, Cryptography, Distributed Systems}
+    }}
+  \end{itemize}
+
+\end{document}

@@ -1,0 +1,158 @@
+%-------------------------
+% Common / general SDE intern resume — cold outreach to startups
+% Backend, APIs, OSS first. Works across AI / FinTech / B2B SaaS.
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.1pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Nishant Agarwal} \\ \vspace{1pt}
+  \small B.Tech CSE $|$ CGPA 8.86/10 $|$ Software Engineering Intern --- Backend, APIs, systems \\ \vspace{1pt}
+  \small +91 7900654124 $|$
+  \href{https://nishantx.in}{\underline{nishantx.in}} $|$
+  \href{mailto:agarwalnishant812@gmail.com}{\underline{agarwalnishant812@gmail.com}} $|$
+  \href{https://github.com/nishant-uxs}{\underline{GitHub}} $|$
+  \href{https://www.linkedin.com/in/nishant-agarwal-62a956322/}{\underline{LinkedIn}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bennett University}{Greater Noida, India}
+      {B.Tech Computer Science Engineering; CGPA: \textbf{8.86/10}}{Oct 2024 -- Jul 2028}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Backend Developer Intern}{Mar 2026 -- Jul 2026}
+      {Digital South Trust}{India (Remote)}
+      \resumeItemListStart
+        \resumeItem{Shipped production REST APIs for a News Portal: Zod validation, structured errors, Express.js routing, and release-time debugging of failing request paths.}
+        \resumeItem{Built backend modules and workflows for Crypto Suraksha; owned features from requirements through testing and production handoff.}
+        \resumeItem{Hardened error handling so client failures returned consistent HTTP status codes instead of opaque 500s.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Krydo} $|$ \emph{TypeScript, Node.js, Express, Firestore} $|$ \href{https://github.com/nishant-uxs/krydo}{\underline{GitHub}} $|$ \href{https://krydo.onrender.com}{\underline{Live}}}{Feb 2026 -- Apr 2026}
+      \resumeItemListStart
+        \resumeItem{Designed a hybrid backend: append-only hashes as source of truth, Firestore as the low-latency query layer, JWT auth, Zod on every route, rate limiting, Helmet/CORS, health/readiness probes.}
+        \resumeItem{\textbf{154 Vitest unit tests} and GitHub Actions (typecheck + test) on Node 20; 8 API route modules, pagination middleware, shareable verification URLs.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{CivicSense} $|$ \emph{TypeScript, Node.js, PostgreSQL (Supabase), React} $|$ \href{https://github.com/nishant-uxs/CivicSense}{\underline{GitHub}} $|$ \href{https://civic-sense-six.vercel.app}{\underline{Live}}}{Dec 2025 -- Feb 2026}
+      \resumeItemListStart
+        \resumeItem{Built REST APIs with JWT auth, role-based access, and a 3-step report lifecycle; hybrid storage (Postgres for queries, integrity layer for auditability); Gemini-assisted triage.}
+        \resumeItem{12-page citizen/admin/org portals with distinct authorization paths end-to-end.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{BlockForge (LabEval)} $|$ \emph{Node.js, React, content-addressed storage} $|$ \href{https://github.com/nishant-uxs/labeval}{\underline{GitHub}} $|$ \href{https://blockchain-labeval.onrender.com}{\underline{Live}}}{Sep 2025 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Split hot data from cold blobs (\textasciitilde{}92\% storage-cost cut vs inlining files); RBAC for student/grader roles; Gemini grading pipeline; research paper accepted at NetCrypt 2026.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Open Source (merged)}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{ClickHouse} \href{https://github.com/ClickHouse/ClickHouse/pull/114003}{\underline{\#114003}} $|$ \textbf{Hardhat} \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}} $|$ \textbf{viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
+      \resumeItemListStart
+        \resumeItem{ClickHouse: fixed Keeper \texttt{writeAt} path that could surface \texttt{CORRUPTED\_DATA} on startup. Hardhat: config resolution prefers \texttt{process.env} over plugin hooks, with unit tests. viem: \texttt{\_types} \texttt{package.json} module marker for TypeScript NodeNext.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Mastra} \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}/\href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}} $|$ \textbf{Hyperlane} \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}} $|$ \textbf{WalletConnect} \href{https://github.com/WalletConnect/walletconnect-monorepo/pull/7302}{\underline{\#7302}} $|$ \textbf{FilOzone} \href{https://github.com/FilOzone/pdp/pull/287}{\underline{pdp\#287}}+\href{https://github.com/FilOzone/filecoin-services/pull/566}{\underline{svc\#566}}}{}
+      \resumeItemListStart
+        \resumeItem{Mastra: core workflow/tool fixes (never execute declined tools; reuse nested snapshots). Hyperlane: fail-safe indexer decode to avoid panics on malformed messages. WalletConnect: EventEmitter TypeScript annotations. FilOzone: piece-removal event + ABI wiring across two repos.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Achievements}
+  \begin{itemize}[leftmargin=0.15in]
+    \resumeItem{10 merged PRs in production repos (ClickHouse, Hardhat, viem, Mastra, Hyperlane, WalletConnect, FilOzone, hardhat-website).}
+    \resumeItem{Finalist, LNMHacks 8.0 (Top 30 / 150+ teams); Top 20, Tech Triad, IIT Kharagpur (Kshitij 2026).}
+  \end{itemize}
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: TypeScript, JavaScript, Python, SQL, C++, Solidity} \\
+      \textbf{Backend}{: Node.js, Express.js, REST APIs, Zod validation, JWT, rate limiting, error handling, CI (GitHub Actions), Vitest} \\
+      \textbf{Data}{: PostgreSQL (Supabase), Firestore; hybrid hot-path vs integrity-store design} \\
+      \textbf{Frontend}{: React, Vite, Tailwind CSS} \\
+      \textbf{CS}{: Data Structures \& Algorithms, OOP, DBMS, distributed systems fundamentals} \\
+      \textbf{Tools}{: Git, GitHub Actions, Render, Vercel}
+    }}
+  \end{itemize}
+
+\end{document}

@@ -1,0 +1,72 @@
+.nx-container {
+  width: var(--nx-container);
+  margin-inline: auto;
+}
+
+.nx-section {
+  position: relative;
+  padding-block: var(--nx-section-space);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nx-eyebrow {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--nx-muted);
+}
+
+.nx-display {
+  font-family: var(--font-clash-display), sans-serif;
+  font-size: clamp(3.5rem, 12vw, 9.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.nx-title {
+  font-family: var(--font-clash-display), sans-serif;
+  font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+.nx-lead {
+  font-size: clamp(1.15rem, 1.6vw, 1.45rem);
+  color: var(--nx-muted);
+  max-width: 38rem;
+  line-height: 1.7;
+}
+
+.nx-glass {
+  background: var(--nx-glass);
+  border: 1px solid var(--nx-border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.nx-glow {
+  box-shadow: 0 0 40px var(--nx-glow);
+}
+
+.nx-divider {
+  height: clamp(4rem, 10vh, 8rem);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(79, 125, 255, 0.05),
+    transparent
+  );
+  filter: blur(0.5px);
+  pointer-events: none;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

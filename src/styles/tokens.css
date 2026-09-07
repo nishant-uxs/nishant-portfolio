@@ -1,0 +1,36 @@
+:root {
+  --nx-bg: #050505;
+  --nx-bg-secondary: #0b0b0b;
+  --nx-text: #ffffff;
+  --nx-muted: #a8a8a8;
+  --nx-accent: #4f7dff;
+  --nx-accent-2: #7b61ff;
+  --nx-border: rgba(255, 255, 255, 0.08);
+  --nx-glass: rgba(255, 255, 255, 0.04);
+  --nx-glow: rgba(79, 125, 255, 0.25);
+  --nx-section-space: clamp(6rem, 14vh, 12rem);
+  --nx-container: min(92vw, 1400px);
+  --nx-radius: 1.25rem;
+  --nx-radius-lg: 2rem;
+}
+
+@theme inline {
+  --color-nx-bg: var(--nx-bg);
+  --color-nx-bg-secondary: var(--nx-bg-secondary);
+  --color-nx-text: var(--nx-text);
+  --color-nx-muted: var(--nx-muted);
+  --color-nx-accent: var(--nx-accent);
+  --color-nx-accent-2: var(--nx-accent-2);
+  --color-nx-border: var(--nx-border);
+  --color-nx-glass: var(--nx-glass);
+  --color-nx-glow: var(--nx-glow);
+  --font-heading: var(--font-clash-display);
+  --font-body: var(--font-satoshi);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument);
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}

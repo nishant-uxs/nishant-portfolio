@@ -1,0 +1,112 @@
+# Nishant Agarwal — Resume Source of Truth
+# Master version. Update only for new achievements.
+
+identity:
+  name: Nishant Agarwal
+  phone: "+91 7900654124"
+  email: agarwalnishant812@gmail.com
+  linkedin: "https://www.linkedin.com/in/nishant-agarwal-62a956322/"
+  github: "https://github.com/nishant-uxs"
+  location: India
+
+education:
+  - school: Bennett University
+    location: India
+    degree: Bachelor of Technology in Computer Science Engineering
+    gpa: "8.86 / 10"
+    dates: Oct 2024 -- Jul 2028
+
+experience:
+  - title: Web3 Blockchain Developer Intern
+    company: Digital South Trust
+    location: India
+    dates: Mar 2026 -- Jul 2026
+    bullets:
+      - Built backend modules and transaction workflows for Crypto Suraksha, a production Web3 safety platform.
+      - Designed and shipped News Portal REST APIs with request validation, structured errors, and Express.js.
+      - Debugged production request failures and hardened error paths before release.
+      - Owned feature delivery end-to-end: requirements, implementation, testing, and production handoff.
+
+open_source:
+  note: "10 merged PRs. Rank for resume: ClickHouse > Hardhat > viem > WalletConnect > Mastra > Hyperlane > FilOzone > hardhat-website (docs, count only)."
+  - repo: ClickHouse/ClickHouse
+    pr: 114003
+    url: https://github.com/ClickHouse/ClickHouse/pull/114003
+    bullet: Fixed Keeper writeAt path that could surface CORRUPTED_DATA on startup.
+  - repo: NomicFoundation/hardhat
+    pr: 8464
+    url: https://github.com/NomicFoundation/hardhat/pull/8464
+    bullet: Made configuration variables prefer process.env over plugin hooks (including keystore), with unit tests for hook short-circuiting.
+  - repo: hyperlane-xyz/hyperlane-monorepo
+    pr: 9181
+    url: https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181
+    bullet: Hardened message decoding to avoid panics in HyperlaneMessage::from on malformed multi-chain payloads.
+  - repo: FilOzone/pdp
+    pr: 287
+    url: https://github.com/FilOzone/pdp/pull/287
+    bullet: Emitted PiecesScheduledForRemoval; paired with filecoin-services #566 PDPVerifier ABI/event wiring.
+  - repo: FilOzone/filecoin-services
+    pr: 566
+    url: https://github.com/FilOzone/filecoin-services/pull/566
+    bullet: PDPVerifier ABI event update (cross-repo with pdp #287).
+  - repo: mastra-ai/mastra
+    prs: [20487, 20518]
+    urls:
+      - https://github.com/mastra-ai/mastra/pull/20487
+      - https://github.com/mastra-ai/mastra/pull/20518
+    bullet: Never execute declined tools; reuse terminal nested snapshots.
+  - repo: WalletConnect/walletconnect-monorepo
+    pr: 7302
+    url: https://github.com/WalletConnect/walletconnect-monorepo/pull/7302
+    bullet: EventEmitter @types/node annotations.
+  - repo: wevm/viem
+    pr: 4903
+    url: https://github.com/wevm/viem/pull/4903
+    bullet: Fixed ESM _types package generation for TypeScript NodeNext.
+  - repo: NomicFoundation/hardhat-website
+    pr: 288
+    url: https://github.com/NomicFoundation/hardhat-website/pull/288
+    bullet: Node.js min version docs → v22.13.0 (listed in achievements total, not expanded on page).
+
+projects:
+  - name: Krydo
+    stack: TypeScript, Ethereum, ZKP
+    github: https://github.com/nishant-uxs/krydo
+    live: https://krydo.onrender.com
+    dates: Feb 2026 -- Apr 2026
+    bullets:
+      - Built privacy-preserving identity via 6 sigma-protocol ZK proofs over Pedersen commitments; 154 unit tests; 3 Sepolia contracts; W3C VC export.
+      - "Hybrid trust model: on-chain credential hashes as source of truth; Firestore as the query layer; SIWE auth."
+  - name: BlockForge (LabEval)
+    stack: Solidity, IPFS, React
+    github: https://github.com/nishant-uxs/labeval
+    live: https://blockchain-labeval.onrender.com
+    dates: Sep 2025 -- Jan 2026
+    bullets:
+      - OpenZeppelin RBAC assessment contracts; IPFS CIDs on-chain (~92% storage cut); Gemini-assisted grading; NetCrypt 2026 accepted paper.
+  - name: CivicSense
+    stack: Solidity, Supabase, Gemini
+    github: https://github.com/nishant-uxs/CivicSense
+    live: https://civic-sense-six.vercel.app
+    dates: Dec 2025 -- Feb 2026
+    bullets:
+      - 3-step on-chain civic lifecycle with hybrid Supabase/Sepolia storage, Gemini triage, and 12-page citizen/admin/org portals.
+
+research:
+  - title: "BlockForge: A Blockchain-Based Decentralized Platform for Transparent Academic Assessment"
+    status: Accepted
+    venue: 4th International Conference on Networks and Cryptology (NetCrypt 2026)
+    presentation: Conference Presentation, Oct 2026
+
+achievements:
+  - Production open-source contributions merged into Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem
+  - Finalist, LNMHacks 8.0 (Top 30 / 150+ teams); Top 20, Tech Triad Hackathon, IIT Kharagpur (Kshitij 2026)
+
+skills:
+  languages: TypeScript, JavaScript, Solidity, Python, Rust, C++, SQL
+  backend_ai: Node.js, Express.js, REST APIs, Zod, JWT, agent tooling (Mastra)
+  blockchain: Ethereum, Hardhat, Ethers.js/viem, Hyperlane, Filecoin PDP, ZK proofs, IPFS, WalletConnect
+  frontend: React, Vite, Tailwind CSS, shadcn/ui
+  databases: PostgreSQL (Supabase), Firestore
+  tools: Git, GitHub Actions, Vitest
+  core_cs: Data Structures & Algorithms, Cryptography, Distributed Systems

@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local / personal clutter
+Sparsh*
+*.docx
+interview-prep/
+github-audit/
+outreach/
+resume/**/*.aux
+resume/**/*.log
+resume/**/*.out
+public/models/
+public/textures/
+public/videos/
+*.pdf
+!public/Nishant_Agarwal_Resume.pdf
+!public/Nishant_Agarwal_Resume_Scaler.pdf
