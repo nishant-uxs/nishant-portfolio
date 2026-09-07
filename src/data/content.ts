@@ -37,7 +37,22 @@ export const aboutData = {
   body: "Product-focused engineer who ships fast. I build REST APIs, full-stack apps, and reliable backends — then harden them with tests and CI. Web3 shows up when integrity and verifiability matter (ZK, IPFS, on-chain audits). Open to internships, freelance, and collabs.",
 };
 
-export const projectsData = [
+export type ProjectItem = {
+  id: string;
+  index: string;
+  title: string;
+  type: string;
+  stack: string;
+  year: string;
+  description: string;
+  tags: readonly string[];
+  proof: readonly string[];
+  github: string;
+  live: string;
+  accent: "violet" | "blue" | "fuchsia" | "cyan" | "amber";
+};
+
+export const projectsData: ProjectItem[] = [
   {
     id: "krydo",
     index: "01",
@@ -51,7 +66,7 @@ export const projectsData = [
     proof: ["154 tests", "8 API modules", "CI on Node 20"],
     github: "https://github.com/nishant-uxs/krydo",
     live: "https://krydo.onrender.com",
-    accent: "violet" as const,
+    accent: "violet",
   },
   {
     id: "civicsense",
@@ -66,7 +81,7 @@ export const projectsData = [
     proof: ["12 pages", "RBAC", "lifecycle APIs"],
     github: "https://github.com/nishant-uxs/CivicSense",
     live: "https://civic-sense-six.vercel.app",
-    accent: "blue" as const,
+    accent: "blue",
   },
   {
     id: "blockforge",
@@ -81,7 +96,7 @@ export const projectsData = [
     proof: ["~92% storage cut", "NetCrypt 2026", "live app"],
     github: "https://github.com/nishant-uxs/labeval",
     live: "https://blockchain-labeval.onrender.com",
-    accent: "fuchsia" as const,
+    accent: "fuchsia",
   },
   {
     id: "trustmesh",
@@ -96,9 +111,9 @@ export const projectsData = [
     proof: ["github", "shipped"],
     github: "https://github.com/nishant-uxs/TrustMesh",
     live: "",
-    accent: "cyan" as const,
+    accent: "cyan",
   },
-] as const;
+];
 
 export const ossData = [
   {
