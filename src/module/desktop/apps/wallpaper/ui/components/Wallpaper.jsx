@@ -5,6 +5,7 @@ import windowWrapper from "@hoc/windowWrapper";
 import useWindowsStore from "@store/window";
 import {
   DESKTOP_WALLPAPERS,
+  WALLPAPER_GROUPS,
   WALLPAPER_STORAGE_KEY,
   applyDesktopWallpaper,
   getWallpaperById,
@@ -30,45 +31,55 @@ const Wallpaper = () => {
         <h2 className="flex-1 text-center text-sm font-semibold text-zinc-700">Wallpaper</h2>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-4">
-        <p className="mb-3 text-[11px] font-medium tracking-wide text-zinc-500 uppercase">
-          Choose a desktop look
-        </p>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {DESKTOP_WALLPAPERS.map((item) => {
-            const selected = item.id === wallpaperId;
-            return (
-              <button
-                key={item.id}
-                type="button"
-                onClick={() => handleSelect(item.id)}
-                className={[
-                  "group overflow-hidden rounded-xl border text-left transition-all",
-                  selected
-                    ? "border-blue-500 ring-2 ring-blue-500/40"
-                    : "border-black/10 hover:border-black/25",
-                ].join(" ")}
-              >
-                <div
-                  className="aspect-[16/10] w-full bg-cover bg-center"
-                  style={
-                    item.type === "image"
-                      ? { backgroundImage: `url("${item.src}")` }
-                      : { backgroundImage: item.value }
-                  }
-                />
-                <div className="flex items-center justify-between gap-2 bg-white/80 px-2.5 py-2">
-                  <span className="truncate text-xs font-medium text-zinc-700">{item.name}</span>
-                  {selected && (
-                    <span className="rounded-full bg-blue-500 px-1.5 py-0.5 text-[9px] font-bold text-white">
-                      ON
-                    </span>
-                  )}
-                </div>
-              </button>
-            );
-          })}
-        </div>
+      <div className="flex-1 space-y-5 overflow-y-auto p-4">
+        {WALLPAPER_GROUPS.map((group) => {
+          const items = DESKTOP_WALLPAPERS.filter((item) => item.group === group);
+          if (!items.length) return null;
+          return (
+            <section key={group}>
+              <p className="mb-2.5 text-[11px] font-medium tracking-wide text-zinc-500 uppercase">
+                {group}
+              </p>
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                {items.map((item) => {
+                  const selected = item.id === wallpaperId;
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => handleSelect(item.id)}
+                      className={[
+                        "group overflow-hidden rounded-xl border text-left transition-all",
+                        selected
+                          ? "border-blue-500 ring-2 ring-blue-500/40"
+                          : "border-black/10 hover:border-black/25",
+                      ].join(" ")}
+                    >
+                      <div
+                        className="aspect-[16/10] w-full bg-cover bg-center"
+                        style={
+                          item.type === "image"
+                            ? { backgroundImage: `url("${item.src}")` }
+                            : { backgroundImage: item.value }
+                        }
+                      />
+                      <div className="flex items-center justify-between gap-2 bg-white/80 px-2.5 py-2">
+                        <span className="truncate text-xs font-medium text-zinc-700">
+                          {item.name}
+                        </span>
+                        {selected && (
+                          <span className="rounded-full bg-blue-500 px-1.5 py-0.5 text-[9px] font-bold text-white">
+                            ON
+                          </span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
       </div>
     </div>
   );
