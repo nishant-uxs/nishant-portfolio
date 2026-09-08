@@ -33,16 +33,8 @@ const CallInProgress = ({
   }, []);
 
   const isNishant = activeCall.name?.toLowerCase().includes("nishant");
-  const isBhavesh = activeCall.name?.toLowerCase().includes("bhavesh");
-  const isMahabub = activeCall.name?.toLowerCase().includes("mahabub");
-  const videoUrl = isNishant
-    ? process.env.NEXT_PUBLIC_VIDEOCALL_KULDEEPRAJPUT
-    : isBhavesh
-      ? process.env.NEXT_PUBLIC_VIDEOCALL_BHAVESH_KUMAR
-      : isMahabub
-        ? process.env.NEXT_PUBLIC_VIDEOCALL_MAHABUB
-        : "";
-  const showVideo = (isNishant || isBhavesh || isMahabub) && videoUrl && !videoError;
+  const videoUrl = isNishant ? process.env.NEXT_PUBLIC_VIDEOCALL_NISHANT || "" : "";
+  const showVideo = isNishant && videoUrl && !videoError;
 
   return (
     <div className="absolute inset-0 bg-neutral-950 text-white z-40 flex flex-col justify-between overflow-hidden select-none h-full rounded-b-xl group">

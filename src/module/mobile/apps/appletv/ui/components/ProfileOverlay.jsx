@@ -55,7 +55,8 @@ const ProfileOverlay = ({ isOpen, onClose, appName = "appletv" }) => {
   if (!isOpen) return null;
 
   const displayName = profile?.name || "Nishant Agarwal";
-  const bio = profile?.bio || "Full Stack Developer | Building premium macOS Web Portfolios";
+  const bio =
+    profile?.bio || "Backend & Blockchain Engineer | Privacy systems, APIs, and open source";
   const location = profile?.location || "India";
   const avatarUrl = profile?.avatar_url || "/images/profile.webp";
 

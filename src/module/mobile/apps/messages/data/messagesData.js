@@ -1,14 +1,14 @@
-import { GITHUB_PROFILE } from "@constants";
+import { GITHUB_PROFILE, LINKEDIN_URL, EMAIL } from "@constants";
 
 export const INITIAL_CONVERSATIONS = [
   {
     id: "nishant",
-    name: "Nishant (Developer)",
+    name: "Nishant Agarwal",
+    avatar: "/images/profile.webp",
     avatarColor: "bg-gradient-to-tr from-blue-500 to-indigo-500",
     initials: "N",
-    avatar: "/images/profile.webp",
     unread: true,
-    email: "agarwalnishant812@gmail.com",
+    email: EMAIL || "agarwalnishant812@gmail.com",
     github: GITHUB_PROFILE,
     messages: [
       {
@@ -32,43 +32,42 @@ export const INITIAL_CONVERSATIONS = [
     ],
   },
   {
-    id: "bhavesh",
-    name: "Bhavesh Kumar",
-    avatarColor: "bg-gradient-to-tr from-indigo-500 to-purple-600",
-    initials: "B",
-    avatar: "/images/contacts/Bhavesh.webp",
+    id: "github",
+    name: "GitHub",
+    avatar: "/images/github.webp",
+    avatarColor: "bg-gradient-to-tr from-zinc-700 to-zinc-900",
+    initials: "GH",
     unread: false,
-    email: "bhavesh@example.com",
-    github: "https://github.com",
+    email: EMAIL || "agarwalnishant812@gmail.com",
+    github: GITHUB_PROFILE,
     messages: [
       {
         id: 1,
-        text: "Hey Nishant, did you check the new desktop mockup?",
+        text: "Check out my merged OSS work — Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, viem.",
         sender: "them",
         time: "Yesterday",
       },
       {
         id: 2,
-        text: "Yeah, it looks super clean! The glassmorphism fits perfectly.",
-        sender: "me",
+        text: "Profile: github.com/nishant-uxs",
+        sender: "them",
         time: "Yesterday",
       },
-      { id: 3, text: "Awesome! Let's get it deployed soon.", sender: "them", time: "Yesterday" },
     ],
   },
   {
-    id: "mahabub",
-    name: "Mahabub",
-    avatarColor: "bg-gradient-to-tr from-purple-500 to-pink-600",
-    initials: "M",
-    avatar: "/images/contacts/mahabub.webp",
+    id: "linkedin",
+    name: "LinkedIn",
+    avatar: "/images/linkedin.webp",
+    avatarColor: "bg-gradient-to-tr from-sky-500 to-blue-700",
+    initials: "in",
     unread: false,
-    email: "mahabub@example.com",
-    github: "https://github.com",
+    email: EMAIL || "agarwalnishant812@gmail.com",
+    github: LINKEDIN_URL,
     messages: [
       {
         id: 1,
-        text: "Hey Nishant! I'm online now. Let me know if you need help with coding.",
+        text: "Connect with me on LinkedIn for roles, collabs, and updates.",
         sender: "them",
         time: "Yesterday",
       },

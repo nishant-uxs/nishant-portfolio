@@ -54,7 +54,7 @@ const MOCK_COLLECTIONS = [
         name: "Send Contact Message",
         method: "POST",
         url: "https://api.dev/v1/contact",
-        body: '{\n  "name": "Anonymous Dev",\n  "email": "dev@example.com",\n  "message": "Love your macOS portfolio!"\n}',
+        body: '{\n  "name": "Nishant Agarwal",\n  "email": "agarwalnishant812@gmail.com",\n  "message": "Interested in collaborating on backend / blockchain work."\n}',
       },
     ],
   },

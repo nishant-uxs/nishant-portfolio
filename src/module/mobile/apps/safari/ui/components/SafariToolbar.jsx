@@ -660,7 +660,7 @@ const SafariMobileHeader = ({ projects }) => {
                       if (urlLower.includes("krydo") || urlLower.includes("onrender.com")) {
                         return (
                           <img
-                            src="/projects/newtube.webp"
+                            src="/projects/krydo.webp"
                             alt="Krydo"
                             className="w-full h-full object-cover object-top"
                           />
@@ -669,7 +669,7 @@ const SafariMobileHeader = ({ projects }) => {
                       if (urlLower.includes("blockforge") || urlLower.includes("labeval")) {
                         return (
                           <img
-                            src="/projects/snsta.webp"
+                            src="/projects/blockforge.webp"
                             alt="BlockForge"
                             className="w-full h-full object-cover object-top"
                           />
@@ -678,16 +678,16 @@ const SafariMobileHeader = ({ projects }) => {
                       if (urlLower.includes("civic")) {
                         return (
                           <img
-                            src="/projects/resume-ats.webp"
+                            src="/projects/civicsense.webp"
                             alt="CivicSense"
                             className="w-full h-full object-cover object-top"
                           />
                         );
                       }
-                      if (urlLower.includes("docs")) {
+                      if (urlLower.includes("trust") || urlLower.includes("mesh")) {
                         return (
                           <img
-                            src="/projects/docs-editor.webp"
+                            src="/projects/trustmesh.webp"
                             alt="TrustMesh"
                             className="w-full h-full object-cover object-top"
                           />

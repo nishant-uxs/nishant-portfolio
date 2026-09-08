@@ -118,7 +118,7 @@ const usePostman = () => {
             data = {
               id: "usr_001",
               name: "Nishant Agarwal",
-              role: "Full Stack Developer",
+              role: "Backend & Blockchain Engineer",
               location: "India",
               github: GITHUB_PROFILE,
               skills: ["React", "Node.js", "Bun", "Tailwind CSS", "GSAP"],
@@ -136,7 +136,7 @@ const usePostman = () => {
               profile: {
                 id: "usr_001",
                 name: parsed.name || "Nishant Agarwal",
-                role: parsed.role || "Full Stack Developer",
+                role: parsed.role || "Backend & Blockchain Engineer",
                 location: parsed.location || "India",
                 github: GITHUB_PROFILE,
                 skills: ["React", "Node.js", "Bun", "Tailwind CSS", "GSAP"],

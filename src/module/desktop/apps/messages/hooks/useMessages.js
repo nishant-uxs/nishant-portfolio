@@ -142,7 +142,7 @@ const useMessages = () => {
     setInputText("");
 
     const chatId = activeChat.id;
-    if (chatId === "nishant" || chatId === "mahabub" || chatId === "bhavesh") {
+    if (chatId === "nishant" || chatId === "github" || chatId === "linkedin") {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
@@ -175,45 +175,29 @@ const useMessages = () => {
             replyText =
               "Hello! How are you doing? I hope you are having a wonderful experience exploring my macOS portfolio interface! How can I help you today?";
           }
-        } else if (chatId === "mahabub") {
-          replyText = "Awesome! Let me know if you want to collaborate on some projects.";
-          if (userMsg.includes("project") || userMsg.includes("work")) {
+        } else if (chatId === "github") {
+          replyText = "Browse my repos and merged OSS at github.com/nishant-uxs.";
+          if (userMsg.includes("project") || userMsg.includes("oss") || userMsg.includes("pr")) {
             replyText =
-              "I love working on frontend architectures and agentic AI systems. I'm always looking to build cutting-edge web applications!";
-          } else if (
-            userMsg.includes("skill") ||
-            userMsg.includes("tech") ||
-            userMsg.includes("stack")
-          ) {
-            replyText =
-              "I specialize in React, Node.js, Next.js, AI system integrations, and frontend optimization.";
+              "Merged contributions include Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem. Start with Krydo and BlockForge.";
           } else if (
             userMsg.includes("hello") ||
             userMsg.includes("hi") ||
             userMsg.includes("hey")
           ) {
-            replyText =
-              "Hello! How are you doing? I was just writing some code. Let me know if there's anything I can help you with!";
+            replyText = "Hey! Open github.com/nishant-uxs for code, PRs, and project READMEs.";
           }
-        } else if (chatId === "bhavesh") {
-          replyText = "That sounds interesting! Let's build something beautiful.";
-          if (userMsg.includes("project") || userMsg.includes("design") || userMsg.includes("ui")) {
+        } else if (chatId === "linkedin") {
+          replyText = "Connect on LinkedIn for roles, internships, and collabs.";
+          if (userMsg.includes("hire") || userMsg.includes("job") || userMsg.includes("intern")) {
             replyText =
-              "We should focus on making clean, modern, and beautiful designs with smooth micro-animations. Have you checked out the layout here?";
-          } else if (
-            userMsg.includes("skill") ||
-            userMsg.includes("tech") ||
-            userMsg.includes("stack")
-          ) {
-            replyText =
-              "I'm deep into CSS, UI design systems, React components, and responsive pixel-perfect implementations.";
+              "I'm open to backend / blockchain roles. Message me on LinkedIn or email agarwalnishant812@gmail.com.";
           } else if (
             userMsg.includes("hello") ||
             userMsg.includes("hi") ||
             userMsg.includes("hey")
           ) {
-            replyText =
-              "Hello! How are you doing? I'm currently designing a new interface. Let me know if you want to talk about design or development!";
+            replyText = "Hi! Let's connect — linkedin.com/in/nishant-agarwal-62a956322/";
           }
         }
 

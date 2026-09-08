@@ -30,18 +30,8 @@ const CallOverlay = ({
   }, []);
 
   const isNishant = activeChat.name?.toLowerCase().includes("nishant");
-  const isBhavesh = activeChat.name?.toLowerCase().includes("bhavesh");
-  const isMahabub = activeChat.name?.toLowerCase().includes("mahabub");
-
-  const videoUrl = isNishant
-    ? process.env.NEXT_PUBLIC_VIDEOCALL_KULDEEPRAJPUT
-    : isBhavesh
-      ? process.env.NEXT_PUBLIC_VIDEOCALL_BHAVESH_KUMAR
-      : isMahabub
-        ? process.env.NEXT_PUBLIC_VIDEOCALL_MAHABUB
-        : "";
-
-  const showVideo = (isNishant || isBhavesh || isMahabub) && videoUrl && !videoError;
+  const videoUrl = isNishant ? process.env.NEXT_PUBLIC_VIDEOCALL_NISHANT || "" : "";
+  const showVideo = isNishant && videoUrl && !videoError;
   return (
     <div className="absolute inset-0 bg-[#0d0d0e] text-white z-40 flex flex-col items-center justify-between py-10 px-6 animate-fade-in overflow-hidden select-none rounded-b-xl group">
       {/* Full-screen Background Stream or Dynamic Gradient */}

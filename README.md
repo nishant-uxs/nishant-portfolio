@@ -558,12 +558,7 @@ Please ensure your code passes linting (`npm run lint`) and formatting (`npm run
 
 ## 📄 License
 
-This project is licensed under a **Custom MIT License** with additional conditions:
-
-- ✅ **Personal & Educational Use** — Fully permitted
-- ✅ **Forking** — You **must fork** the original repo (not re-upload as a new repo)
-- ✅ **Attribution** — You **must credit** the original author if showcasing publicly
-- ❌ **Exact Replicas** — You may **not** publish identical copies without significant modifications
+This project is licensed under the **MIT License**.
 
 See the [LICENSE](LICENSE) file for full details.
 

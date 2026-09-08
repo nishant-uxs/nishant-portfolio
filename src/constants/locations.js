@@ -53,8 +53,8 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/projects/newtube.webp",
-          imageMobUrl: "/projects/mobile/newtube-mob.webp",
+          imageUrl: "/projects/krydo.webp",
+          imageMobUrl: "/projects/mobile/krydo-mob.webp",
         },
         {
           id: 5,
@@ -104,8 +104,8 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/projects/snsta.webp",
-          imageMobUrl: "/projects/mobile/snsta-mob.webp",
+          imageUrl: "/projects/blockforge.webp",
+          imageMobUrl: "/projects/mobile/blockforge-mob.webp",
         },
         {
           id: 5,
@@ -155,8 +155,8 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/projects/resume-ats.webp",
-          imageMobUrl: "/projects/mobile/resume-ats-mob.webp",
+          imageUrl: "/projects/civicsense.webp",
+          imageMobUrl: "/projects/mobile/civicsense-mob.webp",
         },
         {
           id: 5,
@@ -206,8 +206,8 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/projects/docs-editor.webp",
-          imageMobUrl: "/projects/mobile/docs-editor-mob.webp",
+          imageUrl: "/projects/trustmesh.webp",
+          imageMobUrl: "/projects/mobile/trustmesh-mob.webp",
         },
         {
           id: 5,

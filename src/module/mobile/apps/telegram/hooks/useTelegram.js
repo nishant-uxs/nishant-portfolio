@@ -34,7 +34,7 @@ const useTelegram = () => {
   const [userProfile, setUserProfile] = useState({
     name: "Nishant Agarwal",
     username: "@nishant-uxs",
-    bio: "Full Stack Engineer | React, Next.js, Node.js & TypeScript enthusiast.",
+    bio: "Backend & Blockchain Engineer | ZK, Ethereum, Hardhat, Next.js.",
     phone: "+91 ••••• •••••",
   });
 
