@@ -70,7 +70,7 @@ const MobileOS = () => {
       />
 
       <MobileOSDock
-        dockApps={["finder", "folder", "resume", "github", "linkedin"]
+        dockApps={["finder", "folder", "github", "linkedin", "instagram", "music", "photos"]
           .map((id) => dockApps.find((app) => app.id === id))
           .filter(Boolean)}
         openWindow={openWindow}

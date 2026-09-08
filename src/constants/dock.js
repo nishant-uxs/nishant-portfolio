@@ -1,4 +1,4 @@
-import { EMAIL, GITHUB_PROFILE, LINKEDIN_URL, PORTFOLIO_URL } from "./env";
+import { GITHUB_PROFILE, INSTAGRAM_URL, LINKEDIN_URL } from "./env";
 
 export const dockApps = [
   { id: "finder", name: "About", icon: "finder.webp", canOpen: true },
@@ -8,34 +8,35 @@ export const dockApps = [
   {
     id: "github",
     name: "GitHub",
-    iconSrc: "/icons/github.svg",
-    iconBg: "#111111",
+    icon: "dock-github.webp",
     href: GITHUB_PROFILE,
     external: true,
     separatorBefore: true,
   },
   {
-    id: "email",
-    name: "Email",
-    iconSrc: "/icons/mail.svg",
-    iconBg: "#ffffff",
-    href: `mailto:${EMAIL}`,
-    external: true,
-  },
-  {
     id: "linkedin",
     name: "LinkedIn",
-    iconSrc: "/icons/linkedin.svg",
-    iconBg: "#ffffff",
+    icon: "dock-linkedin.webp",
     href: LINKEDIN_URL,
     external: true,
   },
   {
-    id: "website",
-    name: "nishantx.in",
-    iconSrc: "/icons/atom.svg",
-    iconBg: "#ffffff",
-    href: PORTFOLIO_URL,
+    id: "instagram",
+    name: "Instagram",
+    icon: "dock-instagram.webp",
+    href: INSTAGRAM_URL,
     external: true,
+  },
+  {
+    id: "music",
+    name: "Music",
+    icon: "dock-music.webp",
+    canOpen: true,
+  },
+  {
+    id: "photos",
+    name: "Photos",
+    icon: "photos.webp",
+    canOpen: true,
   },
 ];

@@ -119,7 +119,7 @@ const DockIcon = ({
               width={64}
               height={64}
               loading="lazy"
-              className={`${canOpen ? "" : "opacity-60"} ${scaleMap[id] || ""} pointer-events-none`}
+              className={`${!canOpen && !href ? "opacity-60" : ""} ${scaleMap[id] || ""} pointer-events-none`}
             />
           )}
         </span>
