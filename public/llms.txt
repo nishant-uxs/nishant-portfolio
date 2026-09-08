@@ -1,0 +1,23 @@
+# Nishant Agarwal — nishantx.in
+
+> Backend & Blockchain Engineer. Official site: https://nishantx.in
+
+## Profile
+- Name: Nishant Agarwal
+- Role: Backend & Blockchain Engineer
+- GitHub: https://github.com/nishant-uxs
+- LinkedIn: https://www.linkedin.com/in/nishant-agarwal-62a956322/
+- Instagram: https://www.instagram.com/nishant.agarwal__/
+- Email: agarwalnishant812@gmail.com
+
+## Pages
+- [Home](https://nishantx.in/): Interactive macOS portfolio
+- [About](https://nishantx.in/about): Biography, education, experience
+- [Projects](https://nishantx.in/projects): Krydo, BlockForge, CivicSense, TrustMesh
+- [Resume](https://nishantx.in/files/resume.pdf): PDF resume
+
+## Projects
+- Krydo — ZK identity (https://krydo.onrender.com)
+- BlockForge — Decentralized lab assessment (https://blockchain-labeval.onrender.com)
+- CivicSense — On-chain civic reporting (https://civic-sense-six.vercel.app)
+- TrustMesh — Stellar Soroban trust network (https://trust-mesh-taupe.vercel.app)

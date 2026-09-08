@@ -1,14 +1,37 @@
-const SITE_URL = (process.env.NEXT_PUBLIC_PORTFOLIO_URL || "https://nishantx.in").replace(
-  /\/+$/,
-  "",
-);
+import { SITE_URL, absoluteUrl } from "../constants/seo";
 
 export default function sitemap() {
   const lastModified = new Date();
   return [
-    { url: SITE_URL, lastModified, changeFrequency: "weekly", priority: 1 },
-    { url: `${SITE_URL}/about`, lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/projects`, lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/files/resume.pdf`, lastModified, changeFrequency: "monthly", priority: 0.7 },
+    {
+      url: SITE_URL,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: absoluteUrl("/about"),
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: absoluteUrl("/projects"),
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: absoluteUrl("/files/resume.pdf"),
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: absoluteUrl("/og-image.png"),
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
   ];
 }

@@ -14,6 +14,7 @@ export const person = {
   url: "https://nishantx.in",
   github: "https://github.com/nishant-uxs",
   linkedin: "https://www.linkedin.com/in/nishant-agarwal-62a956322/",
+  instagram: "https://www.instagram.com/nishant.agarwal__/",
   resumePath: "/files/resume.pdf",
 };
 

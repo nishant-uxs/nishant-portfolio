@@ -1,18 +1,20 @@
-const SITE_URL = (process.env.NEXT_PUBLIC_PORTFOLIO_URL || "https://nishantx.in").replace(
-  /\/+$/,
-  "",
-);
+import { SITE_URL, absoluteUrl } from "../constants/seo";
 
 export default function robots() {
   return {
     rules: [
       {
         userAgent: "*",
+        allow: ["/", "/about", "/projects", "/files/", "/og-image.png", "/images/"],
+        disallow: ["/api/"],
+      },
+      {
+        userAgent: "Googlebot",
         allow: "/",
         disallow: ["/api/"],
       },
     ],
-    sitemap: `${SITE_URL}/sitemap.xml`,
+    sitemap: absoluteUrl("/sitemap.xml"),
     host: SITE_URL,
   };
 }

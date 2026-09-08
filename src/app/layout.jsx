@@ -1,145 +1,70 @@
 import "../styles/index.css";
 import { SeoProfile } from "./_components/SeoProfile";
-import { person } from "../constants/person";
+import {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  OWNER_NAME,
+  SEO_KEYWORDS,
+  GOOGLE_SITE_VERIFICATION,
+  OG_IMAGE_PATH,
+  buildJsonLdGraph,
+  defaultOpenGraph,
+  defaultTwitter,
+  absoluteUrl,
+} from "../constants/seo";
 
-const SITE_URL = person.url;
-const OWNER_NAME = person.name;
-const SITE_NAME = `${OWNER_NAME} | ${person.jobTitle}`;
-const SITE_DESCRIPTION = person.headline;
-const OG_IMAGE = "/readme/desktop.png";
-const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE || person.github;
-const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL || person.linkedin;
-const INSTAGRAM_URL =
-  process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/nishant.agarwal__/";
-const EMAIL = process.env.NEXT_PUBLIC_EMAIL || person.email;
-const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
-
-const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, INSTAGRAM_URL].filter(Boolean);
-const jsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": `${SITE_URL}/#website`,
-    name: OWNER_NAME,
-    alternateName: ["Nishant Agarwal portfolio", "nishantx.in"],
-    url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    inLanguage: "en-IN",
-    publisher: { "@id": `${SITE_URL}/#person` },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": `${SITE_URL}/#person`,
-    name: OWNER_NAME,
-    url: SITE_URL,
-    email: EMAIL,
-    telephone: person.phone,
-    jobTitle: person.jobTitle,
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "IN",
-    },
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: person.university,
-    },
-    sameAs,
-    knowsAbout: [
-      "Backend engineering",
-      "Blockchain",
-      "Ethereum",
-      "Zero-knowledge proofs",
-      "Hardhat",
-      "TypeScript",
-    ],
-    description: person.description,
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "@id": `${SITE_URL}/about#profile`,
-    url: `${SITE_URL}/about`,
-    name: `About ${OWNER_NAME}`,
-    mainEntity: { "@id": `${SITE_URL}/#person` },
-  },
-];
+const jsonLd = buildJsonLdGraph();
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  applicationName: OWNER_NAME,
+  applicationName: "nishantx.in",
   generator: "Next.js",
   title: {
     default: SITE_NAME,
     template: `%s | ${OWNER_NAME}`,
   },
   description: SITE_DESCRIPTION,
-  keywords: [
-    "Nishant Agarwal",
-    "Nishant Agarwal portfolio",
-    "Nishant Agarwal Bennett University",
-    "Nishant Agarwal blockchain",
-    "Nishant Agarwal Web3",
-    "Nishant Agarwal backend engineer",
-    "nishantx.in",
-    "Hardhat contributor",
-    "Hyperlane contributor",
-    "Krydo",
-    "BlockForge",
-  ],
+  keywords: SEO_KEYWORDS,
   authors: [{ name: OWNER_NAME, url: SITE_URL }],
   creator: OWNER_NAME,
   publisher: OWNER_NAME,
   category: "technology",
   classification: "Portfolio",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "/",
-    types: {
-      "text/html": [
-        { url: "/", title: "Nishant Agarwal" },
-        { url: "/about", title: "About Nishant Agarwal" },
-        { url: "/projects", title: "Projects by Nishant Agarwal" },
-      ],
+    languages: {
+      "en-IN": "/",
+      en: "/",
     },
   },
   verification: GOOGLE_SITE_VERIFICATION ? { google: GOOGLE_SITE_VERIFICATION } : undefined,
-  openGraph: {
-    type: "profile",
-    locale: "en_IN",
-    url: "/",
-    siteName: OWNER_NAME,
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-    firstName: "Nishant",
-    lastName: "Agarwal",
-    username: "nishant-uxs",
-    images: [
-      {
-        url: OG_IMAGE,
-        width: 1920,
-        height: 1080,
-        alt: "Nishant Agarwal — backend and blockchain engineer portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-    images: [OG_IMAGE],
-  },
+  openGraph: defaultOpenGraph,
+  twitter: defaultTwitter,
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: ["/favicon-32.png"],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -161,7 +86,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-IN" suppressHydrationWarning={true}>
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="canonical" href={absoluteUrl("/")} />
+        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta property="og:image" content={absoluteUrl(OG_IMAGE_PATH)} />
+        <meta name="author" content={OWNER_NAME} />
+        <meta name="geo.region" content="IN" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
