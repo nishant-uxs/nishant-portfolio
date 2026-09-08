@@ -65,7 +65,7 @@ const NavbarControlCenterSection = ({
             avatar_url: data.avatar_url,
             login: data.login,
             email: data.email || `${data.login}@users.noreply.github.com`,
-            bio: data.bio || "Full Stack Developer",
+            bio: data.bio || "Backend & Blockchain Engineer",
             location: data.location || "India",
             public_repos: data.public_repos || 15,
             followers: data.followers || 45,
@@ -599,7 +599,7 @@ const NavbarControlCenterSection = ({
                         <Settings size={14} className="text-white/40 shrink-0 mt-0.5" />
                         {currentUserMode === "admin" ? (
                           <span className="block font-medium">
-                            Full Stack Developer | Building beautiful, premium web solutions.
+                            Backend & Blockchain Engineer | Privacy systems, APIs, and open source.
                           </span>
                         ) : (
                           <span>

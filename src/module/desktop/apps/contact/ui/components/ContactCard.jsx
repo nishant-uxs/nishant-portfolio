@@ -4,7 +4,10 @@ const ContactCard = ({ _label, email, phone, copied, onCopy }) => (
   <>
     <img src={"/images/profile.webp"} alt="Nishant Agarwal" className="w-20 rounded-full" />
     <h3>Let's Connect</h3>
-    <p>Full-stack developer building scalable apps—let's connect and create something impactful.</p>
+    <p>
+      Backend & blockchain engineer — privacy systems, production APIs, and open source. Let&apos;s
+      connect.
+    </p>
     <div
       className="flex items-center gap-3 cursor-pointer group"
       onClick={() => onCopy(email, "email")}

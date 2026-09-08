@@ -25,6 +25,7 @@ const WINDOW_CONFIG = {
   font: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   telegram: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   music: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  wallpaper: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   launchpad: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 

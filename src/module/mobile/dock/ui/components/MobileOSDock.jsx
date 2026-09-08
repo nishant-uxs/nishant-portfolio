@@ -1,4 +1,6 @@
 import OptimizedImage from "@module/shared/ui/components/OptimizedImage";
+import { locations } from "@constants";
+import useLocationStore from "@store/location";
 
 const scaleMap = {
   finder: "scale-[0.90]",
@@ -22,47 +24,57 @@ const scaleMap = {
   font: "scale-[2.7]",
   telegram: "scale-[0.90]",
   music: "scale-[0.90]",
+  wallpaper: "scale-[0.90]",
   folder: "scale-[0.80]",
   trash: "scale-[0.80]",
 };
 
-const MobileOSDock = ({ dockApps, openWindow }) => (
-  <footer className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center justify-around w-[92%] h-[88px] bg-white/22 backdrop-blur-[40px] backdrop-saturate-[1.8] rounded-[32px] border border-white/18 shadow-[0_8px_40px_rgba(0,0,0,0.22),inset_0_1px_0_rgba(255,255,255,0.12)] px-[10px]">
-    {dockApps.map((app) => (
-      <button
-        key={app.id}
-        onClick={() => {
-          if (app.external && app.href) {
-            window.open(
-              app.href,
-              app.href.startsWith("mailto:") ? "_self" : "_blank",
-              "noopener,noreferrer",
-            );
-            return;
-          }
-          openWindow(app.id);
-        }}
-        className="active:scale-[0.82] transition-transform duration-150 w-[58px] h-[58px] rounded-[14px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.2)]"
-      >
-        {app.iconSrc ? (
-          <span
-            className="flex h-full w-full items-center justify-center rounded-[14px]"
-            style={{ background: app.iconBg || "#ffffff" }}
-          >
-            <img src={app.iconSrc} alt={app.name} className="h-7 w-7 object-contain" />
-          </span>
-        ) : (
-          <OptimizedImage
-            src={`/images/${app.icon}`}
-            alt={app.name}
-            width={64}
-            height={64}
-            className={`w-full h-full object-cover rounded-[14px] ${scaleMap[app.id] || ""}`}
-          />
-        )}
-      </button>
-    ))}
-  </footer>
-);
+const MobileOSDock = ({ dockApps, openWindow }) => {
+  const setActiveLocation = useLocationStore((state) => state.setActiveLocation);
+
+  return (
+    <footer className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center justify-around w-[92%] h-[88px] bg-white/22 backdrop-blur-[40px] backdrop-saturate-[1.8] rounded-[32px] border border-white/18 shadow-[0_8px_40px_rgba(0,0,0,0.22),inset_0_1px_0_rgba(255,255,255,0.12)] px-[10px]">
+      {dockApps.map((app) => (
+        <button
+          key={app.id}
+          onClick={() => {
+            if (app.external && app.href) {
+              window.open(
+                app.href,
+                app.href.startsWith("mailto:") ? "_self" : "_blank",
+                "noopener,noreferrer",
+              );
+              return;
+            }
+            if (app.id === "folder") {
+              setActiveLocation(locations.work);
+              openWindow("finder");
+              return;
+            }
+            openWindow(app.id);
+          }}
+          className="active:scale-[0.82] transition-transform duration-150 w-[58px] h-[58px] rounded-[14px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.2)]"
+        >
+          {app.iconSrc ? (
+            <span
+              className="flex h-full w-full items-center justify-center rounded-[14px]"
+              style={{ background: app.iconBg || "#ffffff" }}
+            >
+              <img src={app.iconSrc} alt={app.name} className="h-7 w-7 object-contain" />
+            </span>
+          ) : (
+            <OptimizedImage
+              src={`/images/${app.icon}`}
+              alt={app.name}
+              width={64}
+              height={64}
+              className={`w-full h-full object-cover rounded-[14px] ${scaleMap[app.id] || ""}`}
+            />
+          )}
+        </button>
+      ))}
+    </footer>
+  );
+};
 
 export default MobileOSDock;

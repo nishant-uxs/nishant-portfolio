@@ -64,6 +64,7 @@ const useWindowsStore = create(
       lowPowerMode: "Never",
       showBatteryPercentage: true,
       optimizedBatteryCharging: true,
+      wallpaperId: "default",
     },
 
     updateSystemSetting: (key, value) =>

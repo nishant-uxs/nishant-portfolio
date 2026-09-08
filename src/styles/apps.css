@@ -24,6 +24,13 @@
     height: 520px;
   }
 
+  #wallpaper {
+    top: 14vh;
+    left: 30vw;
+    width: 560px;
+    height: 440px;
+  }
+
   #messages {
     top: 8vh;
     left: 28vw;

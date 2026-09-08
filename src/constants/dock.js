@@ -39,4 +39,10 @@ export const dockApps = [
     icon: "photos.webp",
     canOpen: true,
   },
+  {
+    id: "wallpaper",
+    name: "Wallpaper",
+    icon: "dock-wallpaper.webp",
+    canOpen: true,
+  },
 ];

@@ -22,6 +22,7 @@ const scaleMap = {
   font: "scale-[2.7]",
   telegram: "scale-[0.90]",
   music: "scale-[0.90]",
+  wallpaper: "scale-[0.90]",
   folder: "scale-[0.80]",
   trash: "scale-[0.80]",
 };

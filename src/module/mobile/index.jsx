@@ -12,6 +12,7 @@ import Map from "@module/mobile/apps/map/ui/view/MapView";
 import Messages from "@module/mobile/apps/messages/ui/view/MessagesView";
 import MobileOS from "@module/mobile/home/ui/view/MobileOSView";
 import Music from "@module/mobile/apps/music/ui/view/MusicView";
+import Wallpaper from "@module/desktop/apps/wallpaper/ui/view/WallpaperView";
 import Notes from "@module/mobile/apps/notes/ui/view/NotesView";
 import Photos from "@module/mobile/apps/photos/ui/view/PhotosView";
 import dynamic from "next/dynamic";
@@ -28,6 +29,7 @@ import Text from "@module/mobile/apps/text/ui/view/TextView";
 import Weather from "@module/mobile/apps/weather/ui/view/WeatherView";
 import AssistiveTouch from "./assistivetouch/ui/components/AssistiveTouch";
 import useWindowsStore from "@store/window";
+import WallpaperBootSync from "@module/shared/ui/components/WallpaperBootSync";
 
 const Mobile = () => {
   const githubRedirect = useWindowsStore((state) => state.githubRedirect);
@@ -35,6 +37,7 @@ const Mobile = () => {
 
   return (
     <main className="mobile-os">
+      <WallpaperBootSync />
       <MobileOS />
       <Terminal />
       <Safari />
@@ -57,6 +60,7 @@ const Mobile = () => {
       <FontBook />
       <Telegram />
       <Music />
+      <Wallpaper />
       <Launchpad />
       <AssistiveTouch />
 

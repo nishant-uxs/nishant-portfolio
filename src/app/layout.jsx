@@ -9,10 +9,12 @@ const SITE_DESCRIPTION = person.headline;
 const OG_IMAGE = "/readme/desktop.png";
 const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE || person.github;
 const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL || person.linkedin;
+const INSTAGRAM_URL =
+  process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/nishant.agarwal__/";
 const EMAIL = process.env.NEXT_PUBLIC_EMAIL || person.email;
 const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
-const sameAs = [GITHUB_PROFILE, LINKEDIN_URL].filter(Boolean);
+const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, INSTAGRAM_URL].filter(Boolean);
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -101,9 +103,7 @@ export const metadata = {
       ],
     },
   },
-  verification: GOOGLE_SITE_VERIFICATION
-    ? { google: GOOGLE_SITE_VERIFICATION }
-    : undefined,
+  verification: GOOGLE_SITE_VERIFICATION ? { google: GOOGLE_SITE_VERIFICATION } : undefined,
   openGraph: {
     type: "profile",
     locale: "en_IN",

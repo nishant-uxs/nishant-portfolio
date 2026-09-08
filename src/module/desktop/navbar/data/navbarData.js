@@ -20,6 +20,7 @@ const appNames = {
   font: "Font Book",
   telegram: "Telegram",
   music: "Music",
+  wallpaper: "Wallpaper",
   launchpad: "Launchpad",
   resume: "Resume",
 };

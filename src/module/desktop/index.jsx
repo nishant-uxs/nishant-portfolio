@@ -14,6 +14,7 @@ import Launchpad from "@module/desktop/apps/launchpad/ui/view/LaunchpadView";
 import Map from "@module/desktop/apps/map/ui/view/MapView";
 import Messages from "@module/desktop/apps/messages/ui/view/MessagesView";
 import Music from "@module/desktop/apps/music/ui/view/MusicView";
+import Wallpaper from "@module/desktop/apps/wallpaper/ui/view/WallpaperView";
 import Navbar from "@module/desktop/navbar/ui/view/NavbarView";
 import Notes from "@module/desktop/apps/notes/ui/view/NotesView";
 import Photos from "@module/desktop/apps/photos/ui/view/PhotosView";
@@ -36,6 +37,7 @@ import Notch from "./notch/ui/view/NotchView";
 import { useState, useEffect } from "react";
 import useWindowsStore from "@store/window";
 import AboutPortfolioModal from "@module/desktop/navbar/ui/components/AboutPortfolioModal";
+import WallpaperBootSync from "@module/shared/ui/components/WallpaperBootSync";
 
 const DesktopWidgets = dynamic(() => import("./widgets/ui/components/Widgets"), {
   ssr: false,
@@ -118,8 +120,10 @@ const Desktop = () => {
       <FontBook />
       <Telegram />
       <Music />
+      <Wallpaper />
       <Launchpad />
       <Home />
+      <WallpaperBootSync />
 
       {/* About Portfolio Dialog */}
       <AboutPortfolioModal
