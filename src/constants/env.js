@@ -8,8 +8,10 @@ export const PROJECT_4_URL = process.env.NEXT_PUBLIC_PROJECT_4_URL;
 export const PROJECT_4_GITHUB = process.env.NEXT_PUBLIC_PROJECT_4_GITHUB;
 export const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE;
 export const TWITTER_URL = process.env.NEXT_PUBLIC_TWITTER_URL;
-export const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL;
-export const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/";
+export const LINKEDIN_URL =
+  process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://www.linkedin.com/in/nishant-agarwal-62a956322/";
+export const INSTAGRAM_URL =
+  process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/nishant.agarwal__/";
 export const GITHUB_USERNAME = GITHUB_PROFILE
   ? GITHUB_PROFILE.replace(/\/+$/, "").split("/").pop()
   : "nishant-uxs";
