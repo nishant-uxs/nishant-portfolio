@@ -4,7 +4,7 @@ const trimSlash = (url) => url.replace(/\/+$/, "");
 
 /** Preferred public origin for canonicals, sitemap, and JSON-LD. */
 export const SITE_URL = trimSlash(
-  process.env.NEXT_PUBLIC_PORTFOLIO_URL || person.url || "https://nishantx.in",
+  process.env.NEXT_PUBLIC_PORTFOLIO_URL || person.url || "https://www.nishantx.in",
 );
 
 export const OWNER_NAME = person.name;

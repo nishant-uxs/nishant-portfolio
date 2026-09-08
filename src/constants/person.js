@@ -11,7 +11,7 @@ export const person = {
   degree: "B.Tech Computer Science Engineering",
   email: "agarwalnishant812@gmail.com",
   phone: "+91 7900654124",
-  url: "https://nishantx.in",
+  url: "https://www.nishantx.in",
   github: "https://github.com/nishant-uxs",
   linkedin: "https://www.linkedin.com/in/nishant-agarwal-62a956322/",
   instagram: "https://www.instagram.com/nishant.agarwal__/",
