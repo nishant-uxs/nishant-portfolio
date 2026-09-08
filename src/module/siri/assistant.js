@@ -9,6 +9,7 @@ import {
   PROJECT_4_URL,
   GITHUB_PROFILE,
   LINKEDIN_URL,
+  INSTAGRAM_URL,
   TWITTER_URL,
   PORTFOLIO_URL,
 } from "@constants";
@@ -25,7 +26,8 @@ const FALLBACK_PROJECT_LINKS = {
 const FALLBACK_SOCIAL_LINKS = {
   github: GITHUB_PROFILE,
   linkedin: LINKEDIN_URL,
-  twitter: TWITTER_URL,
+  twitter: TWITTER_URL || INSTAGRAM_URL,
+  instagram: INSTAGRAM_URL,
   portfolio: PORTFOLIO_URL,
 };
 
@@ -205,12 +207,18 @@ const getSocialByQuery = (query) => {
         FALLBACK_SOCIAL_LINKS.linkedin,
     };
   }
-  if (containsTerm(query, "twitter") || containsTerm(query, "x")) {
+  if (
+    containsTerm(query, "twitter") ||
+    containsTerm(query, "x") ||
+    containsTerm(query, "instagram")
+  ) {
+    const wantsInstagram = containsTerm(query, "instagram") || !TWITTER_URL;
     return {
-      name: "Twitter/X",
-      url:
-        socials.find((item) => item.text.toLowerCase().includes("twitter"))?.link ||
-        FALLBACK_SOCIAL_LINKS.twitter,
+      name: wantsInstagram ? "Instagram" : "Twitter/X",
+      url: wantsInstagram
+        ? FALLBACK_SOCIAL_LINKS.instagram
+        : socials.find((item) => item.text.toLowerCase().includes("twitter"))?.link ||
+          FALLBACK_SOCIAL_LINKS.twitter,
     };
   }
   if (containsTerm(query, "portfolio website") || containsTerm(query, "website")) {

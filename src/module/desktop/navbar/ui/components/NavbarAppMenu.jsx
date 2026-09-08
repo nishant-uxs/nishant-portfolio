@@ -3,6 +3,7 @@ import useWindowsStore from "@store/window";
 import {
   GITHUB_PROFILE,
   LINKEDIN_URL,
+  INSTAGRAM_URL,
   TWITTER_URL,
   PROJECT_3_URL,
   PROJECT_4_URL,
@@ -239,10 +240,19 @@ const NavbarAppMenu = ({ activeAppName, openWindow, isAppleMenuOpen, setIsAppleM
           label: "Connect on LinkedIn",
           onClick: () => openWindow("safari", { url: LINKEDIN_URL }),
         },
-        {
-          label: "Follow on Twitter / X",
-          onClick: () => openWindow("safari", { url: TWITTER_URL }),
-        },
+        ...(TWITTER_URL
+          ? [
+              {
+                label: "Follow on Twitter / X",
+                onClick: () => openWindow("safari", { url: TWITTER_URL }),
+              },
+            ]
+          : [
+              {
+                label: "Open Instagram",
+                onClick: () => openWindow("safari", { url: INSTAGRAM_URL }),
+              },
+            ]),
       ],
     ],
     resume: [

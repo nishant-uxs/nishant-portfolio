@@ -243,19 +243,21 @@ const SafariDesktopToolbar = ({
                     <span>{isBookmarked ? "Remove Bookmark" : "Add Bookmark"}</span>
                   </button>
                   <div className="h-[1px] bg-gray-200 my-1" />
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setShowShare(false);
-                      navigateTabTo(TWITTER_URL);
-                    }}
-                    className="w-full flex items-center gap-2 px-2.5 py-1.5 hover:bg-blue-500 hover:text-white rounded-lg text-left font-medium transition-colors border-none bg-transparent cursor-pointer text-gray-700"
-                  >
-                    <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    <span>Twitter / X</span>
-                  </button>
+                  {TWITTER_URL ? (
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setShowShare(false);
+                        navigateTabTo(TWITTER_URL);
+                      }}
+                      className="w-full flex items-center gap-2 px-2.5 py-1.5 hover:bg-blue-500 hover:text-white rounded-lg text-left font-medium transition-colors border-none bg-transparent cursor-pointer text-gray-700"
+                    >
+                      <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                      </svg>
+                      <span>Twitter / X</span>
+                    </button>
+                  ) : null}
                   <button
                     onClick={(e) => {
                       e.preventDefault();

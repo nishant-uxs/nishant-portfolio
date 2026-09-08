@@ -27,7 +27,7 @@ const AppleTVHeaderSection = ({ onProfileClick, profileUrl, showHeader = true })
         className="w-full h-full object-cover"
         onError={(e) => {
           e.target.onerror = null;
-          e.target.src = "https://avatars.githubusercontent.com/u/105151528?v=4";
+          e.target.src = "/images/profile.webp";
         }}
       />
     </button>

@@ -1,17 +1,17 @@
 export const defaultNotes = [
   {
     id: "1",
-    title: "Welcome to Notes",
+    title: "About Nishant",
     preview:
-      "This is a macOS-style Notes application integrated into this interactive desktop portfolio.",
-    body: "<div><strong>Welcome to Notes</strong></div><div><br></div><div>This is a macOS-style Notes application integrated into this interactive desktop portfolio.</div><div><br></div><div><strong>Features:</strong></div><ul><li>Add new notes using the compose button</li><li>Delete notes when they are no longer needed</li><li>Real-time search to quickly find what you're looking for</li><li>Automated persistence so your thoughts are saved locally!</li></ul>",
+      "Backend & Blockchain Engineer — Bennett CSE, Digital South Trust intern, OSS contributor.",
+    body: "<div><strong>About Nishant</strong></div><div><br></div><div>Backend &amp; Blockchain Engineer. B.Tech CSE @ Bennett University.</div><div><br></div><div><strong>Highlights</strong></div><ul><li>Intern — Digital South Trust (Web3 / Blockchain)</li><li>OSS merges: Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, viem</li><li>LNMHacks 8.0 Finalist · Top 20 Kshitij 2026</li></ul>",
     updatedAt: new Date().toISOString(),
   },
   {
     id: "2",
-    title: "Idea Log",
-    preview: "Build a fully functioning macOS desktop experience using React & Tailwind (Done!)",
-    body: "<div><strong>Idea Log</strong></div><div><br></div><ul><li>Build a fully functioning macOS desktop experience using React &amp; Tailwind (Done!)</li><li>Add interactive apps like Notes, Safari, Calculator, Photos, and Terminal</li><li>Design a gorgeous Control Center and mobile responsive iOS shell</li></ul>",
+    title: "Project checklist",
+    preview: "Krydo · BlockForge · CivicSense · TrustMesh",
+    body: "<div><strong>Project checklist</strong></div><div><br></div><ul><li><strong>Krydo</strong> — ZK identity, Sepolia contracts</li><li><strong>BlockForge</strong> — Decentralized lab assessment, NetCrypt 2026</li><li><strong>CivicSense</strong> — On-chain civic reporting + Gemini triage</li><li><strong>TrustMesh</strong> — Stellar Soroban reputation network</li></ul><div><br></div><div>Portfolio: https://www.nishantx.in</div>",
     updatedAt: new Date().toISOString(),
   },
 ];
