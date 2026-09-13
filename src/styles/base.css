@@ -32,6 +32,34 @@
     border: none;
     background: transparent;
   }
+
+  /* SEO / text pages: unlock scroll + keep wallpaper vibe */
+  main.seo-doc-page {
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem 2.5rem;
+    box-sizing: border-box;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
+
+html:has(main.seo-doc-page),
+body:has(main.seo-doc-page) {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  min-height: 100dvh;
+  background-attachment: fixed;
+  user-select: text;
+  -webkit-user-select: text;
+  touch-action: pan-y;
 }
 
 html,
@@ -65,6 +93,194 @@ body {
   touch-action: manipulation;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.seo-doc-menubar {
+  width: min(920px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(246, 246, 248, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  color: #1d1d1f;
+  font-size: 0.82rem;
+}
+
+.seo-doc-brand {
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.seo-doc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.seo-doc-nav a {
+  color: rgba(29, 29, 31, 0.78);
+  text-decoration: none;
+}
+
+.seo-doc-nav a:hover {
+  color: #0071e3;
+}
+
+.seo-doc-window {
+  width: min(920px, 100%);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(246, 246, 248, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.28),
+    0 0 0 0.5px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(28px) saturate(1.35);
+  -webkit-backdrop-filter: blur(28px) saturate(1.35);
+  color: #1d1d1f;
+}
+
+.seo-doc-titlebar {
+  display: grid;
+  grid-template-columns: 72px 1fr 72px;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(235, 235, 240, 0.35));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.seo-doc-traffic {
+  display: flex;
+  gap: 7px;
+}
+
+.seo-doc-traffic span {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.seo-doc-traffic span:nth-child(1) {
+  background: #ff5f57;
+}
+
+.seo-doc-traffic span:nth-child(2) {
+  background: #febc2e;
+}
+
+.seo-doc-traffic span:nth-child(3) {
+  background: #28c840;
+}
+
+.seo-doc-window-title {
+  margin: 0;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(29, 29, 31, 0.72);
+}
+
+.seo-doc-titlebar-spacer {
+  width: 100%;
+}
+
+.seo-doc-content {
+  padding: 1.5rem 1.35rem 2rem;
+}
+
+.seo-doc-content h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.seo-doc-content h2 {
+  margin: 1.75rem 0 0.55rem;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.seo-doc-content h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.seo-doc-content p,
+.seo-doc-content li {
+  line-height: 1.65;
+  color: rgba(29, 29, 31, 0.82);
+}
+
+.seo-doc-content a {
+  color: #0071e3;
+  text-decoration: none;
+}
+
+.seo-doc-content a:hover {
+  text-decoration: underline;
+}
+
+.seo-doc-kicker {
+  margin: 0 0 0.65rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(29, 29, 31, 0.45);
+}
+
+.seo-doc-muted {
+  color: rgba(29, 29, 31, 0.55) !important;
+}
+
+.seo-doc-lead {
+  font-size: 1.05rem;
+  color: rgba(29, 29, 31, 0.72) !important;
+}
+
+.seo-doc-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.seo-doc-list li + li {
+  margin-top: 0.4rem;
+}
+
+.seo-doc-footer-links {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .seo-doc-menubar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .seo-doc-nav {
+    justify-content: flex-start;
+  }
+
+  .seo-doc-content {
+    padding: 1.15rem 1rem 1.6rem;
+  }
 }
 
 @media (max-width: 767px) {

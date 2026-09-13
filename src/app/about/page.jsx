@@ -1,11 +1,11 @@
 import { person, featuredProjects } from "../../constants/person";
 import {
   SITE_DESCRIPTION,
-  SITE_NAME,
   defaultOpenGraph,
   defaultTwitter,
   absoluteUrl,
 } from "../../constants/seo";
+import { SeoDocShell } from "../_components/SeoDocShell";
 
 export const metadata = {
   title: "About Nishant Agarwal",
@@ -33,44 +33,36 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-black px-6 py-16 text-white md:px-16">
-      <article
-        className="mx-auto max-w-3xl space-y-6"
-        itemScope
-        itemType="https://schema.org/Person"
-      >
-        <p className="font-mono text-xs tracking-[0.2em] text-white/50 uppercase">nishantx.in</p>
-        <h1 className="text-4xl font-bold tracking-tight md:text-6xl" itemProp="name">
-          Nishant Agarwal
-        </h1>
-        <p className="text-xl text-white/70" itemProp="jobTitle">
+    <SeoDocShell title="About — Nishant Agarwal">
+      <article itemScope itemType="https://schema.org/Person">
+        <p className="seo-doc-kicker">nishantx.in</p>
+        <h1 itemProp="name">Nishant Agarwal</h1>
+        <p className="seo-doc-lead" itemProp="jobTitle">
           {person.jobTitle}
         </p>
-        <p className="text-lg leading-relaxed text-white/80" itemProp="description">
-          {person.description}
-        </p>
+        <p itemProp="description">{person.description}</p>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Who is Nishant Agarwal?</h2>
-          <p className="mt-3 text-white/70 leading-relaxed">
+          <h2>Who is Nishant Agarwal?</h2>
+          <p>
             Nishant Agarwal is a backend and blockchain engineer based in Greater Noida, India. He
             builds privacy systems, production APIs, and Ethereum tooling, and contributes merged
             open-source work to ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and
             viem. He studies {person.degree} at {person.university}. Also known as nishant-uxs.
           </p>
-          <p className="mt-3 text-sm text-white/50">{person.disambiguation}</p>
+          <p className="seo-doc-muted">{person.disambiguation}</p>
         </section>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Education</h2>
-          <p className="mt-3 text-white/70">
+          <h2>Education</h2>
+          <p>
             {person.degree}, {person.university}, {person.location}
           </p>
         </section>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Experience & recognition</h2>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <h2>Experience & recognition</h2>
+          <ul className="seo-doc-list">
             <li>Web3 Blockchain Developer Intern — Digital South Trust (Mar 2026 – Jul 2026)</li>
             <li>LNMHacks 8.0 Finalist</li>
             <li>Top 20 — Kshitij 2026 (IIT Kharagpur)</li>
@@ -79,53 +71,37 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Selected work</h2>
-          <ul className="mt-4 space-y-3 text-white/70">
+          <h2>Selected work</h2>
+          <ul className="seo-doc-list">
             {featuredProjects.map((project) => (
               <li key={project.name}>
-                <a className="text-cyan-300 underline" href={project.github} itemProp="owns">
+                <a href={project.github} itemProp="owns">
                   {project.name}
-                </a>
-                {" — "}
-                {project.description}
+                </a>{" "}
+                — {project.description}
               </li>
             ))}
           </ul>
         </section>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Contact</h2>
-          <p className="mt-3 text-white/70">
+          <h2>Contact</h2>
+          <p>
             Email{" "}
-            <a className="text-cyan-300 underline" href={`mailto:${person.email}`} itemProp="email">
+            <a href={`mailto:${person.email}`} itemProp="email">
               {person.email}
             </a>
-            . GitHub{" "}
-            <a className="text-cyan-300 underline" href={person.github}>
-              {person.github}
-            </a>
-            . LinkedIn{" "}
-            <a className="text-cyan-300 underline" href={person.linkedin}>
-              {person.linkedin}
-            </a>
-            .
+            . GitHub <a href={person.github}>{person.github}</a>. LinkedIn{" "}
+            <a href={person.linkedin}>{person.linkedin}</a>.
           </p>
         </section>
 
-        <p className="pt-8">
-          <a className="text-cyan-300 underline" href="/nishant-agarwal">
-            Nishant Agarwal SEO profile
-          </a>
-          {" · "}
-          <a className="text-cyan-300 underline" href="/">
-            Open the interactive portfolio
-          </a>
-          {" · "}
-          <a className="text-cyan-300 underline" href="/projects">
-            View all projects
-          </a>
-        </p>
+        <div className="seo-doc-footer-links">
+          <a href="/">Open macOS portfolio</a>
+          <a href="/nishant-agarwal">Profile</a>
+          <a href="/projects">Projects</a>
+        </div>
       </article>
-    </main>
+    </SeoDocShell>
   );
 }

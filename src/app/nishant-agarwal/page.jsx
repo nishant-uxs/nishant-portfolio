@@ -7,6 +7,7 @@ import {
   buildFaqJsonLd,
   buildPersonJsonLd,
 } from "../../constants/seo";
+import { SeoDocShell } from "../_components/SeoDocShell";
 
 export const metadata = {
   title: "Nishant Agarwal — Bennett University Backend & Blockchain Engineer",
@@ -38,28 +39,26 @@ const jsonLd = [buildPersonJsonLd(), buildFaqJsonLd()];
 
 export default function NishantAgarwalPage() {
   return (
-    <main className="min-h-screen bg-black px-6 py-16 text-white md:px-16">
+    <SeoDocShell title="Nishant Agarwal — Profile">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <article className="mx-auto max-w-3xl space-y-8">
-        <p className="font-mono text-xs tracking-[0.2em] text-white/50 uppercase">
-          Official profile · nishantx.in
-        </p>
-        <h1 className="text-4xl font-bold tracking-tight md:text-6xl">Nishant Agarwal</h1>
-        <p className="text-xl text-white/70">
+      <article>
+        <p className="seo-doc-kicker">Official profile · nishantx.in</p>
+        <h1>Nishant Agarwal</h1>
+        <p className="seo-doc-lead">
           Backend & Blockchain Engineer · B.Tech CSE, Bennett University · GitHub{" "}
-          <span className="text-white">nishant-uxs</span>
+          <strong>nishant-uxs</strong>
         </p>
-        <p className="text-lg leading-relaxed text-white/80">{person.description}</p>
-        <p className="text-sm leading-relaxed text-white/50">{person.disambiguation}</p>
+        <p>{person.description}</p>
+        <p className="seo-doc-muted">{person.disambiguation}</p>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Quick facts</h2>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <h2>Quick facts</h2>
+          <ul className="seo-doc-list">
             <li>
               Student: {person.degree}, {person.university}
             </li>
@@ -67,64 +66,49 @@ export default function NishantAgarwalPage() {
             <li>Internship: Web3 Blockchain Developer — Digital South Trust</li>
             <li>Handles: nishant-uxs (GitHub), nishant.agarwal__ (Instagram)</li>
             <li>
-              Website:{" "}
-              <a className="text-cyan-300 underline" href="/">
-                https://www.nishantx.in
-              </a>
+              Website: <a href="/">https://www.nishantx.in</a>
             </li>
           </ul>
         </section>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">Open source & projects</h2>
-          <p className="mt-3 text-white/70">
+          <h2>Open source & projects</h2>
+          <p>
             Merged contributions include ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra,
             WalletConnect, and viem. Featured projects:
           </p>
-          <ul className="mt-4 space-y-3 text-white/70">
+          <ul className="seo-doc-list">
             {featuredProjects.map((project) => (
               <li key={project.name}>
-                <a className="text-cyan-300 underline" href={project.github}>
-                  {project.name}
-                </a>
-                {" — "}
-                {project.description}
+                <a href={project.github}>{project.name}</a> — {project.description}
               </li>
             ))}
           </ul>
         </section>
 
         <section>
-          <h2 className="mt-10 text-2xl font-semibold">FAQ — Who is Nishant Agarwal?</h2>
-          <div className="mt-4 space-y-5 text-white/70">
+          <h2>FAQ — Who is Nishant Agarwal?</h2>
+          <div style={{ display: "grid", gap: "1.1rem", marginTop: "0.75rem" }}>
             <div>
-              <h3 className="font-semibold text-white">Who is Nishant Agarwal?</h3>
-              <p className="mt-1">{person.description}</p>
+              <h3>Who is Nishant Agarwal?</h3>
+              <p>{person.description}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-white">Where does Nishant Agarwal study?</h3>
-              <p className="mt-1">
+              <h3>Where does Nishant Agarwal study?</h3>
+              <p>
                 {person.degree} at {person.university}, {person.location}.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-white">
-                What is Nishant Agarwal&apos;s official website?
-              </h3>
-              <p className="mt-1">
-                <a className="text-cyan-300 underline" href="/">
-                  https://www.nishantx.in
-                </a>{" "}
-                — GitHub{" "}
-                <a className="text-cyan-300 underline" href={person.github}>
-                  {person.github}
-                </a>
-                .
+              <h3>What is Nishant Agarwal&apos;s official website?</h3>
+              <p>
+                <a href="/">https://www.nishantx.in</a> — GitHub{" "}
+                <a href={person.github}>{person.github}</a>.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-white">What projects has Nishant Agarwal built?</h3>
-              <p className="mt-1">
+              <h3>What projects has Nishant Agarwal built?</h3>
+              <p>
                 Krydo, BlockForge, CivicSense, and TrustMesh — spanning ZK identity, decentralized
                 assessment, civic reporting, and Stellar Soroban reputation.
               </p>
@@ -132,20 +116,12 @@ export default function NishantAgarwalPage() {
           </div>
         </section>
 
-        <p className="pt-6">
-          <a className="text-cyan-300 underline" href="/about">
-            Full about page
-          </a>
-          {" · "}
-          <a className="text-cyan-300 underline" href="/projects">
-            Projects
-          </a>
-          {" · "}
-          <a className="text-cyan-300 underline" href="/">
-            Interactive portfolio
-          </a>
-        </p>
+        <div className="seo-doc-footer-links">
+          <a href="/">Open macOS portfolio</a>
+          <a href="/about">About</a>
+          <a href="/projects">Projects</a>
+        </div>
       </article>
-    </main>
+    </SeoDocShell>
   );
 }

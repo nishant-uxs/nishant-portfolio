@@ -5,6 +5,7 @@ import {
   defaultTwitter,
   absoluteUrl,
 } from "../../constants/seo";
+import { SeoDocShell } from "../_components/SeoDocShell";
 
 export const metadata = {
   title: "Projects by Nishant Agarwal",
@@ -35,51 +36,47 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen bg-black px-6 py-16 text-white md:px-16">
-      <article className="mx-auto max-w-3xl space-y-8">
-        <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-          Projects by Nishant Agarwal
-        </h1>
-        <p className="text-lg text-white/70">{person.headline}</p>
-        <p className="text-white/60 leading-relaxed">
+    <SeoDocShell title="Projects — Nishant Agarwal">
+      <article>
+        <h1>Projects by Nishant Agarwal</h1>
+        <p className="seo-doc-lead">{person.headline}</p>
+        <p>
           These are featured production and research projects by Nishant Agarwal spanning
           zero-knowledge identity, decentralized assessment, civic reporting, and on-chain
           reputation.
         </p>
+
         {featuredProjects.map((project) => (
           <section
             key={project.name}
-            className="border-t border-white/10 pt-6"
             itemScope
             itemType="https://schema.org/SoftwareApplication"
+            style={{
+              marginTop: "1.35rem",
+              paddingTop: "1.15rem",
+              borderTop: "1px solid rgba(0,0,0,0.08)",
+            }}
           >
-            <h2 className="text-2xl font-semibold" itemProp="name">
+            <h2 itemProp="name" style={{ marginTop: 0 }}>
               {project.name}
             </h2>
-            <p className="mt-2 text-white/70" itemProp="description">
-              {project.description}
-            </p>
+            <p itemProp="description">{project.description}</p>
             <meta itemProp="author" content="Nishant Agarwal" />
-            <p className="mt-3 flex gap-4 text-sm">
-              <a className="text-cyan-300 underline" href={project.url} itemProp="url">
+            <p style={{ display: "flex", gap: "1rem", marginTop: "0.65rem", fontSize: "0.92rem" }}>
+              <a href={project.url} itemProp="url">
                 Live demo
               </a>
-              <a className="text-cyan-300 underline" href={project.github}>
-                Source on GitHub
-              </a>
+              <a href={project.github}>Source on GitHub</a>
             </p>
           </section>
         ))}
-        <p>
-          <a className="text-cyan-300 underline" href="/about">
-            About Nishant Agarwal
-          </a>
-          {" · "}
-          <a className="text-cyan-300 underline" href="/">
-            Home
-          </a>
-        </p>
+
+        <div className="seo-doc-footer-links">
+          <a href="/">Open macOS portfolio</a>
+          <a href="/about">About</a>
+          <a href="/nishant-agarwal">Profile</a>
+        </div>
       </article>
-    </main>
+    </SeoDocShell>
   );
 }
