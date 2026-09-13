@@ -53,11 +53,12 @@ export default function AboutPage() {
         <section>
           <h2 className="mt-10 text-2xl font-semibold">Who is Nishant Agarwal?</h2>
           <p className="mt-3 text-white/70 leading-relaxed">
-            Nishant Agarwal is a backend and blockchain engineer based in India. He builds privacy
-            systems, production APIs, and Ethereum tooling, and contributes merged open-source work
-            to Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem. He studies{" "}
-            {person.degree} at {person.university}.
+            Nishant Agarwal is a backend and blockchain engineer based in Greater Noida, India. He
+            builds privacy systems, production APIs, and Ethereum tooling, and contributes merged
+            open-source work to ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and
+            viem. He studies {person.degree} at {person.university}. Also known as nishant-uxs.
           </p>
+          <p className="mt-3 text-sm text-white/50">{person.disambiguation}</p>
         </section>
 
         <section>
@@ -112,6 +113,10 @@ export default function AboutPage() {
         </section>
 
         <p className="pt-8">
+          <a className="text-cyan-300 underline" href="/nishant-agarwal">
+            Nishant Agarwal SEO profile
+          </a>
+          {" · "}
           <a className="text-cyan-300 underline" href="/">
             Open the interactive portfolio
           </a>

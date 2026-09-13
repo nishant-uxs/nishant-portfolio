@@ -8,7 +8,7 @@ export const SITE_URL = trimSlash(
 );
 
 export const OWNER_NAME = person.name;
-export const SITE_NAME = `${OWNER_NAME} | ${person.jobTitle}`;
+export const SITE_NAME = `${OWNER_NAME} | Backend & Blockchain Engineer | Bennett University`;
 export const SITE_DESCRIPTION = person.headline;
 export const OG_IMAGE_PATH = "/og-image.png";
 export const OG_IMAGE_ALT =
@@ -27,14 +27,18 @@ export const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, INSTAGRAM_URL].filter(Boole
 
 export const SEO_KEYWORDS = [
   "Nishant Agarwal",
-  "Nishant Agarwal portfolio",
-  "Nishant Agarwal backend engineer",
-  "Nishant Agarwal blockchain engineer",
-  "Nishant Agarwal Web3",
   "Nishant Agarwal Bennett University",
+  "Nishant Agarwal Greater Noida",
+  "Nishant Agarwal blockchain engineer",
+  "Nishant Agarwal backend engineer",
+  "Nishant Agarwal Web3",
   "Nishant Agarwal Digital South Trust",
+  "Nishant Agarwal Krydo",
+  "Nishant Agarwal BlockForge",
+  "Nishant Agarwal ClickHouse",
   "Nishant Agarwal Hardhat",
   "Nishant Agarwal Hyperlane",
+  "Nishant Agarwal portfolio",
   "nishant-uxs",
   "nishantx.in",
   "nishant.agarwal__",
@@ -44,7 +48,7 @@ export const SEO_KEYWORDS = [
   "TrustMesh Stellar",
   "Backend engineer India",
   "Blockchain engineer India",
-  "Open source contributor Hardhat viem WalletConnect",
+  "Open source contributor Hardhat viem WalletConnect ClickHouse",
 ];
 
 export const absoluteUrl = (path = "/") => {
@@ -59,7 +63,14 @@ export const buildPersonJsonLd = () => ({
   name: OWNER_NAME,
   givenName: person.firstName,
   familyName: "Agarwal",
-  alternateName: ["nishant-uxs", "nishant.agarwal__", "Nishant Agarwal Bennett"],
+  alternateName: [
+    "nishant-uxs",
+    "nishant.agarwal__",
+    "Nishant Agarwal Bennett",
+    "Nishant Agarwal Bennett University",
+    "Nishant Agarwal nishantx.in",
+    "Nishant Agarwal blockchain engineer",
+  ],
   url: SITE_URL,
   image: absoluteUrl("/images/profile.webp"),
   email: EMAIL,
@@ -69,11 +80,14 @@ export const buildPersonJsonLd = () => ({
   nationality: "Indian",
   address: {
     "@type": "PostalAddress",
+    addressLocality: "Greater Noida",
+    addressRegion: "Uttar Pradesh",
     addressCountry: "IN",
   },
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: person.university,
+    sameAs: "https://www.bennett.edu.in/",
   },
   worksFor: {
     "@type": "Organization",
@@ -87,6 +101,7 @@ export const buildPersonJsonLd = () => ({
     "Solidity",
     "Zero-knowledge proofs",
     "Hardhat",
+    "ClickHouse",
     "TypeScript",
     "Node.js",
     "IPFS",
@@ -97,6 +112,46 @@ export const buildPersonJsonLd = () => ({
     "LNMHacks 8.0 Finalist",
     "Top 20 — Kshitij 2026 (IIT Kharagpur)",
     "NetCrypt 2026 accepted paper (BlockForge)",
+  ],
+});
+
+export const buildFaqJsonLd = () => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": `${SITE_URL}/nishant-agarwal#faq`,
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is Nishant Agarwal?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: person.description,
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where does Nishant Agarwal study?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `Nishant Agarwal is pursuing ${person.degree} at ${person.university}, ${person.location}.`,
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Nishant Agarwal's official website?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `The official portfolio of Nishant Agarwal is ${SITE_URL} (nishantx.in). His GitHub is nishant-uxs.`,
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What projects has Nishant Agarwal built?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nishant Agarwal built Krydo (ZK identity), BlockForge (decentralized lab assessment, NetCrypt 2026), CivicSense (on-chain civic reporting), and TrustMesh (Stellar Soroban trust network).",
+      },
+    },
   ],
 });
 
@@ -152,6 +207,7 @@ export const buildJsonLdGraph = () => [
   buildPersonJsonLd(),
   buildProfilePageJsonLd(),
   buildProjectsJsonLd(),
+  buildFaqJsonLd(),
 ];
 
 export const defaultOpenGraph = {

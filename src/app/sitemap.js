@@ -16,6 +16,12 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: absoluteUrl("/nishant-agarwal"),
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
       url: absoluteUrl("/projects"),
       lastModified,
       changeFrequency: "weekly",

@@ -1,23 +1,32 @@
 # Nishant Agarwal — nishantx.in
 
-> Backend & Blockchain Engineer. Official site: https://nishantx.in
+> Backend & Blockchain Engineer at Bennett University. Official site: https://www.nishantx.in
 
 ## Profile
-- Name: Nishant Agarwal
+- Name: Nishant Agarwal (also nishant-uxs, nishant.agarwal__)
 - Role: Backend & Blockchain Engineer
+- Education: B.Tech CSE, Bennett University, Greater Noida, India
+- Internship: Web3 Blockchain Developer — Digital South Trust
 - GitHub: https://github.com/nishant-uxs
 - LinkedIn: https://www.linkedin.com/in/nishant-agarwal-62a956322/
 - Instagram: https://www.instagram.com/nishant.agarwal__/
 - Email: agarwalnishant812@gmail.com
 
+## Disambiguation
+This Nishant Agarwal is the Bennett University CSE student and author of nishantx.in — not other professionals with the same name.
+
 ## Pages
-- [Home](https://nishantx.in/): Interactive macOS portfolio
-- [About](https://nishantx.in/about): Biography, education, experience
-- [Projects](https://nishantx.in/projects): Krydo, BlockForge, CivicSense, TrustMesh
-- [Resume](https://nishantx.in/files/resume.pdf): PDF resume
+- [Home](https://www.nishantx.in/): Interactive macOS portfolio
+- [Nishant Agarwal](https://www.nishantx.in/nishant-agarwal): Name-focused profile + FAQ
+- [About](https://www.nishantx.in/about): Biography, education, experience
+- [Projects](https://www.nishantx.in/projects): Krydo, BlockForge, CivicSense, TrustMesh
+- [Resume](https://www.nishantx.in/files/resume.pdf): PDF resume
 
 ## Projects
 - Krydo — ZK identity (https://krydo.onrender.com)
 - BlockForge — Decentralized lab assessment (https://blockchain-labeval.onrender.com)
 - CivicSense — On-chain civic reporting (https://civic-sense-six.vercel.app)
 - TrustMesh — Stellar Soroban trust network (https://trust-mesh-taupe.vercel.app)
+
+## Open source
+Merged contributions: ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, viem.
