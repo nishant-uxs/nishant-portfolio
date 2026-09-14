@@ -16,6 +16,7 @@ export const person = {
   linkedin: "https://www.linkedin.com/in/nishant-agarwal-62a956322/",
   instagram: "https://www.instagram.com/nishant.agarwal__/",
   resumePath: "/files/resume.pdf",
+  photo: "/images/profile.webp",
   disambiguation:
     "Not to be confused with other professionals named Nishant Agarwal. This Nishant Agarwal is the Bennett University CSE student, Digital South Trust Web3 intern, and author of the nishantx.in macOS portfolio.",
 };

@@ -5,7 +5,6 @@ import ProfileOverlay from "../components/ProfileOverlay";
 import { FEATURED_SHOW } from "../../data";
 import AppleTVHeaderSection from "../section/AppleTVHeaderSection";
 import AppleTVSection from "../section/AppleTVSection";
-import { GITHUB_USERNAME } from "@constants";
 
 const AppleTVView = () => {
   const [activeTab, setActiveTab] = useState("watchNow");
@@ -19,23 +18,13 @@ const AppleTVView = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [showControls, setShowControls] = useState(true);
   const [showProfile, setShowProfile] = useState(false);
-  const [profileUrl, setProfileUrl] = useState("/images/profile.webp");
+  const [profileUrl] = useState("/images/profile.webp");
   const [forwardDestination, setForwardDestination] = useState(null);
 
   const videoRef = useRef(null);
   const controlsTimeoutRef = useRef(null);
 
   useEffect(() => {
-    // Fetch GitHub avatar dynamically
-    fetch(`https://api.github.com/users/${GITHUB_USERNAME}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.avatar_url) {
-          setProfileUrl(data.avatar_url);
-        }
-      })
-      .catch((err) => console.error("Error fetching avatar in AppleTVView:", err));
-
     return () => {
       if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
     };

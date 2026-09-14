@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Mic, MicOff, Video, VideoOff, PhoneOff } from "lucide-react";
 
 const CallOverlay = ({
@@ -10,24 +10,7 @@ const CallOverlay = ({
   onEndCall,
   formatCallTime,
 }) => {
-  const [profileAvatar, setProfileAvatar] = useState("/images/profile.webp");
   const [videoError, setVideoError] = useState(false);
-
-  useEffect(() => {
-    const githubProfileUrl = process.env.NEXT_PUBLIC_GITHUB_PROFILE || "";
-    const username = githubProfileUrl
-      ? githubProfileUrl.replace(/\/+$/, "").split("/").pop()
-      : "nishant-uxs";
-
-    fetch(`https://api.github.com/users/${username}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data && data.avatar_url) {
-          setProfileAvatar(data.avatar_url);
-        }
-      })
-      .catch((err) => console.error("Error fetching profile avatar:", err));
-  }, []);
 
   const isNishant = activeChat.name?.toLowerCase().includes("nishant");
   const videoUrl = isNishant ? process.env.NEXT_PUBLIC_VIDEOCALL_NISHANT || "" : "";

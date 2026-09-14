@@ -1,5 +1,5 @@
 import { Film, FolderHeart, Play, Search, ShoppingBag, Tv } from "lucide-react";
-import { GITHUB_USERNAME } from "@constants";
+import { GITHUB_USERNAME, PROFILE_PHOTO } from "@constants";
 
 const appleTvItems = [
   { id: "watchNow", label: "Watch Now", icon: Play, color: "text-orange-500 fill-orange-500" },
@@ -111,15 +111,11 @@ const SidebarNavigation = ({
       className="appletv-profile-switcher mt-auto pt-4 border-t border-[#d4d4d8]/40 flex items-center gap-2.5 px-1 select-none cursor-pointer group/profile hover:bg-[#e5e5eb]/40 p-1.5 rounded-xl transition-all active:scale-95"
     >
       <div className="w-7 h-7 rounded-full overflow-hidden bg-transparent flex items-center justify-center text-zinc-600 text-[10px] font-black shrink-0 border border-[#d4d4d8]/40">
-        {githubProfile?.avatar_url ? (
-          <img
-            src={githubProfile.avatar_url}
-            alt={githubProfile.name || "Kunal"}
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          "K"
-        )}
+        <img
+          src={PROFILE_PHOTO}
+          alt={githubProfile?.name || "Nishant Agarwal"}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="min-w-0">
         <p className="text-[11px] font-bold text-zinc-700 group-hover/profile:text-zinc-950 truncate leading-none">

@@ -1,4 +1,4 @@
-import { navIcons, GITHUB_USERNAME, GITHUB_PROFILE } from "@constants";
+import { navIcons, GITHUB_USERNAME, GITHUB_PROFILE, PROFILE_PHOTO } from "@constants";
 import NavbarBatteryMenu from "../components/NavbarBatteryMenu";
 import NavbarDateTime from "../components/NavbarDateTime";
 import NavbarControlCenter from "../components/NavbarControlCenter";
@@ -42,7 +42,7 @@ const NavbarControlCenterSection = ({
 
   const [profile, setProfile] = useState({
     name: "Nishant Agarwal",
-    avatar_url: null,
+    avatar_url: PROFILE_PHOTO,
     login: GITHUB_USERNAME,
     email: `${GITHUB_USERNAME}@users.noreply.github.com`,
     bio: "Backend & Blockchain Engineer",
@@ -62,7 +62,7 @@ const NavbarControlCenterSection = ({
         if (data && data.login) {
           setProfile({
             name: data.name || "Nishant Agarwal",
-            avatar_url: data.avatar_url,
+            avatar_url: PROFILE_PHOTO,
             login: data.login,
             email: data.email || `${data.login}@users.noreply.github.com`,
             bio: data.bio || "Backend & Blockchain Engineer",
@@ -569,11 +569,7 @@ const NavbarControlCenterSection = ({
                       <div className="flex items-center gap-3">
                         {profile.avatar_url ? (
                           <img
-                            src={
-                              currentUserMode === "admin"
-                                ? profile.avatar_url
-                                : "/images/profile.webp"
-                            }
+                            src={PROFILE_PHOTO}
                             className="w-11 h-11 rounded-full border border-white/20 shadow-md shrink-0 object-cover"
                             alt="Profile Avatar"
                           />

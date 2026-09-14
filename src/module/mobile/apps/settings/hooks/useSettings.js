@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import useWindowsStore from "@store/window";
 
-import { GITHUB_USERNAME } from "@constants";
+import { GITHUB_USERNAME, PROFILE_PHOTO } from "@constants";
 
 const useSettings = () => {
   const githubApiBase =
@@ -39,7 +39,10 @@ const useSettings = () => {
       ),
     ])
       .then(([profile, repos]) => {
-        setGithubData({ profile, repos });
+        setGithubData({
+          profile: { ...profile, avatar_url: PROFILE_PHOTO },
+          repos,
+        });
         setIsLoading(false);
       })
       .catch((err) => {

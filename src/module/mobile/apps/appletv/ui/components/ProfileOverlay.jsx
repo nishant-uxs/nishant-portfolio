@@ -58,7 +58,7 @@ const ProfileOverlay = ({ isOpen, onClose, appName = "appletv" }) => {
   const bio =
     profile?.bio || "Backend & Blockchain Engineer | Privacy systems, APIs, and open source";
   const location = profile?.location || "India";
-  const avatarUrl = profile?.avatar_url || "/images/profile.webp";
+  const avatarUrl = "/images/profile.webp";
 
   return (
     <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-50 flex flex-col justify-end animate-fade-in">

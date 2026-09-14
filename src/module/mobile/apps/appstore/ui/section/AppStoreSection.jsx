@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import useWindowsStore from "@store/window";
 import { STORE_APPS } from "../../data";
-import { GITHUB_USERNAME } from "@constants";
 import AppStoreContentSection from "./AppStoreContentSection";
 import AppDetailsModal from "../components/AppDetailsModal";
 import ProfileOverlay from "../../../appletv/ui/components/ProfileOverlay";
@@ -23,7 +22,7 @@ const AppStoreSection = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedApp, setSelectedApp] = useState(null);
   const [showProfile, setShowProfile] = useState(false);
-  const [profileUrl, setProfileUrl] = useState("/images/profile.webp");
+  const [profileUrl] = useState("/images/profile.webp");
   const [showHeader, setShowHeader] = useState(true);
   const [forwardDestination, setForwardDestination] = useState(null);
 
@@ -38,18 +37,6 @@ const AppStoreSection = () => {
   const [alertApp, setAlertApp] = useState(null);
   const [updatingAll, setUpdatingAll] = useState(false);
   const [updateProgresses, setUpdateProgresses] = useState({});
-
-  useEffect(() => {
-    // Fetch GitHub avatar dynamically
-    fetch(`https://api.github.com/users/${GITHUB_USERNAME}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.avatar_url) {
-          setProfileUrl(data.avatar_url);
-        }
-      })
-      .catch((err) => console.error("Error fetching avatar in AppStoreSection:", err));
-  }, []);
 
   const startDownload = (appId) => {
     setInstallStates((prev) => ({

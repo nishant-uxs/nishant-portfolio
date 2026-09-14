@@ -1,4 +1,5 @@
 export { person, featuredProjects } from "./person";
+export const PROFILE_PHOTO = "/images/profile.webp";
 export { navLinks, navIcons } from "./nav";
 export { dockApps } from "./dock";
 export { projects } from "./projects";

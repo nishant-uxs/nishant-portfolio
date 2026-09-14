@@ -5,7 +5,7 @@ import {
   Terminal as TerminalIcon,
   ArrowDownCircle,
 } from "lucide-react";
-import { GITHUB_USERNAME } from "@constants";
+import { GITHUB_USERNAME, PROFILE_PHOTO } from "@constants";
 
 const NAV_ITEMS = [
   { id: "discover", label: "Discover", icon: Sparkles },
@@ -68,15 +68,11 @@ const AppStoreSidebar = ({
           className="mt-auto flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold text-left transition-colors cursor-pointer text-gray-600 hover:bg-gray-200/60 hover:text-gray-900 w-full select-none"
         >
           <div className="w-7 h-7 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center text-gray-600 text-[10px] font-black shrink-0">
-            {githubProfile?.avatar_url ? (
-              <img
-                src={githubProfile.avatar_url}
-                alt={githubProfile.name || "Kunal"}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              "K"
-            )}
+            <img
+              src={PROFILE_PHOTO}
+              alt={githubProfile?.name || "Nishant Agarwal"}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="min-w-0">
             <p className="text-[11px] font-bold text-gray-800 leading-none truncate">
