@@ -12,6 +12,9 @@ import {
   defaultOpenGraph,
   defaultTwitter,
   absoluteUrl,
+  INSTAGRAM_URL,
+  GITHUB_PROFILE,
+  LINKEDIN_URL,
 } from "../constants/seo";
 
 const jsonLd = buildJsonLdGraph();
@@ -87,6 +90,9 @@ export default function RootLayout({ children }) {
     <html lang="en-IN" suppressHydrationWarning={true}>
       <head>
         <link rel="canonical" href={absoluteUrl("/")} />
+        <link rel="me" href={INSTAGRAM_URL} />
+        <link rel="me" href={GITHUB_PROFILE} />
+        <link rel="me" href={LINKEDIN_URL} />
         <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

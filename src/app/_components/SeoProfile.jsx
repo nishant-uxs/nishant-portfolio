@@ -41,14 +41,15 @@ export function SeoProfile() {
       <p>
         Email <a href={`mailto:${person.email}`}>{person.email}</a>. Phone {person.phone}. GitHub{" "}
         <a href={person.github}>{person.github}</a>. LinkedIn{" "}
-        <a href={person.linkedin}>{person.linkedin}</a>. Instagram{" "}
-        <a href={INSTAGRAM_URL}>{INSTAGRAM_URL}</a>. Resume{" "}
-        <a href={person.resumePath}>Nishant Agarwal Resume PDF</a>.
+        <a href={person.linkedin}>{person.linkedin}</a>. Instagram of Nishant Agarwal{" "}
+        <a href={INSTAGRAM_URL}>Nishant Agarwal Instagram @nishant.agarwal__</a> ({INSTAGRAM_URL}).
+        Resume <a href={person.resumePath}>Nishant Agarwal Resume PDF</a>.
       </p>
       <nav>
         <a href="/nishant-agarwal">Nishant Agarwal profile</a>
         <a href="/about">About Nishant Agarwal</a>
         <a href="/projects">Projects by Nishant Agarwal</a>
+        <a href={INSTAGRAM_URL}>Nishant Agarwal Instagram</a>
         <a href="/">Interactive macOS portfolio</a>
       </nav>
     </section>

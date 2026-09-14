@@ -1,3 +1,5 @@
+import { person } from "../../constants/person";
+
 export function SeoDocShell({ title = "Notes", children }) {
   return (
     <main className="seo-doc-page">
@@ -10,6 +12,7 @@ export function SeoDocShell({ title = "Notes", children }) {
           <a href="/nishant-agarwal">Profile</a>
           <a href="/about">About</a>
           <a href="/projects">Projects</a>
+          <a href={person.instagram}>Instagram</a>
           <a href="/files/resume.pdf">Resume</a>
         </nav>
       </header>

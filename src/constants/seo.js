@@ -42,6 +42,8 @@ export const SEO_KEYWORDS = [
   "nishant-uxs",
   "nishantx.in",
   "nishant.agarwal__",
+  "Nishant Agarwal Instagram",
+  "Nishant Agarwal Instagram profile",
   "Krydo ZK identity",
   "BlockForge NetCrypt",
   "CivicSense",
@@ -70,6 +72,22 @@ export const buildPersonJsonLd = () => ({
     "Nishant Agarwal Bennett University",
     "Nishant Agarwal nishantx.in",
     "Nishant Agarwal blockchain engineer",
+  ],
+  identifier: [
+    {
+      "@type": "PropertyValue",
+      propertyID: "Instagram",
+      name: "Nishant Agarwal Instagram",
+      value: "nishant.agarwal__",
+      url: INSTAGRAM_URL,
+    },
+    {
+      "@type": "PropertyValue",
+      propertyID: "GitHub",
+      name: "Nishant Agarwal GitHub",
+      value: "nishant-uxs",
+      url: GITHUB_PROFILE,
+    },
   ],
   url: SITE_URL,
   image: absoluteUrl("/images/profile.webp"),
@@ -142,6 +160,14 @@ export const buildFaqJsonLd = () => ({
       acceptedAnswer: {
         "@type": "Answer",
         text: `The official portfolio of Nishant Agarwal is ${SITE_URL} (nishantx.in). His GitHub is nishant-uxs.`,
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Nishant Agarwal's Instagram?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `Nishant Agarwal's Instagram is @nishant.agarwal__ at ${INSTAGRAM_URL}. This is the official Instagram of the Bennett University backend and blockchain engineer, not other people named Nishant Agarwal.`,
       },
     },
     {

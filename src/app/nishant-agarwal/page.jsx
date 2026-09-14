@@ -64,7 +64,12 @@ export default function NishantAgarwalPage() {
             </li>
             <li>Location: {person.location}</li>
             <li>Internship: Web3 Blockchain Developer — Digital South Trust</li>
-            <li>Handles: nishant-uxs (GitHub), nishant.agarwal__ (Instagram)</li>
+            <li>
+              Instagram: <a href={person.instagram}>Nishant Agarwal (@nishant.agarwal__)</a>
+            </li>
+            <li>
+              GitHub: <a href={person.github}>nishant-uxs</a>
+            </li>
             <li>
               Website: <a href="/">https://www.nishantx.in</a>
             </li>
@@ -100,6 +105,14 @@ export default function NishantAgarwalPage() {
               </p>
             </div>
             <div>
+              <h3>What is Nishant Agarwal&apos;s Instagram?</h3>
+              <p>
+                Official Instagram of Nishant Agarwal:{" "}
+                <a href={person.instagram}>@nishant.agarwal__</a> —{" "}
+                <a href={person.instagram}>{person.instagram}</a>
+              </p>
+            </div>
+            <div>
               <h3>What is Nishant Agarwal&apos;s official website?</h3>
               <p>
                 <a href="/">https://www.nishantx.in</a> — GitHub{" "}
@@ -120,6 +133,7 @@ export default function NishantAgarwalPage() {
           <a href="/">Open macOS portfolio</a>
           <a href="/about">About</a>
           <a href="/projects">Projects</a>
+          <a href={person.instagram}>Instagram</a>
         </div>
       </article>
     </SeoDocShell>

@@ -92,7 +92,8 @@ export default function AboutPage() {
               {person.email}
             </a>
             . GitHub <a href={person.github}>{person.github}</a>. LinkedIn{" "}
-            <a href={person.linkedin}>{person.linkedin}</a>.
+            <a href={person.linkedin}>{person.linkedin}</a>. Instagram{" "}
+            <a href={person.instagram}>Nishant Agarwal (@nishant.agarwal__)</a>.
           </p>
         </section>
 
