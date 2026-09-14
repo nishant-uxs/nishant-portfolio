@@ -24,4 +24,6 @@ export const gallery = [
   { id: 15, img: "/images/people/2.webp", category: "People" },
   { id: 16, img: "/images/people/3.webp", category: "People" },
   { id: 17, img: "/images/people/4.webp", category: "People" },
+  { id: 18, img: "/images/people/nishant.webp", category: "People" },
+  { id: 19, img: "/images/people/nishant.webp", category: "Favorites" },
 ];
