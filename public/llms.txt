@@ -23,7 +23,7 @@ This Nishant Agarwal is the Bennett University CSE student and author of nishant
 - [Resume](https://www.nishantx.in/files/resume.pdf): PDF resume
 
 ## Projects
-- Krydo — ZK identity (https://krydo.onrender.com)
+- Krydo — Stellar Soroban privacy identity (https://krydo.in, https://github.com/nishant-uxs/krydo-next)
 - BlockForge — Decentralized lab assessment (https://blockchain-labeval.onrender.com)
 - CivicSense — On-chain civic reporting (https://civic-sense-six.vercel.app)
 - TrustMesh — Stellar Soroban trust network (https://trust-mesh-taupe.vercel.app)

@@ -69,7 +69,7 @@ const useCalendar = () => {
         start: "09:00",
         end: "10:30",
         category: "work",
-        desc: "Run Krydo ZK identity test suite and Sepolia checks.",
+        desc: "Run Krydo Soroban + Vitest suite and krydo.in smoke checks.",
       },
       {
         id: "5",

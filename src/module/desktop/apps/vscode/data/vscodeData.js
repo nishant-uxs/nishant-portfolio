@@ -71,8 +71,8 @@ export default function Hero() {
 const SELECTED_PROJECTS = [
   {
     title: "KRYDO",
-    desc: "Privacy-preserving identity with zero-knowledge proofs, 154 tests, and Sepolia contracts.",
-    tech: ["Solidity", "ZK proofs", "Hardhat", "Next.js"],
+    desc: "Stellar-native privacy identity with Soroban contracts, SIWS + ZK proofs, krydo.in, and 168+ tests.",
+    tech: ["TypeScript", "Stellar Soroban", "Express", "Firestore"],
     rating: "4.9"
   },
   {

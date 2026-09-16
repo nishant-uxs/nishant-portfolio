@@ -122,8 +122,9 @@ export default function NishantAgarwalPage() {
             <div>
               <h3>What projects has Nishant Agarwal built?</h3>
               <p>
-                Krydo, BlockForge, CivicSense, and TrustMesh — spanning ZK identity, decentralized
-                assessment, civic reporting, and Stellar Soroban reputation.
+                Krydo, BlockForge, CivicSense, and TrustMesh — spanning Stellar Soroban privacy
+                identity (krydo.in), decentralized assessment, civic reporting, and on-chain
+                reputation.
               </p>
             </div>
           </div>

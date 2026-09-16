@@ -5,7 +5,7 @@ export const person = {
   headline:
     "Nishant Agarwal (nishant-uxs) — Backend & Blockchain Engineer at Bennett University. Digital South Trust intern. Open source: ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, viem. Portfolio: nishantx.in.",
   description:
-    "Nishant Agarwal is a backend and blockchain engineer from India and a B.Tech CSE student at Bennett University (Greater Noida). Also known online as nishant-uxs and nishant.agarwal__. He builds privacy-preserving systems, production APIs, and Ethereum tooling. He interned as a Web3 Blockchain Developer at Digital South Trust, was a Finalist at LNMHacks 8.0, placed Top 20 at Kshitij 2026 (IIT Kharagpur), and has merged open-source contributions into ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem. His projects include Krydo (ZK identity), BlockForge (decentralized lab assessment, NetCrypt 2026), CivicSense, and TrustMesh. Official website: https://www.nishantx.in.",
+    "Nishant Agarwal is a backend and blockchain engineer from India and a B.Tech CSE student at Bennett University (Greater Noida). Also known online as nishant-uxs and nishant.agarwal__. He builds privacy-preserving systems, production APIs, and blockchain tooling. He interned as a Web3 Blockchain Developer at Digital South Trust, was a Finalist at LNMHacks 8.0, placed Top 20 at Kshitij 2026 (IIT Kharagpur), and has merged open-source contributions into ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem. His projects include Krydo (Stellar Soroban privacy identity at krydo.in), BlockForge (decentralized lab assessment, NetCrypt 2026), CivicSense, and TrustMesh. Official website: https://www.nishantx.in.",
   location: "Greater Noida, India",
   university: "Bennett University",
   degree: "B.Tech Computer Science Engineering",
@@ -24,10 +24,12 @@ export const person = {
 export const featuredProjects = [
   {
     name: "Krydo",
-    url: "https://krydo.onrender.com",
-    github: "https://github.com/nishant-uxs/krydo",
+    url: "https://krydo.in",
+    github: "https://github.com/nishant-uxs/krydo-next",
+    stack: "TypeScript, Node.js, Express, Stellar Soroban, Firestore",
+    period: "Feb 2026 – Present",
     description:
-      "Privacy-preserving identity with zero-knowledge proofs, 154 tests, and Sepolia contracts.",
+      "Stellar-native privacy identity: 3 Soroban contracts (Authority, Credentials, Audit), SIWS + ZK sigma proofs, hybrid Firestore query layer, ~36 API endpoints, web app at krydo.in, Android app v0.28, and 168+ Vitest tests.",
   },
   {
     name: "BlockForge",

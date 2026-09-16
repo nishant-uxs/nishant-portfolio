@@ -32,14 +32,14 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Krydo is privacy-preserving identity infrastructure by Nishant Agarwal. Prove eligibility with zero-knowledge proofs and W3C verifiable credentials without revealing confidential data.",
-            "154 tests. 3 contracts deployed on Sepolia. Circom circuits plus on-chain verification.",
-            "Stack: Solidity, Hardhat, ZK proofs, Next.js, and Ethereum.",
+            "Krydo is Stellar-native privacy identity by Nishant Agarwal. Verifiers check ZK sigma predicates without seeing raw claims.",
+            "3 Soroban contracts (Authority, Credentials, Audit) on testnet, SIWS wallet auth, optional SIWE (Ethereum) login, hybrid on-chain hashes + Firestore query layer.",
+            "8 API route modules (~36 endpoints), JWT + Zod, rate limiting, Helmet/CORS. Web app (11 pages at krydo.in), Android v0.28 (13 screens), 168+ Vitest tests. Stack: TypeScript, Node.js, Express, Stellar Soroban, Firestore.",
           ],
         },
         {
           id: 2,
-          name: "krydo.onrender.com",
+          name: "krydo.in",
           icon: "/images/safari.webp",
           kind: "file",
           fileType: "url",

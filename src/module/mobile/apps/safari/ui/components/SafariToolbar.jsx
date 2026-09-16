@@ -657,7 +657,11 @@ const SafariMobileHeader = ({ projects }) => {
                   <div className="flex-1 flex items-center justify-center mt-2 bg-zinc-50 rounded-xl border border-zinc-200/50 shadow-inner overflow-hidden select-none relative">
                     {(() => {
                       const urlLower = tab.url.toLowerCase();
-                      if (urlLower.includes("krydo") || urlLower.includes("onrender.com")) {
+                      if (
+                        urlLower.includes("krydo") ||
+                        urlLower.includes("krydo.in") ||
+                        urlLower.includes("onrender.com")
+                      ) {
                         return (
                           <img
                             src="/projects/krydo.webp"

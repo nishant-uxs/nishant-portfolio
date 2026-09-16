@@ -11,7 +11,7 @@ export const defaultNotes = [
     id: "2",
     title: "Project checklist",
     preview: "Krydo · BlockForge · CivicSense · TrustMesh",
-    body: "<div><strong>Project checklist</strong></div><div><br></div><ul><li><strong>Krydo</strong> — ZK identity, Sepolia contracts</li><li><strong>BlockForge</strong> — Decentralized lab assessment, NetCrypt 2026</li><li><strong>CivicSense</strong> — On-chain civic reporting + Gemini triage</li><li><strong>TrustMesh</strong> — Stellar Soroban reputation network</li></ul><div><br></div><div>Portfolio: https://www.nishantx.in</div>",
+    body: "<div><strong>Project checklist</strong></div><div><br></div><ul><li><strong>Krydo</strong> — Stellar Soroban privacy identity, krydo.in</li><li><strong>BlockForge</strong> — Decentralized lab assessment, NetCrypt 2026</li><li><strong>CivicSense</strong> — On-chain civic reporting + Gemini triage</li><li><strong>TrustMesh</strong> — Stellar Soroban reputation network</li></ul><div><br></div><div>Portfolio: https://www.nishantx.in</div>",
     updatedAt: new Date().toISOString(),
   },
 ];

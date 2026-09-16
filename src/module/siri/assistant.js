@@ -34,7 +34,7 @@ const FALLBACK_SOCIAL_LINKS = {
 const PROJECT_META = {
   1: {
     key: "krydo",
-    aliases: ["krydo", "zk", "zero knowledge", "identity", "verifiable credentials"],
+    aliases: ["krydo", "krydo.in", "stellar", "soroban", "zk", "zero knowledge", "identity"],
   },
   2: {
     key: "blockforge",

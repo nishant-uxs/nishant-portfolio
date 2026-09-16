@@ -14,7 +14,7 @@ export const projects = [
     id: 1,
     title: "Krydo",
     description:
-      "Privacy-preserving identity by Nishant Agarwal — ZK proofs, 154 tests, 3 Sepolia contracts, W3C verifiable credentials.",
+      "Stellar-native privacy identity by Nishant Agarwal — 3 Soroban contracts, SIWS + ZK proofs, hybrid Firestore backend, krydo.in web app, Android v0.28, 168+ tests.",
     image: "/projects/krydo.webp",
     link: PROJECT_1_URL,
     github: PROJECT_1_GITHUB,

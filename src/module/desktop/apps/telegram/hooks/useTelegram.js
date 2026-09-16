@@ -119,7 +119,7 @@ const useTelegram = () => {
             "Hello! I am your Telegram assistant. Type `/projects`, `/skills`, or `/contact` to browse Nishant's portfolio.";
         } else if (cmd.includes("/project")) {
           reply =
-            "Here are some top projects:\n1. **Krydo**: ZK identity, 154 tests, Sepolia contracts.\n2. **BlockForge**: Decentralized lab assessment + IPFS, NetCrypt 2026.\n3. **CivicSense**: On-chain civic reporting with Gemini triage.\n4. **TrustMesh**: Stellar Soroban business trust network.";
+            "Here are some top projects:\n1. **Krydo**: Stellar Soroban privacy identity, 168+ tests, krydo.in.\n2. **BlockForge**: Decentralized lab assessment + IPFS, NetCrypt 2026.\n3. **CivicSense**: On-chain civic reporting with Gemini triage.\n4. **TrustMesh**: Stellar Soroban business trust network.";
         } else if (cmd.includes("/skill") || cmd.includes("/tech")) {
           reply =
             "Core Stack:\n• **Languages**: TypeScript, JavaScript, Solidity, Python\n• **Backend**: Node.js, Express, REST APIs\n• **Blockchain**: Ethereum, Hardhat, viem, ZK proofs, IPFS\n• **Frontend**: React, Next.js, Tailwind CSS\n• **Tools**: Git, GitHub, Postman";
