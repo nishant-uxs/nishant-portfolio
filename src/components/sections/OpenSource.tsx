@@ -15,8 +15,8 @@ export function OpenSource() {
             Open source
           </h2>
           <p className="mt-5 max-w-2xl text-lg text-white/50">
-            Merged upstream PRs in production repos — ClickHouse to Hardhat,
-            viem, Mastra, and more.
+            Upstream PRs across ClickHouse, OpenTelemetry, Hardhat, viem,
+            Mastra, LiteLLM, Hyperlane, and Nethermind.
           </p>
         </Reveal>
 
