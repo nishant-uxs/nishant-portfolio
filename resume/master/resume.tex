@@ -4,6 +4,7 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 % Candidate: Nishant Agarwal
+% Source aligned to NishantAg_resume.pdf (2026-11)
 %-------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -90,99 +91,86 @@
   \small +91 7900654124 $|$
   \href{mailto:agarwalnishant812@gmail.com}{\underline{agarwalnishant812@gmail.com}} $|$
   \href{https://www.linkedin.com/in/nishant-agarwal-62a956322/}{\underline{LinkedIn}} $|$
-  \href{https://github.com/nishant-uxs}{\underline{GitHub}}
+  \href{https://github.com/nishant-uxs}{\underline{GitHub}} $|$
+  \href{https://nishantx.in}{\underline{nishantx.in}}
 \end{center}
 
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Bennett University}{India}
-      {Bachelor of Technology in Computer Science Engineering; CGPA: 8.86/10}{Oct 2024 -- Jul 2028}
+      {Bennett University}{Greater Noida, India}
+      {Bachelor of Technology in Computer Science Engineering; CGPA: 8.86 / 10.0}{Oct 2024 -- Jul 2028}
+  \resumeSubHeadingListEnd
+
+\section{Open Source Contributions}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{OpenTelemetry} --- PR \href{https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52310}{\underline{\#52310}} \emph{(Go, distributed tracing)}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered fix in \texttt{extension/sigv4auth} to forward configured \texttt{AssumeRole} session names, preserving IAM session context across collector trace export pipelines.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{ClickHouse} --- Merged PR \href{https://github.com/ClickHouse/ClickHouse/pull/114003}{\underline{\#114003}} \emph{(C++, columnar DB)}}{}
+      \resumeItemListStart
+        \resumeItem{Fixed a Keeper \texttt{writeAt} path bug that surfaced corrupted snapshot data on node startup; resolved table mutation scheduling edge cases (\texttt{ALTER ... MODIFY TTL}).}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{wevm/viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}} \& \textbf{Hardhat} \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}} \emph{(TypeScript tooling)}}{}
+      \resumeItemListStart
+        \resumeItem{Restored missing \texttt{type: module} in viem's emitted types package for NodeNext ESM; resolved keystore env-var initialization sequencing before Hardhat plugin hooks.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Mastra} $|$ \textbf{LiteLLM} $|$ \textbf{Hyperlane}}{}
+      \resumeItemListStart
+        \resumeItem{Hardened LLM execution loops against declined tool runs (\href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{Mastra}}); recovered streaming metrics on client drops (\href{https://github.com/BerriAI/litellm/pull/35349}{\underline{LiteLLM}}); guarded \texttt{HyperlaneMessage::from} against malformed interchain payloads (\href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{Hyperlane}}).}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Web3 Blockchain Developer Intern}{Mar 2026 -- Jul 2026}
-      {Digital South Trust}{India}
+      {Software Engineer Intern (Full-Stack / Backend)}{Mar 2026 -- Jul 2026}
+      {Digital South Trust}{Remote, India}
       \resumeItemListStart
-        \resumeItem{Built backend modules and transaction workflows for Crypto Suraksha, a production Web3 safety platform.}
-        \resumeItem{Designed and shipped News Portal REST APIs with request validation, structured errors, and Express.js.}
-        \resumeItem{Debugged production request failures and hardened error paths before release.}
-        \resumeItem{Owned feature delivery end-to-end: requirements, implementation, testing, and production handoff.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-\section{Selected Open Source Contributions}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{NomicFoundation/hardhat} --- Merged PR \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}}}{}
-      \resumeItemListStart
-        \resumeItem{Resolved configuration variables from \texttt{process.env} before plugin hooks (including keystore), with unit tests for hook short-circuiting.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{hyperlane-xyz/hyperlane-monorepo} --- Merged PR \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}}}{}
-      \resumeItemListStart
-        \resumeItem{Hardened message decoding to avoid panics in \texttt{HyperlaneMessage::from} on malformed multi-chain payloads.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{FilOzone/pdp} --- Merged PR \href{https://github.com/FilOzone/pdp/pull/287}{\underline{\#287}}; \textbf{filecoin-services} \href{https://github.com/FilOzone/filecoin-services/pull/566}{\underline{\#566}}}{}
-      \resumeItemListStart
-        \resumeItem{Emitted \texttt{PiecesScheduledForRemoval} in PDP and updated PDPVerifier ABI/event wiring across the Filecoin services stack.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{mastra-ai/mastra} --- Merged PRs \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}, \href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}}}{}
-      \resumeItemListStart
-        \resumeItem{Prevented declined tools from executing; reused terminal nested snapshots to avoid redundant agent-state recomputation.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{WalletConnect/walletconnect-monorepo} --- Merged PR \href{https://github.com/WalletConnect/walletconnect-monorepo/pull/7302}{\underline{\#7302}}; \textbf{wevm/viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
-      \resumeItemListStart
-        \resumeItem{Added EventEmitter \texttt{@types/node} annotations (WalletConnect); fixed ESM \texttt{\_types} package generation for NodeNext (viem).}
+        \resumeItem{Architected backend microservices and transactional state workflows for Crypto Suraksha, serving multi-tenant production traffic.}
+        \resumeItem{Implemented high-throughput REST APIs in Node.js/Express with strict schema validation, JWT auth, and role-based access control (RBAC).}
+        \resumeItem{Diagnosed production request bottlenecks, optimized PostgreSQL queries/indexing, and containerized deployments via Docker.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{Krydo} $|$ \emph{TypeScript, Ethereum, ZKP} $|$ \href{https://github.com/nishant-uxs/krydo}{\underline{GitHub}} $|$ \href{https://krydo.onrender.com}{\underline{Live}}}{Feb 2026 -- Apr 2026}
+      {\textbf{Krydo (KrydoNext)} --- Privacy Identity Infrastructure $|$ \href{https://github.com/nishant-uxs/krydo-next}{\underline{GitHub}} $|$ \href{https://krydo.in}{\underline{krydo.in}}}{Jan 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Built privacy-preserving identity via 6 sigma-protocol ZK proofs over Pedersen commitments; 154 unit tests; 3 Sepolia contracts; W3C VC export.}
-        \resumeItem{Hybrid trust model: on-chain credential hashes as source of truth; Firestore as the query layer; SIWE auth.}
+        \resumeItem{Awarded Honorable Mention, Stellar Buildathon Delhi; engineered privacy credential protocol with 3 Soroban contracts.}
+        \resumeItem{Integrated Sign-In with Stellar (SIWS) and Zero-Knowledge sigma-proofs over Pedersen commitments; 36-endpoint TypeScript backend with hybrid Firestore caching, web/mobile apps, and 168+ Vitest tests.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf{BlockForge (LabEval)} $|$ \emph{Solidity, IPFS, React} $|$ \href{https://github.com/nishant-uxs/labeval}{\underline{GitHub}} $|$ \href{https://blockchain-labeval.onrender.com}{\underline{Live}}}{Sep 2025 -- Jan 2026}
+      {\textbf{CivicSense} --- Multi-Portal Civic Management $|$ \href{https://github.com/nishant-uxs/CivicSense}{\underline{GitHub}} $|$ \href{https://civic-sense-six.vercel.app}{\underline{Live}}}{Dec 2025 -- Feb 2026}
       \resumeItemListStart
-        \resumeItem{OpenZeppelin RBAC assessment contracts; IPFS CIDs on-chain (\textasciitilde{}92\% storage cut); Gemini-assisted grading; NetCrypt 2026 accepted paper.}
+        \resumeItem{Built a 12-page responsive full-stack platform (React, Vite, Tailwind, Supabase PostgreSQL) across citizen, admin, and worker roles; hybrid persistence with SHA-256 state transitions anchored on-chain.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf{CivicSense} $|$ \emph{Solidity, Supabase, Gemini} $|$ \href{https://github.com/nishant-uxs/CivicSense}{\underline{GitHub}} $|$ \href{https://civic-sense-six.vercel.app}{\underline{Live}}}{Dec 2025 -- Feb 2026}
+      {\textbf{BlockForge} --- Role-Based Assessment Infrastructure $|$ \href{https://github.com/nishant-uxs/labeval}{\underline{GitHub}} $|$ \href{https://blockchain-labeval.onrender.com}{\underline{Live}}}{Sep 2025 -- Jan 2026}
       \resumeItemListStart
-        \resumeItem{3-step on-chain civic lifecycle with hybrid Supabase/Sepolia storage, Gemini triage, and 12-page citizen/admin/org portals.}
+        \resumeItem{Architected full-stack portal with React, TypeScript, and smart-contract RBAC (Admin, Evaluator, Student); IPFS storage cut on-chain gas overhead by \textasciitilde{}92\%.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-\section{Research}
+\section{Publications \& Achievements}
   \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{\textbf{BlockForge: A Blockchain-Based Decentralized Platform for Transparent Academic Assessment} --- Accepted, 4th International Conference on Networks and Cryptology (NetCrypt 2026); Conference Presentation, Oct 2026.}
-  \end{itemize}
-
-\section{Achievements}
-  \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{Production open-source contributions merged into Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem.}
-    \resumeItem{Finalist, LNMHacks 8.0 (Top 30 / 150+ teams); Top 20, Tech Triad Hackathon, IIT Kharagpur (Kshitij 2026).}
+    \resumeItem{\textbf{IEEE Conference Publication \& Presentation:} BlockForge: A Blockchain-Based Decentralized Platform for Transparent Academic Assessment --- Presented and published at 4th Int. Conf. on Networks \& Cryptology (NetCrypt 2026); Certificate of Presentation.}
+    \resumeItem{\textbf{Honors \& Hackathons:} Winner, GenZFEST Hacktoberfest Agra 2026; Rank 4 / 600+ teams, Smart India Hackathon (SIH Internal); Honorable Mention, Stellar Buildathon Delhi; Finalist, LNMHacks 8.0 (Top 30/150+); Top 20, IIT Kharagpur (Kshitij 2026).}
   \end{itemize}
 
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: TypeScript, JavaScript, Solidity, Python, Rust, C++, SQL} \\
-      \textbf{Backend / AI}{: Node.js, Express.js, REST APIs, Zod, JWT, agent tooling (Mastra)} \\
-      \textbf{Blockchain}{: Ethereum, Hardhat, Ethers.js/viem, Hyperlane, Filecoin PDP, ZK proofs, IPFS, WalletConnect} \\
-      \textbf{Frontend}{: React, Vite, Tailwind CSS, shadcn/ui} \\
-      \textbf{Databases}{: PostgreSQL (Supabase), Firestore} \\
-      \textbf{Tools}{: Git, GitHub Actions, Vitest} \\
-      \textbf{Core CS}{: Data Structures \& Algorithms, Cryptography, Distributed Systems}
+      \textbf{Languages}{: TypeScript, JavaScript, Python, C++, Go, Rust (Soroban), SQL, Solidity} \\
+      \textbf{Frontend}{: React.js, React Native, Next.js, Vite, Tailwind CSS, HTML5/CSS3, TanStack Query, shadcn/ui} \\
+      \textbf{Backend \& Cloud}{: Node.js, Express.js, Django/Flask, RESTful APIs, GraphQL, PostgreSQL, MongoDB, Redis, OpenTelemetry, Docker, AWS, Git} \\
+      \textbf{Core CS}{: Data Structures \& Algorithms (DSA), System Design, Low-Level Design (LLD), OOP, Distributed Systems}
     }}
   \end{itemize}
 

@@ -96,15 +96,15 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Bennett University}{India}
+      {Bennett University}{Greater Noida, India}
       {Bachelor of Technology in Computer Science Engineering; CGPA: 8.86/10}{Oct 2024 -- Jul 2028}
   \resumeSubHeadingListEnd
 
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Web3 Blockchain Developer Intern}{Mar 2026 -- Jul 2026}
-      {Digital South Trust}{India}
+      {Software Engineer Intern (Full-Stack / Backend)}{Mar 2026 -- Jul 2026}
+      {Digital South Trust}{Remote, India}
       \resumeItemListStart
         \resumeItem{Built backend modules and transaction workflows for Crypto Suraksha, a production Web3 safety platform.}
         \resumeItem{Designed and shipped News Portal REST APIs with request validation, structured errors, and Express.js.}
@@ -116,29 +116,24 @@
 \section{Selected Open Source Contributions}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{NomicFoundation/hardhat} --- Merged PR \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}}}{}
+      {\textbf{NethermindEth/nethermind} --- Merged PR \href{https://github.com/NethermindEth/nethermind/pull/12739}{\underline{\#12739}}}{}
       \resumeItemListStart
-        \resumeItem{Resolved configuration variables from \texttt{process.env} before plugin hooks (including keystore), with unit tests for hook short-circuiting.}
+        \resumeItem{Fixed \texttt{eth\_syncing} reporting synced during consensus-layer catch-up by including the beacon tip in \texttt{HighestBlock}.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf{hyperlane-xyz/hyperlane-monorepo} --- Merged PR \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}}}{}
+      {\textbf{ClickHouse/ClickHouse} --- Merged PR \href{https://github.com/ClickHouse/ClickHouse/pull/114003}{\underline{\#114003}}}{}
       \resumeItemListStart
-        \resumeItem{Hardened message decoding to avoid panics in \texttt{HyperlaneMessage::from} on malformed multi-chain payloads.}
+        \resumeItem{Fixed Keeper \texttt{writeAt} path that could surface \texttt{CORRUPTED\_DATA} on startup.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf{FilOzone/pdp} --- Merged PR \href{https://github.com/FilOzone/pdp/pull/287}{\underline{\#287}}; \textbf{filecoin-services} \href{https://github.com/FilOzone/filecoin-services/pull/566}{\underline{\#566}}}{}
+      {\textbf{OpenTelemetry Collector} --- Merged PR \href{https://github.com/open-telemetry/opentelemetry-collector/pull/16144}{\underline{\#16144}}}{}
       \resumeItemListStart
-        \resumeItem{Emitted \texttt{PiecesScheduledForRemoval} in PDP and updated PDPVerifier ABI/event wiring across the Filecoin services stack.}
+        \resumeItem{Redacted non-empty \texttt{env} provider defaults in the unexpanded config snapshot.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf{mastra-ai/mastra} --- Merged PRs \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}, \href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}}}{}
+      {\textbf{hyperlane} \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}}; \textbf{mastra} \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}/\href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}}; \textbf{hardhat} \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}}; \textbf{viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
       \resumeItemListStart
-        \resumeItem{Prevented declined tools from executing; reused terminal nested snapshots to avoid redundant agent-state recomputation.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{WalletConnect/walletconnect-monorepo} --- Merged PR \href{https://github.com/WalletConnect/walletconnect-monorepo/pull/7302}{\underline{\#7302}}; \textbf{wevm/viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
-      \resumeItemListStart
-        \resumeItem{Added EventEmitter \texttt{@types/node} annotations (WalletConnect); fixed ESM \texttt{\_types} package generation for NodeNext (viem).}
+        \resumeItem{Hyperlane: fail-safe decode of short payloads. Mastra: declined tools never execute; reuse terminal nested snapshots. Hardhat: \texttt{process.env} before plugin hooks. viem: ESM \texttt{\_types} for NodeNext.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -164,12 +159,13 @@
 
 \section{Research}
   \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{\textbf{BlockForge: A Blockchain-Based Decentralized Platform for Transparent Academic Assessment} --- Accepted, 4th International Conference on Networks and Cryptology (NetCrypt 2026); Conference Presentation, Oct 2026.}
+    \resumeItem{\textbf{BlockForge: A Blockchain-Based Decentralized Platform for Transparent Academic Assessment} --- Accepted and presented, 4th International Conference on Networks and Cryptology (NetCrypt 2026), Oct 2026.}
   \end{itemize}
 
 \section{Achievements}
   \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{Production open-source contributions merged into Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem.}
+    \resumeItem{Production open-source contributions merged into Nethermind, ClickHouse, OpenTelemetry, Hyperlane, Hardhat, Mastra, and viem.}
+    \resumeItem{Winner, GenZFEST Hacktoberfest Agra 2026; Rank 4 / 600+ teams, SIH Internal; Honorable Mention, Stellar Buildathon Delhi.}
     \resumeItem{Finalist, LNMHacks 8.0 (Top 30 / 150+ teams); Top 20, Tech Triad Hackathon, IIT Kharagpur (Kshitij 2026).}
   \end{itemize}
 

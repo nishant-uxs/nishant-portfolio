@@ -1,5 +1,41 @@
 # Resume CHANGELOG
 
+## 2026-11-14 — NishantAg_resume.pdf sync
+
+- Public resume replaced with `NishantAg_resume.pdf` (source of truth)
+- Title: Software Engineer Intern (Full-Stack / Backend), Digital South Trust, Remote, Mar–Jul 2026
+- OSS featured: OpenTelemetry contrib #52310, ClickHouse #114003, viem/Hardhat, Mastra/LiteLLM/Hyperlane
+- Projects: Krydo (Stellar HM), CivicSense, BlockForge; GenZFEST winner + SIH 4th + Stellar HM in achievements
+- Skills expanded (Go, Docker, AWS, GraphQL, React Native, System Design / LLD)
+
+---
+
+
+## 2026-10-23 — BU SIH + NetCrypt presented
+
+- Achievement: 4th rank, Bennett University SIH 2026 (Internal), out of 600+ teams
+- Research: NetCrypt 2026 marked accepted and presented (Oct 2026)
+
+---
+
+## 2026-10-23 — Nethermind + OpenTelemetry
+
+- Featured merged PRs: Nethermind #12739 (23 Sep 2026), ClickHouse #114003, OpenTelemetry Collector #16144 (15 Oct 2026)
+- Hyperlane, Mastra, Hardhat, and viem compressed to one line; FilOzone and WalletConnect stay in the source list
+- Tracked production PR count 10 → 12 (excludes good-first-issue and own-repo merges)
+- Same order on the site OSS grid, meta description, and role versions
+
+---
+
+## 2026-09-16 — Krydo Stellar + ClickHouse
+
+- Krydo: Stellar Soroban privacy stack, `krydo-next`, live `krydo.in`, Android v0.28, 168+ Vitest tests
+- OSS: ClickHouse #114003 featured; Hardhat/Hyperlane and Mastra/WC/viem compressed for page budget
+- Header: added nishantx.in; Skills: Stellar Soroban; Achievements: ClickHouse in OSS list
+- Still **1 page**; synced to nishantx-in `public/files/resume.pdf`
+
+---
+
 ## 2026-08-25 — Scaler SDE version
 
 - Added `versions/scaler.tex`: backend/API/architecture-first bullets, compressed OSS, CGPA 8.86, no invented LeetCode ratings

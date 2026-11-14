@@ -93,8 +93,8 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Backend Developer Intern}{Mar 2026 -- Jul 2026}
-      {Digital South Trust}{India (Remote)}
+      {Software Engineer Intern (Full-Stack / Backend)}{Mar 2026 -- Jul 2026}
+      {Digital South Trust}{Remote, India}
       \resumeItemListStart
         \resumeItem{Shipped production REST APIs for a News Portal: Zod validation, structured errors, Express.js routing, and release-time debugging of failing request paths.}
         \resumeItem{Built backend modules and workflows for Crypto Suraksha; owned features from requirements through testing and production handoff.}
@@ -126,20 +126,21 @@
 \section{Open Source (merged)}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{ClickHouse} \href{https://github.com/ClickHouse/ClickHouse/pull/114003}{\underline{\#114003}} $|$ \textbf{Hardhat} \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}} $|$ \textbf{viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
+      {\textbf{Nethermind} \href{https://github.com/NethermindEth/nethermind/pull/12739}{\underline{\#12739}} $|$ \textbf{ClickHouse} \href{https://github.com/ClickHouse/ClickHouse/pull/114003}{\underline{\#114003}} $|$ \textbf{OpenTelemetry} \href{https://github.com/open-telemetry/opentelemetry-collector/pull/16144}{\underline{\#16144}}}{}
       \resumeItemListStart
-        \resumeItem{ClickHouse: fixed Keeper \texttt{writeAt} path that could surface \texttt{CORRUPTED\_DATA} on startup. Hardhat: config resolution prefers \texttt{process.env} over plugin hooks, with unit tests. viem: \texttt{\_types} \texttt{package.json} module marker for TypeScript NodeNext.}
+        \resumeItem{Nethermind: \texttt{eth\_syncing} includes the beacon tip so CL catch-up is not reported as synced. ClickHouse: fixed Keeper \texttt{writeAt} path that could surface \texttt{CORRUPTED\_DATA} on startup. OpenTelemetry: redact non-empty \texttt{env} defaults in the unexpanded config snapshot.}
       \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf{Mastra} \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}/\href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}} $|$ \textbf{Hyperlane} \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}} $|$ \textbf{WalletConnect} \href{https://github.com/WalletConnect/walletconnect-monorepo/pull/7302}{\underline{\#7302}} $|$ \textbf{FilOzone} \href{https://github.com/FilOzone/pdp/pull/287}{\underline{pdp\#287}}+\href{https://github.com/FilOzone/filecoin-services/pull/566}{\underline{svc\#566}}}{}
+      {\textbf{Hyperlane} \href{https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9181}{\underline{\#9181}} $|$ \textbf{Mastra} \href{https://github.com/mastra-ai/mastra/pull/20487}{\underline{\#20487}}/\href{https://github.com/mastra-ai/mastra/pull/20518}{\underline{\#20518}} $|$ \textbf{Hardhat} \href{https://github.com/NomicFoundation/hardhat/pull/8464}{\underline{\#8464}} $|$ \textbf{viem} \href{https://github.com/wevm/viem/pull/4903}{\underline{\#4903}}}{}
       \resumeItemListStart
-        \resumeItem{Mastra: core workflow/tool fixes (never execute declined tools; reuse nested snapshots). Hyperlane: fail-safe indexer decode to avoid panics on malformed messages. WalletConnect: EventEmitter TypeScript annotations. FilOzone: piece-removal event + ABI wiring across two repos.}
+        \resumeItem{Hyperlane: fail-safe indexer decode. Mastra: declined tools never execute; reuse nested snapshots. Hardhat: \texttt{process.env} before plugin hooks. viem: ESM \texttt{\_types} marker for NodeNext.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Achievements}
   \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{10 merged PRs in production repos (ClickHouse, Hardhat, viem, Mastra, Hyperlane, WalletConnect, FilOzone, hardhat-website).}
+    \resumeItem{12 merged PRs in production repos (Nethermind, ClickHouse, OpenTelemetry, Hyperlane, Hardhat, Mastra, viem).}
+    \resumeItem{Winner, GenZFEST Hacktoberfest Agra 2026; Rank 4 / 600+ teams, SIH Internal; Honorable Mention, Stellar Buildathon Delhi.}
     \resumeItem{Finalist, LNMHacks 8.0 (Top 30 / 150+ teams); Top 20, Tech Triad, IIT Kharagpur (Kshitij 2026).}
   \end{itemize}
 
