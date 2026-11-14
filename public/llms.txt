@@ -18,9 +18,10 @@ This Nishant Agarwal is the Bennett University CSE student, GenZFEST winner, and
 
 ## Pages
 - [Home](https://www.nishantx.in/): Interactive macOS portfolio
-- [Nishant Agarwal](https://www.nishantx.in/nishant-agarwal): Name-focused profile + FAQ
+- [Nishant Agarwal](https://www.nishantx.in/nishant-agarwal): Official name profile + FAQ (best page for "Nishant Agarwal" search)
 - [About](https://www.nishantx.in/about): Biography, education, experience
 - [Projects](https://www.nishantx.in/projects): Krydo, CivicSense, BlockForge, TrustMesh
+- [Open Source](https://www.nishantx.in/open-source): Upstream PRs (ClickHouse, OpenTelemetry, Hardhat, …)
 - [Resume](https://www.nishantx.in/files/resume.pdf): PDF resume
 
 ## Projects

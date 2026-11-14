@@ -55,6 +55,7 @@ export function SeoProfile() {
         <a href="/nishant-agarwal">Nishant Agarwal profile</a>
         <a href="/about">About Nishant Agarwal</a>
         <a href="/projects">Projects by Nishant Agarwal</a>
+        <a href="/open-source">Open source by Nishant Agarwal</a>
         <a href={INSTAGRAM_URL}>Nishant Agarwal Instagram</a>
         <a href="/">Interactive macOS portfolio</a>
       </nav>

@@ -7,7 +7,6 @@ import {
   OWNER_NAME,
   SEO_KEYWORDS,
   GOOGLE_SITE_VERIFICATION,
-  OG_IMAGE_PATH,
   buildJsonLdGraph,
   defaultOpenGraph,
   defaultTwitter,
@@ -89,16 +88,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-IN" suppressHydrationWarning={true}>
       <head>
-        <link rel="canonical" href={absoluteUrl("/")} />
+        {/* Canonical comes from each page's metadata.alternates — do not hardcode "/" here. */}
         <link rel="me" href={INSTAGRAM_URL} />
         <link rel="me" href={GITHUB_PROFILE} />
         <link rel="me" href={LINKEDIN_URL} />
         <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta property="og:image" content={absoluteUrl(OG_IMAGE_PATH)} />
         <meta name="author" content={OWNER_NAME} />
-        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="IN-UP" />
+        <meta name="geo.placename" content="Greater Noida" />
+        <link rel="alternate" type="text/plain" href={absoluteUrl("/llms.txt")} title="llms.txt" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

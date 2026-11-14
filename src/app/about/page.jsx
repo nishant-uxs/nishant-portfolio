@@ -8,13 +8,14 @@ import {
 import { SeoDocShell } from "../_components/SeoDocShell";
 
 export const metadata = {
-  title: "About Nishant Agarwal",
+  title: "About Nishant Agarwal | Bennett University · Digital South Trust",
   description: person.description,
   keywords: [
     "About Nishant Agarwal",
     "Nishant Agarwal Bennett University",
     "Nishant Agarwal Digital South Trust",
     "Nishant Agarwal open source",
+    "Nishant Agarwal Greater Noida",
   ],
   alternates: { canonical: "/about" },
   openGraph: {

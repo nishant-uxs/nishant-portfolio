@@ -9,9 +9,10 @@ export function SeoDocShell({ title = "Notes", children }) {
         </a>
         <nav className="seo-doc-nav">
           <a href="/">Desktop</a>
-          <a href="/nishant-agarwal">Profile</a>
+          <a href="/nishant-agarwal">Nishant Agarwal</a>
           <a href="/about">About</a>
           <a href="/projects">Projects</a>
+          <a href="/open-source">Open Source</a>
           <a href={person.instagram}>Instagram</a>
           <a href="/files/resume.pdf">Resume</a>
         </nav>

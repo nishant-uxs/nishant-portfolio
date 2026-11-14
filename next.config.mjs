@@ -40,6 +40,30 @@ const nextConfig = {
     deviceSizes: [390, 640, 768, 1024, 1280, 1536, 1920, 2560],
     imageSizes: [16, 24, 32, 48, 64, 96, 128, 192, 256, 384],
   },
+  async redirects() {
+    return [
+      {
+        source: "/nishantagarwal",
+        destination: "/nishant-agarwal",
+        permanent: true,
+      },
+      {
+        source: "/nishant",
+        destination: "/nishant-agarwal",
+        permanent: true,
+      },
+      {
+        source: "/profile",
+        destination: "/nishant-agarwal",
+        permanent: true,
+      },
+      {
+        source: "/me",
+        destination: "/nishant-agarwal",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

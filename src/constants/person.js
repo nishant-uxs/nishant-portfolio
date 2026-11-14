@@ -3,7 +3,7 @@ export const person = {
   firstName: "Nishant",
   jobTitle: "Backend & Full-Stack Engineer",
   headline:
-    "Nishant Agarwal (nishant-uxs) — Backend & full-stack engineer, B.Tech CSE at Bennett University. Software Engineer Intern at Digital South Trust. Open source: ClickHouse, OpenTelemetry, Hardhat, viem, Mastra, Hyperlane. Krydo at krydo.in. Portfolio: nishantx.in.",
+    "Nishant Agarwal is a backend & full-stack engineer and B.Tech CSE student at Bennett University (Greater Noida). Software Engineer Intern at Digital South Trust. Open source: ClickHouse, OpenTelemetry, Hardhat, viem, Mastra, Hyperlane. Official site: nishantx.in.",
   description:
     "Nishant Agarwal is a backend and full-stack engineer from Greater Noida, India, and a B.Tech CSE student at Bennett University (CGPA 8.86/10.0). Also known online as nishant-uxs and nishant.agarwal__. He ships production APIs, privacy identity systems, and open-source fixes. He interned as a Software Engineer Intern (Full-Stack / Backend) at Digital South Trust (Mar–Jul 2026). Open-source work spans ClickHouse, OpenTelemetry, Hardhat, viem, Mastra, LiteLLM, Hyperlane, and Nethermind. Winner of GenZFEST Hacktoberfest Agra 2026; Rank 4 / 600+ at SIH Internal; Honorable Mention at Stellar Buildathon Delhi; LNMHacks 8.0 Finalist; Top 20 at Kshitij 2026 (IIT Kharagpur). Projects include Krydo (Stellar Soroban privacy identity at krydo.in), CivicSense, and BlockForge (presented and published at NetCrypt 2026). Official website: https://www.nishantx.in.",
   location: "Greater Noida, India",

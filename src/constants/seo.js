@@ -8,11 +8,12 @@ export const SITE_URL = trimSlash(
 );
 
 export const OWNER_NAME = person.name;
-export const SITE_NAME = `${OWNER_NAME} | Backend & Full-Stack Engineer | Bennett University`;
+/** Name-first title so "Nishant Agarwal" searches match the homepage SERP. */
+export const SITE_NAME = `Nishant Agarwal | Backend & Full-Stack Engineer | Bennett University | nishantx.in`;
 export const SITE_DESCRIPTION = person.headline;
 export const OG_IMAGE_PATH = "/og-image.png";
 export const OG_IMAGE_ALT =
-  "Nishant Agarwal — Backend & Full-Stack Engineer · nishantx.in";
+  "Nishant Agarwal — Backend & Full-Stack Engineer at Bennett University · nishantx.in";
 
 export const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE || person.github;
 export const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL || person.linkedin;
@@ -27,34 +28,42 @@ export const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, INSTAGRAM_URL].filter(Boole
 
 export const SEO_KEYWORDS = [
   "Nishant Agarwal",
+  "Nishant Agarwal Bennett",
   "Nishant Agarwal Bennett University",
   "Nishant Agarwal Greater Noida",
+  "Nishant Agarwal Noida",
+  "Nishant Agarwal India",
+  "Nishant Agarwal CSE",
+  "Nishant Agarwal software engineer",
   "Nishant Agarwal backend engineer",
   "Nishant Agarwal full stack engineer",
   "Nishant Agarwal open source",
+  "Nishant Agarwal portfolio",
+  "Nishant Agarwal resume",
+  "Nishant Agarwal GitHub",
+  "Nishant Agarwal LinkedIn",
+  "Nishant Agarwal Instagram",
   "Nishant Agarwal Digital South Trust",
   "Nishant Agarwal Krydo",
   "Nishant Agarwal BlockForge",
+  "Nishant Agarwal CivicSense",
   "Nishant Agarwal ClickHouse",
   "Nishant Agarwal OpenTelemetry",
   "Nishant Agarwal Hardhat",
+  "Nishant Agarwal Nethermind",
   "Nishant Agarwal Hyperlane",
   "Nishant Agarwal GenZFEST",
   "Nishant Agarwal SIH",
-  "Nishant Agarwal portfolio",
+  "Nishant Agarwal Stellar",
+  "Nishant Agarwal NetCrypt",
   "nishant-uxs",
   "nishantx.in",
   "nishant.agarwal__",
-  "Nishant Agarwal Instagram",
+  "Who is Nishant Agarwal",
   "Krydo Stellar Soroban",
   "krydo.in",
-  "krydo-next",
   "BlockForge NetCrypt",
-  "CivicSense",
-  "TrustMesh Stellar",
   "Software Engineer Intern India",
-  "Backend engineer India",
-  "Open source ClickHouse OpenTelemetry Hardhat viem Mastra",
 ];
 
 export const absoluteUrl = (path = "/") => {
@@ -182,6 +191,22 @@ export const buildFaqJsonLd = () => ({
         text: "Nishant Agarwal built Krydo (Stellar Soroban privacy identity at krydo.in), BlockForge (decentralized lab assessment, NetCrypt 2026), CivicSense (on-chain civic reporting), and TrustMesh (Stellar Soroban trust network).",
       },
     },
+    {
+      "@type": "Question",
+      name: "What is Nishant Agarwal's GitHub?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `Nishant Agarwal's GitHub is nishant-uxs at ${GITHUB_PROFILE}.`,
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Nishant Agarwal from Bennett University?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `Yes. Nishant Agarwal is a ${person.degree} student at ${person.university}, ${person.location}. Official site: ${SITE_URL}.`,
+      },
+    },
   ],
 });
 
@@ -224,12 +249,37 @@ export const buildProjectsJsonLd = () => ({
 export const buildProfilePageJsonLd = () => ({
   "@context": "https://schema.org",
   "@type": "ProfilePage",
+  "@id": `${SITE_URL}/nishant-agarwal#profile`,
+  url: absoluteUrl("/nishant-agarwal"),
+  name: "Nishant Agarwal — Official Profile",
+  description: person.description,
+  dateModified: "2026-11-14",
+  mainEntity: { "@id": `${SITE_URL}/#person` },
+  about: { "@id": `${SITE_URL}/#person` },
+  isPartOf: { "@id": `${SITE_URL}/#website` },
+  inLanguage: "en-IN",
+});
+
+export const buildAboutProfilePageJsonLd = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
   "@id": `${SITE_URL}/about#profile`,
   url: absoluteUrl("/about"),
   name: `About ${OWNER_NAME}`,
   description: person.description,
   mainEntity: { "@id": `${SITE_URL}/#person` },
   about: { "@id": `${SITE_URL}/#person` },
+});
+
+export const buildBreadcrumbJsonLd = (items) => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    item: absoluteUrl(item.path),
+  })),
 });
 
 export const buildJsonLdGraph = () => [
