@@ -24,7 +24,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="relative min-h-full bg-nx-bg font-body text-nx-text">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
         <AppProviders>
           <LivingBackground />

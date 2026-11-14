@@ -1,0 +1,43 @@
+# Nishant Agarwal
+
+> Backend & full-stack engineer. B.Tech CSE at Bennett University (Greater Noida). Portfolio: https://nishantx.in
+
+Nishant Agarwal (GitHub: nishant-uxs) builds production APIs, privacy identity systems, and open-source fixes. Recent Software Engineer Intern (Full-Stack / Backend) at Digital South Trust (Mar–Jul 2026).
+
+## Primary links
+
+- Portfolio: https://nishantx.in
+- Resume PDF: https://nishantx.in/Nishant_Agarwal_Resume.pdf
+- GitHub: https://github.com/nishant-uxs
+- LinkedIn: https://www.linkedin.com/in/nishant-agarwal-62a956322/
+- Email: agarwalnishant812@gmail.com
+
+## Projects
+
+- Krydo (KrydoNext) — Privacy identity on Stellar Soroban; Honorable Mention, Stellar Buildathon Delhi: https://krydo.in · https://github.com/nishant-uxs/krydo-next
+- CivicSense — Multi-portal civic platform: https://civic-sense-six.vercel.app · https://github.com/nishant-uxs/CivicSense
+- BlockForge — Role-based assessment; presented at NetCrypt 2026: https://blockchain-labeval.onrender.com · https://github.com/nishant-uxs/labeval
+
+## Open source
+
+- OpenTelemetry collector-contrib #52310 (sigv4auth AssumeRole session names)
+- ClickHouse #114003 (Keeper writeAt / corrupted snapshot fix) — merged
+- wevm/viem #4903 — merged
+- NomicFoundation/hardhat #8464 — merged
+- mastra-ai/mastra #20487 / #20518 — merged
+- BerriAI/litellm #35349
+- hyperlane-xyz/hyperlane-monorepo #9181 — merged
+- NethermindEth/nethermind #12739 — merged
+
+## Highlights
+
+- Winner, GenZFEST Hacktoberfest Agra 2026
+- Rank 4 / 600+ teams, SIH Internal (Bennett)
+- Honorable Mention, Stellar Buildathon Delhi
+- IEEE / NetCrypt 2026 publication & presentation (BlockForge)
+- CGPA 8.86 / 10.0, Bennett University
+
+## Optional
+
+- Sitemap: https://nishantx.in/sitemap.xml
+- robots: https://nishantx.in/robots.txt
