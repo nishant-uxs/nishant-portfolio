@@ -45,10 +45,10 @@ export default function AboutPage() {
         <section>
           <h2>Who is Nishant Agarwal?</h2>
           <p>
-            Nishant Agarwal is a backend and blockchain engineer based in Greater Noida, India. He
-            builds privacy systems, production APIs, and Ethereum tooling, and contributes merged
-            open-source work to ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and
-            viem. He studies {person.degree} at {person.university}. Also known as nishant-uxs.
+            Nishant Agarwal is a backend and full-stack engineer based in Greater Noida, India. He
+            builds privacy systems, production APIs, and open-source fixes across ClickHouse,
+            OpenTelemetry, Hardhat, viem, Mastra, and Hyperlane. He studies {person.degree} at{" "}
+            {person.university}. Also known as nishant-uxs.
           </p>
           <p className="seo-doc-muted">{person.disambiguation}</p>
         </section>
@@ -63,10 +63,15 @@ export default function AboutPage() {
         <section>
           <h2>Experience & recognition</h2>
           <ul className="seo-doc-list">
-            <li>Web3 Blockchain Developer Intern — Digital South Trust (Mar 2026 – Jul 2026)</li>
-            <li>LNMHacks 8.0 Finalist</li>
-            <li>Top 20 — Kshitij 2026 (IIT Kharagpur)</li>
-            <li>BlockForge paper accepted at NetCrypt 2026</li>
+            <li>
+              Software Engineer Intern (Full-Stack / Backend) — Digital South Trust (Mar 2026 – Jul
+              2026)
+            </li>
+            <li>Winner — GenZFEST Hacktoberfest Agra 2026</li>
+            <li>Rank 4 / 600+ — SIH Internal</li>
+            <li>Honorable Mention — Stellar Buildathon Delhi</li>
+            <li>LNMHacks 8.0 Finalist · Top 20 — Kshitij 2026 (IIT Kharagpur)</li>
+            <li>BlockForge presented and published at NetCrypt 2026</li>
           </ul>
         </section>
 

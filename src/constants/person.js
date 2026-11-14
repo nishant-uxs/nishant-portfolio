@@ -1,11 +1,11 @@
 export const person = {
   name: "Nishant Agarwal",
   firstName: "Nishant",
-  jobTitle: "Backend & Blockchain Engineer",
+  jobTitle: "Backend & Full-Stack Engineer",
   headline:
-    "Nishant Agarwal (nishant-uxs) — Backend & Blockchain Engineer at Bennett University. Digital South Trust intern. Open source: ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, viem. Portfolio: nishantx.in.",
+    "Nishant Agarwal (nishant-uxs) — Backend & full-stack engineer, B.Tech CSE at Bennett University. Software Engineer Intern at Digital South Trust. Open source: ClickHouse, OpenTelemetry, Hardhat, viem, Mastra, Hyperlane. Krydo at krydo.in. Portfolio: nishantx.in.",
   description:
-    "Nishant Agarwal is a backend and blockchain engineer from India and a B.Tech CSE student at Bennett University (Greater Noida). Also known online as nishant-uxs and nishant.agarwal__. He builds privacy-preserving systems, production APIs, and blockchain tooling. He interned as a Web3 Blockchain Developer at Digital South Trust, was a Finalist at LNMHacks 8.0, placed Top 20 at Kshitij 2026 (IIT Kharagpur), and has merged open-source contributions into ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, and viem. His projects include Krydo (Stellar Soroban privacy identity at krydo.in), BlockForge (decentralized lab assessment, NetCrypt 2026), CivicSense, and TrustMesh. Official website: https://www.nishantx.in.",
+    "Nishant Agarwal is a backend and full-stack engineer from Greater Noida, India, and a B.Tech CSE student at Bennett University (CGPA 8.86/10.0). Also known online as nishant-uxs and nishant.agarwal__. He ships production APIs, privacy identity systems, and open-source fixes. He interned as a Software Engineer Intern (Full-Stack / Backend) at Digital South Trust (Mar–Jul 2026). Open-source work spans ClickHouse, OpenTelemetry, Hardhat, viem, Mastra, LiteLLM, Hyperlane, and Nethermind. Winner of GenZFEST Hacktoberfest Agra 2026; Rank 4 / 600+ at SIH Internal; Honorable Mention at Stellar Buildathon Delhi; LNMHacks 8.0 Finalist; Top 20 at Kshitij 2026 (IIT Kharagpur). Projects include Krydo (Stellar Soroban privacy identity at krydo.in), CivicSense, and BlockForge (presented and published at NetCrypt 2026). Official website: https://www.nishantx.in.",
   location: "Greater Noida, India",
   university: "Bennett University",
   degree: "B.Tech Computer Science Engineering",
@@ -18,7 +18,7 @@ export const person = {
   resumePath: "/files/resume.pdf",
   photo: "/images/profile.webp",
   disambiguation:
-    "Not to be confused with other professionals named Nishant Agarwal. This Nishant Agarwal is the Bennett University CSE student, Digital South Trust Web3 intern, and author of the nishantx.in macOS portfolio.",
+    "Not to be confused with other professionals named Nishant Agarwal. This Nishant Agarwal is the Bennett University CSE student, Digital South Trust Software Engineer Intern, GenZFEST winner, and author of the nishantx.in macOS portfolio.",
 };
 
 export const featuredProjects = [
@@ -27,22 +27,23 @@ export const featuredProjects = [
     url: "https://krydo.in",
     github: "https://github.com/nishant-uxs/krydo-next",
     stack: "TypeScript, Node.js, Express, Stellar Soroban, Firestore",
-    period: "Feb 2026 – Present",
+    period: "Jan 2026 – Present",
     description:
-      "Stellar-native privacy identity: 3 Soroban contracts (Authority, Credentials, Audit), SIWS + ZK sigma proofs, hybrid Firestore query layer, ~36 API endpoints, web app at krydo.in, Android app v0.28, and 168+ Vitest tests.",
+      "Privacy identity on Stellar: 3 Soroban contracts, SIWS + ZK sigma proofs, hybrid Firestore layer, 36 API endpoints, web/mobile apps, 168+ Vitest tests. Honorable Mention, Stellar Buildathon Delhi.",
+  },
+  {
+    name: "CivicSense",
+    url: "https://civic-sense-six.vercel.app",
+    github: "https://github.com/nishant-uxs/CivicSense",
+    description:
+      "12-page multi-portal civic platform with hybrid PostgreSQL persistence and on-chain SHA-256 state transitions.",
   },
   {
     name: "BlockForge",
     url: "https://blockchain-labeval.onrender.com",
     github: "https://github.com/nishant-uxs/labeval",
     description:
-      "Decentralized academic assessment with IPFS storage and a NetCrypt 2026 accepted paper.",
-  },
-  {
-    name: "CivicSense",
-    url: "https://civic-sense-six.vercel.app",
-    github: "https://github.com/nishant-uxs/CivicSense",
-    description: "On-chain civic reporting with hybrid storage and Gemini-assisted triage.",
+      "Role-based academic assessment with IPFS storage (~92% gas cut). Presented and published at NetCrypt 2026.",
   },
   {
     name: "TrustMesh",

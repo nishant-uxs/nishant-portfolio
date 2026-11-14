@@ -4,25 +4,31 @@ import { INSTAGRAM_URL, SITE_URL } from "../../constants/seo";
 export function SeoProfile() {
   return (
     <section className="sr-only" aria-label="Nishant Agarwal profile for search engines">
-      <h1>Nishant Agarwal — Backend & Blockchain Engineer | Bennett University | nishantx.in</h1>
+      <h1>Nishant Agarwal — Backend & Full-Stack Engineer | Bennett University | nishantx.in</h1>
       <p>{person.headline}</p>
       <p>{person.description}</p>
       <p>{person.disambiguation}</p>
       <p>
-        Official website of Nishant Agarwal ({SITE_URL}): backend engineer, blockchain engineer,
-        Web3 developer, open source contributor, Bennett University CSE student from Greater Noida,
-        India. Also known as nishant-uxs and nishant.agarwal__. Search identifiers: Nishant Agarwal
-        Bennett, Nishant Agarwal blockchain, Nishant Agarwal Krydo, Nishant Agarwal Digital South
-        Trust.
+        Official website of Nishant Agarwal ({SITE_URL}): backend engineer, full-stack engineer,
+        open source contributor, Bennett University CSE student from Greater Noida, India. Also
+        known as nishant-uxs and nishant.agarwal__. Search identifiers: Nishant Agarwal Bennett,
+        Nishant Agarwal Krydo, Nishant Agarwal ClickHouse, Nishant Agarwal OpenTelemetry, Nishant
+        Agarwal GenZFEST, Nishant Agarwal Digital South Trust.
       </p>
       <h2>Experience</h2>
       <ul>
-        <li>Web3 Blockchain Developer Intern — Digital South Trust (Mar 2026 – Jul 2026)</li>
         <li>
-          Open source contributor with merged PRs in ClickHouse, Hardhat, Hyperlane, FilOzone,
-          Mastra, WalletConnect, and viem
+          Software Engineer Intern (Full-Stack / Backend) — Digital South Trust (Mar 2026 – Jul
+          2026)
         </li>
-        <li>LNMHacks 8.0 Finalist · Top 20 at Kshitij 2026 (IIT Kharagpur)</li>
+        <li>
+          Open source contributor across ClickHouse, OpenTelemetry, Hardhat, viem, Mastra,
+          Hyperlane, and Nethermind
+        </li>
+        <li>
+          Winner, GenZFEST Hacktoberfest Agra 2026 · Rank 4 / 600+ SIH Internal · Honorable Mention,
+          Stellar Buildathon Delhi · LNMHacks 8.0 Finalist · Top 20 Kshitij 2026
+        </li>
       </ul>
       <h2>Education</h2>
       <p>

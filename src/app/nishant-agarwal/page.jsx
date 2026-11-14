@@ -63,7 +63,9 @@ export default function NishantAgarwalPage() {
               Student: {person.degree}, {person.university}
             </li>
             <li>Location: {person.location}</li>
-            <li>Internship: Web3 Blockchain Developer — Digital South Trust</li>
+            <li>
+              Internship: Software Engineer Intern (Full-Stack / Backend) — Digital South Trust
+            </li>
             <li>
               Instagram: <a href={person.instagram}>Nishant Agarwal (@nishant.agarwal__)</a>
             </li>
@@ -79,8 +81,8 @@ export default function NishantAgarwalPage() {
         <section>
           <h2>Open source & projects</h2>
           <p>
-            Merged contributions include ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra,
-            WalletConnect, and viem. Featured projects:
+            Open-source work spans ClickHouse, OpenTelemetry, Hardhat, viem, Mastra, LiteLLM,
+            Hyperlane, and Nethermind. Featured projects:
           </p>
           <ul className="seo-doc-list">
             {featuredProjects.map((project) => (

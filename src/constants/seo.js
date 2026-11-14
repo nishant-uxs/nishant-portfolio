@@ -8,11 +8,11 @@ export const SITE_URL = trimSlash(
 );
 
 export const OWNER_NAME = person.name;
-export const SITE_NAME = `${OWNER_NAME} | Backend & Blockchain Engineer | Bennett University`;
+export const SITE_NAME = `${OWNER_NAME} | Backend & Full-Stack Engineer | Bennett University`;
 export const SITE_DESCRIPTION = person.headline;
 export const OG_IMAGE_PATH = "/og-image.png";
 export const OG_IMAGE_ALT =
-  "Nishant Agarwal — Backend & Blockchain Engineer portfolio (nishantx.in)";
+  "Nishant Agarwal — Backend & Full-Stack Engineer · nishantx.in";
 
 export const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE || person.github;
 export const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL || person.linkedin;
@@ -29,30 +29,32 @@ export const SEO_KEYWORDS = [
   "Nishant Agarwal",
   "Nishant Agarwal Bennett University",
   "Nishant Agarwal Greater Noida",
-  "Nishant Agarwal blockchain engineer",
   "Nishant Agarwal backend engineer",
-  "Nishant Agarwal Web3",
+  "Nishant Agarwal full stack engineer",
+  "Nishant Agarwal open source",
   "Nishant Agarwal Digital South Trust",
   "Nishant Agarwal Krydo",
   "Nishant Agarwal BlockForge",
   "Nishant Agarwal ClickHouse",
+  "Nishant Agarwal OpenTelemetry",
   "Nishant Agarwal Hardhat",
   "Nishant Agarwal Hyperlane",
+  "Nishant Agarwal GenZFEST",
+  "Nishant Agarwal SIH",
   "Nishant Agarwal portfolio",
   "nishant-uxs",
   "nishantx.in",
   "nishant.agarwal__",
   "Nishant Agarwal Instagram",
-  "Nishant Agarwal Instagram profile",
   "Krydo Stellar Soroban",
   "krydo.in",
   "krydo-next",
   "BlockForge NetCrypt",
   "CivicSense",
   "TrustMesh Stellar",
+  "Software Engineer Intern India",
   "Backend engineer India",
-  "Blockchain engineer India",
-  "Open source contributor Hardhat viem WalletConnect ClickHouse",
+  "Open source ClickHouse OpenTelemetry Hardhat viem Mastra",
 ];
 
 export const absoluteUrl = (path = "/") => {
@@ -109,29 +111,29 @@ export const buildPersonJsonLd = () => ({
     name: person.university,
     sameAs: "https://www.bennett.edu.in/",
   },
-  worksFor: {
-    "@type": "Organization",
-    name: "Digital South Trust",
-  },
   sameAs,
   knowsAbout: [
     "Backend engineering",
-    "Blockchain",
-    "Ethereum",
-    "Solidity",
-    "Zero-knowledge proofs",
-    "Hardhat",
-    "ClickHouse",
+    "Full-stack development",
     "TypeScript",
     "Node.js",
-    "IPFS",
+    "OpenTelemetry",
+    "ClickHouse",
+    "PostgreSQL",
+    "Docker",
+    "Hardhat",
     "Stellar Soroban",
+    "Zero-knowledge proofs",
     "Open source",
+    "System design",
   ],
   award: [
+    "Winner — GenZFEST Hacktoberfest Agra 2026",
+    "Rank 4 / 600+ — Smart India Hackathon Internal",
+    "Honorable Mention — Stellar Buildathon Delhi",
     "LNMHacks 8.0 Finalist",
     "Top 20 — Kshitij 2026 (IIT Kharagpur)",
-    "NetCrypt 2026 accepted paper (BlockForge)",
+    "NetCrypt 2026 presented & published (BlockForge)",
   ],
 });
 
@@ -169,7 +171,7 @@ export const buildFaqJsonLd = () => ({
       name: "What is Nishant Agarwal's Instagram?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: `Nishant Agarwal's Instagram is @nishant.agarwal__ at ${INSTAGRAM_URL}. This is the official Instagram of the Bennett University backend and blockchain engineer, not other people named Nishant Agarwal.`,
+        text: `Nishant Agarwal's Instagram is @nishant.agarwal__ at ${INSTAGRAM_URL}. This is the official Instagram of the Bennett University backend and full-stack engineer, not other people named Nishant Agarwal.`,
       },
     },
     {

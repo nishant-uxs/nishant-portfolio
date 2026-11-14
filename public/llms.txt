@@ -1,32 +1,46 @@
 # Nishant Agarwal — nishantx.in
 
-> Backend & Blockchain Engineer at Bennett University. Official site: https://www.nishantx.in
+> Backend & full-stack engineer at Bennett University. Official site: https://www.nishantx.in
 
 ## Profile
 - Name: Nishant Agarwal (also nishant-uxs, nishant.agarwal__)
-- Role: Backend & Blockchain Engineer
-- Education: B.Tech CSE, Bennett University, Greater Noida, India
-- Internship: Web3 Blockchain Developer — Digital South Trust
+- Role: Backend & Full-Stack Engineer
+- Education: B.Tech CSE, Bennett University, Greater Noida, India (CGPA 8.86/10.0)
+- Internship: Software Engineer Intern (Full-Stack / Backend) — Digital South Trust (Mar–Jul 2026)
 - GitHub: https://github.com/nishant-uxs
 - LinkedIn: https://www.linkedin.com/in/nishant-agarwal-62a956322/
-- Instagram: https://www.instagram.com/nishant.agarwal__/ (Nishant Agarwal Instagram, @nishant.agarwal__)
+- Instagram: https://www.instagram.com/nishant.agarwal__/ (@nishant.agarwal__)
 - Email: agarwalnishant812@gmail.com
+- Resume: https://www.nishantx.in/files/resume.pdf
 
 ## Disambiguation
-This Nishant Agarwal is the Bennett University CSE student and author of nishantx.in — not other professionals with the same name.
+This Nishant Agarwal is the Bennett University CSE student, GenZFEST winner, and author of nishantx.in — not other professionals with the same name.
 
 ## Pages
 - [Home](https://www.nishantx.in/): Interactive macOS portfolio
 - [Nishant Agarwal](https://www.nishantx.in/nishant-agarwal): Name-focused profile + FAQ
 - [About](https://www.nishantx.in/about): Biography, education, experience
-- [Projects](https://www.nishantx.in/projects): Krydo, BlockForge, CivicSense, TrustMesh
+- [Projects](https://www.nishantx.in/projects): Krydo, CivicSense, BlockForge, TrustMesh
 - [Resume](https://www.nishantx.in/files/resume.pdf): PDF resume
 
 ## Projects
-- Krydo — Stellar Soroban privacy identity (https://krydo.in, https://github.com/nishant-uxs/krydo-next)
-- BlockForge — Decentralized lab assessment (https://blockchain-labeval.onrender.com)
-- CivicSense — On-chain civic reporting (https://civic-sense-six.vercel.app)
+- Krydo — Stellar Soroban privacy identity; Honorable Mention, Stellar Buildathon Delhi (https://krydo.in, https://github.com/nishant-uxs/krydo-next)
+- CivicSense — Multi-portal civic platform (https://civic-sense-six.vercel.app)
+- BlockForge — Role-based assessment; NetCrypt 2026 presented & published (https://blockchain-labeval.onrender.com)
 - TrustMesh — Stellar Soroban trust network (https://trust-mesh-taupe.vercel.app)
 
 ## Open source
-Merged contributions: ClickHouse, Hardhat, Hyperlane, FilOzone, Mastra, WalletConnect, viem.
+- OpenTelemetry collector-contrib #52310 (sigv4auth AssumeRole session names)
+- ClickHouse #114003 — merged
+- wevm/viem #4903 — merged
+- NomicFoundation/hardhat #8464 — merged
+- mastra-ai/mastra #20487 / #20518 — merged
+- BerriAI/litellm #35349
+- hyperlane-xyz/hyperlane-monorepo #9181 — merged
+- NethermindEth/nethermind #12739 — merged
+
+## Highlights
+- Winner, GenZFEST Hacktoberfest Agra 2026
+- Rank 4 / 600+ teams, SIH Internal
+- Honorable Mention, Stellar Buildathon Delhi
+- IEEE / NetCrypt 2026 publication & presentation (BlockForge)
