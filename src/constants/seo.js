@@ -21,10 +21,12 @@ export const INSTAGRAM_URL =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL ||
   person.instagram ||
   "https://www.instagram.com/nishant.agarwal__/";
+export const DEVTO_URL =
+  process.env.NEXT_PUBLIC_DEVTO_URL || "https://dev.to/agarwalnishant812";
 export const EMAIL = process.env.NEXT_PUBLIC_EMAIL || person.email;
 export const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
-export const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, INSTAGRAM_URL].filter(Boolean);
+export const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, INSTAGRAM_URL, DEVTO_URL].filter(Boolean);
 
 export const SEO_KEYWORDS = [
   "Nishant Agarwal",
