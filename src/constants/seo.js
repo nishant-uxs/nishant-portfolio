@@ -255,7 +255,7 @@ export const buildProfilePageJsonLd = () => ({
   url: absoluteUrl("/nishant-agarwal"),
   name: "Nishant Agarwal — Official Profile",
   description: person.description,
-  dateModified: "2026-11-14",
+  dateModified: "2026-11-14T00:00:00.000Z",
   mainEntity: { "@id": `${SITE_URL}/#person` },
   about: { "@id": `${SITE_URL}/#person` },
   isPartOf: { "@id": `${SITE_URL}/#website` },
